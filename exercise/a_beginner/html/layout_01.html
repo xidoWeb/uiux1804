@@ -4,30 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- css문서 불러오기 -->
+  <link rel="stylesheet" href="../css/src/layout_01.css" />
   <title>layout 구조이해하기</title>
   <!-- css -->
-  <style>
-  /* margin: 여백의 의미(떨어져있는 공간의 느낌) , padding : 안쪽여백-자신의 부피가 커져보이는것 */
-
-    html, body {margin:0;}
-    #box {width:600px; height:auto; margin:50px auto;  background-color:#afa;  padding:10px;}
-      /* #header ================================================ */
-      #header {width:100%;  height:100px; background-color:#f0a;}
-        h1{width:100px; height:100px; background-color:#fff; margin:0; float:left;}
-        .navigation {width:400px; height:50px; background-color:#acf; margin-top:50px; float:right;}
-      /* #section ================================================ */
-      #section {width:100%; height:auto; background-color:#fa0;}
-      /*#section > div {height: 300px; float: left;}*/
-        .aside {width:30%; height:300px; background-color:#9c9; float:right;}
-        .article {width:70%; height:150px; background-color:#999; float:left;}
-        .container {width:70%; height: 150px; background-color: #09a; float: left;}
-
-        #section::after, 
-        #section:after {content:" "; display: block; 
-                        width: 100%; height:0; clear: both;}
-      /* #footer ================================================ */
-      #footer {width:100%;  height:100px; background-color:#0af;}
-  </style>
+  <style> </style>
 </head>
 <body>
   <!-- design -->
@@ -35,7 +16,17 @@
   <div id="box">
     <div id="header">
       <h1>logo</h1>
-      <div class="navigation">navigation</div>
+      <div class="navigation">
+        <ul>
+          <li>list_01</li>
+          <li>list_02</li>
+          <li>list_03</li>
+          <li>list_04</li>
+          <li>list_05</li>
+          <li class="last">list_06</li>
+        </ul>
+      </div>
+      <!-- // .navigation -->
     </div><!-- // #header -->
     <div id="section">
       <div class="aside">aside</div><!-- // #aside -->

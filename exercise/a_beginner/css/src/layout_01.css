@@ -1,0 +1,32 @@
+/* layout_01.css */
+
+/* margin: 여백의 의미(떨어져있는 공간의 느낌) , padding : 안쪽여백-자신의 부피가 커져보이는것 */
+
+    html, body {margin:0;}
+    #box {width:600px; height:auto; margin:50px auto;  background-color:#afa;  padding:10px;}
+      /* #header ================================================ */
+      #header {width:100%;  height:100px; background-color:#f0a;}
+        h1{width:100px; height:100px; background-color:#fff; margin:0; float:left;}
+        .navigation {width:400px; height:auto; margin-top:50px; float:right;}
+        .navigation > ul {width: 100%; height:auto; margin: 0; padding: 0;}
+        .navigation > ul::after, 
+        .navigation > ul:after
+         {content:" "; display: block; width:100%; height: 0; clear:both;}
+        .navigation > ul > li {width:15%; height:50px; 
+                              list-style:none; margin-right:2%;
+                              background-color: #ff0; float: left; }
+        /*.navigation > ul > .last {margin-right: 0;} */
+        .navigation > ul > li:last-child {margin-right: 0;} 
+
+      /* #section ================================================ */
+      #section {width:100%; height:auto;}
+      /*#section > div {height: 300px; float: left;}*/
+        .aside {width:30%; height:300px; background-color:#9c9; float:right;}
+        .article {width:70%; height:150px; background-color:#999; float:left;}
+        .container {width:70%; height: 150px; background-color: #09a; float: left;}
+
+        #section::after, 
+        #section:after {content:" "; display: block; 
+                        width: 100%; height:0; clear: both;}
+      /* #footer ================================================ */
+      #footer {width:100%;  height:100px; background-color:#0af;}
