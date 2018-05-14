@@ -15,18 +15,27 @@ a {text-decoration: none; color:inherit;}
 #headBox {height:auto; background-color: #f6a;
 					padding: 35px; box-sizing: border-box;}
 #headBox::after,
-#headBox:after{content:" "; display: block; 
-               width: 100%; height: 0;clear: both;}
-
-	h1 {width:180px; height:180px; background-color:#fff;
-		float: left;/* margin-top:35px; margin-left: 35px;*/}
-	#navigation {width:650px; height:180px; 
-		 background-color:#fff; float: right;
-		/*margin-top:35px; margin-right: 35px; 
-		margin-bottom: 35px;*/}
+#headBox:after{content:" "; display:block; width:100%; height:0; clear:both;}
+	h1 {width:180px; height:180px; background-color:#fff; float: left;/* margin-top:35px; margin-left: 35px;*/}
+	#navigation {width:650px; height:180px; background-color:#fff; float:right;
+		/*margin-top:35px; margin-right: 35px; margin-bottom: 35px;*/}
 
 /* .container =================================== */
-.container {height: 1800px; background-color: #faf;}
+.container {height:auto; background-color: #faf;}
+.container > div{width:100%;}
+	#adBanner {width:100%; height: 500px; background-color:#fff;}
+	#contentBox {width:100%; height: 900px; background-color:#ccc;}
+	#contentList {width:100%; height: 400px; background-color:#aaa;}
 
 /* #footBox =================================== */
-#footBox {height: 350px; background-color: #5af;}
+#footBox {height:auto; background-color: #5af;
+				padding: 35px; padding-bottom: 50px; box-sizing: border-box;}
+#footBox::after ,
+#footBox:after{content:" "; display:block; width:100%; height:0; clear:both;}
+
+#footBox > h2{width:150px; height:150px; background-color:#fff; float:left; 
+	    /* margin-top: 35px; margin-left: 35px; */ margin-right: 50px;}
+.info {width: 500px; height: 250px; background-color: #fff; float:left;
+	    /* margin-top: 35px; */}
+.family_menu {width:150px; height:50px; background-color:#fff; float:right;
+	  /* margin-top: 35px; margin-right: 35px; */}
