@@ -1,0 +1,32 @@
+/*layout_01_test_result.css*/
+
+/* reset.css */
+html, body {margin: 0;}
+h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0;}
+ul,ol,li {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color:inherit;}
+
+/* design */
+#wrap {width: 960px; height:auto; 
+	   background-color: #fa5; margin:auto;
+	   padding:10px;}
+#wrap > div {width:100%;}	
+/* #headBox =================================== */
+#headBox {height:auto; background-color: #f6a;
+					padding: 35px; box-sizing: border-box;}
+#headBox::after,
+#headBox:after{content:" "; display: block; 
+               width: 100%; height: 0;clear: both;}
+
+	h1 {width:180px; height:180px; background-color:#fff;
+		float: left;/* margin-top:35px; margin-left: 35px;*/}
+	#navigation {width:650px; height:180px; 
+		 background-color:#fff; float: right;
+		/*margin-top:35px; margin-right: 35px; 
+		margin-bottom: 35px;*/}
+
+/* .container =================================== */
+.container {height: 1800px; background-color: #faf;}
+
+/* #footBox =================================== */
+#footBox {height: 350px; background-color: #5af;}
