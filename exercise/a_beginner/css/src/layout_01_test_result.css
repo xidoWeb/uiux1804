@@ -5,6 +5,8 @@ html, body {margin: 0;}
 h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0;}
 ul,ol,li {margin: 0; padding: 0; list-style: none;}
 a {text-decoration: none; color:inherit;}
+.clearfix::after,
+.clearfix:after{content:" ";display:block;width:100%;height:0;clear:both;}
 
 /* design */
 #wrap {width: 960px; height:auto; 
@@ -14,28 +16,49 @@ a {text-decoration: none; color:inherit;}
 /* #headBox =================================== */
 #headBox {height:auto; background-color: #f6a;
 					padding: 35px; box-sizing: border-box;}
-#headBox::after,
-#headBox:after{content:" "; display:block; width:100%; height:0; clear:both;}
-	h1 {width:180px; height:180px; background-color:#fff; float: left;/* margin-top:35px; margin-left: 35px;*/}
-	#navigation {width:650px; height:180px; background-color:#fff; float:right;
-		/*margin-top:35px; margin-right: 35px; margin-bottom: 35px;*/}
 
+/*#headBox::after,
+#headBox:after{content:" "; display:block; width:100%; height:0; clear:both;}*/
+	h1 {width:180px; height:180px; background-color:#fff; float: left;/* margin-top:35px; margin-left: 35px;*/}
+	#navigation {width:650px; height:auto; background-color:#fff; float:right;
+		/*margin-top:35px; margin-right: 35px; margin-bottom: 35px;*/}
+	.utility_navigation {width: 500px; height: 60px; 
+		background-color: #0af;/* margin-left:150px;*/
+		float: right;}
+	.global_navigation {width: 100%; height:100px; 
+		margin-top: 20px; background-color: #0af;
+		float: right;}
 /* .container =================================== */
 .container {height:auto; background-color: #faf;}
 .container > div{width:100%;}
 	#adBanner {width:100%; height: 500px; background-color:#fff;}
+	/* #contentBox ********************** */
 	#contentBox {width:100%; height: 900px; background-color:#ccc;}
+		.snb {width:20%; height:900px; 
+			   background-color:#caf; float:left;}
+	  .con_wrap {width: 60%; height: 900px; float: left;}
+		.con_wrap> .mv {width:100%; height:450px; background-color:#fa7;}
+		.con_wrap> .best {width:100%; height:450px; background-color:#f7c;}
+		#contentBox > .best {width:20%; height:900px; 
+			   background-color:#caf; float:left;}
+
 	#contentList {width:100%; height: 400px; background-color:#aaa;}
+		.con_01{width:30%; height:400px; float:left; background-color:#faf;}
+  	.con_02{width:40%; height:400px; float:left; background-color:#aaf;}
+  	.con_03{width:30%; height:400px; float:left; background-color:#7af;}
 
 /* #footBox =================================== */
 #footBox {height:auto; background-color: #5af;
 				padding: 35px; padding-bottom: 50px; box-sizing: border-box;}
-#footBox::after ,
-#footBox:after{content:" "; display:block; width:100%; height:0; clear:both;}
+/*#footBox::after ,
+#footBox:after{content:" "; display:block; width:100%; height:0; clear:both;}*/
 
 #footBox > h2{width:150px; height:150px; background-color:#fff; float:left; 
 	    /* margin-top: 35px; margin-left: 35px; */ margin-right: 50px;}
-.info {width: 500px; height: 250px; background-color: #fff; float:left;
+.info {width: 500px; height:auto; background-color: #fff; float:left;
 	    /* margin-top: 35px; */}
+	.info_navi {width:100%; height:50px; background-color:#aaa; margin-bottom:10px;}
+  .address_con {width:100%; height:120px; background-color:#aaa; margin-bottom:10px;}
+  .copyright {width:100%; height:50px; background-color:#aaa;}
 .family_menu {width:150px; height:50px; background-color:#fff; float:right;
 	  /* margin-top: 35px; margin-right: 35px; */}
