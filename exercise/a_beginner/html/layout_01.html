@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- layout_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>layout 구조이해하기</title>
+  <!-- css -->
+  <style>
+  /* margin: 여백의 의미 */
+    html, body {margin:0;}
+    #box {width:600px; height:auto; margin:50px auto;  background-color:#afa;  padding:10px;}
+      /* #header ================================================ */
+      #header {width:100%;  height:100px; background-color:#f0a;}
+
+      /* #section ================================================ */
+      #section {width:100%; height: 500px; background-color:#fa0;}
+        .aside {width:40%; height:500px; background-color:#9c9;}
+        .article {width:60%; height:500px; background-color:#999;}
+
+      /* #footer ================================================ */
+      #footer {width:100%;  height:100px; background-color:#0af;}
+  </style>
+</head>
+<body>
+  <!-- design -->
+
+  <div id="box">
+    <div id="header"> header  </div><!-- // #header -->
+    <div id="section">
+      <div class="aside">aside</div><!-- // #aside -->
+      <div class="article">article</div><!-- // #article -->
+    </div><!-- // #section -->
+    <div id="footer"> footer  </div><!-- // #footer -->
+  </div>
+  <!-- // #box -->
+  
+  <!-- javascript -->
+  <script src="../js/base/jquery-3.3.1.js"></script>
+  <script>
+    (function($) {})(jQuery);
+  </script>
+</body>
+</html>
