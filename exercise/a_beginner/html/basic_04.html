@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- basic_04.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Document</title>
+  <style></style>
+</head>
+<body>
+  <h1>jquery 불러와서 사용하는 방법 알아보기</h1>
+  <p>기본형태로 불러오는 방법은 2가지가 있다.<br />
+  단, 둘 모두 불러오는 것이 아닌 한가지 방법으로만 불러올 것을 권장</p>
+  
+  <!-- javascript -->
+  <!-- jquery 불러오는 방법1: CDN  -->
+ <!--  <script 
+  src="http://code.jquery.com/jquery-3.3.1.js">
+  </script> -->
+
+  <!-- jquery 불러오는 방법2: 직접받기  -->
+  <script src="../js/base/jquery-3.3.1.js"></script>
+
+  <!-- jquery 사용하기 -->
+  <script>
+    (function($) {
+      $('body').css('backgroundColor','#afa');
+    })(jQuery);
+  </script>
+</body>
+</html>
