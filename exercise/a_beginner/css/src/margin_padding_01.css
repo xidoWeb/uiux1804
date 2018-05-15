@@ -1,0 +1,101 @@
+/*margin_padding_01.html*/
+/* reset */
+html,body {margin: 0;}
+/** mpbo
+  * margin: 외부 여백;
+  * margin: 30px;  - 위30, 오른쪽30, 아래30, 왼30
+  * margin: 30px 50px;  - 위/아래 30, 좌/우 50
+  * margin: 30px auto;  - 위/아래 30, 자동으로(가운데)
+  *** margin:auto; 와 float기능을 함께사용할 수는 없다.
+
+  ---------------------------------------------------
+  * padding: 내부여백;
+  * padding: 40px;  - 위40 오른쪽40 아래40 왼쪽40
+  * padding: 40px 10px; -위/아래 40, 좌/우 10
+
+  *** padding: 30px auto; - error: padding에는 auto수치가 없음
+  *** padding을사용시에는 box-sizing속성을 사용가능하고, 
+      값은  content-box(기본) | border-box(정해진 크기의 안쪽으로 공간을 생성)
+ */
+
+
+/* design */
+.wrap {width: 800px; height: 350px; background-color: #fa0; margin:0 auto;
+      padding:25px; box-sizing:border-box;}
+.wrap>div{width: 250px; height: 300px; float: left; padding:25px; box-sizing: border-box;}
+  .one_box { background-color: #acf;}
+  .in_box{width: 200px; height: 250px; background-color: #fff;}
+  .two_box { background-color: #fca;}
+  .third_box { background-color: #ffa;}
+
+  /* -------------------------------------------- */
+  .margin {width: 800px; height: auto; margin: auto;
+    padding: 1rem; box-sizing: border-box; 
+    background-color: #ccc;}
+  .box > ul {width: 100%; height: 500px; 
+    background-color: #fff; padding: 0;}
+  .box > ul > li{list-style: none; width: 100px; height: 100px;
+    float: left; background-color: #777; color:#fff; font-weight: bold;
+    line-height: 100px; text-align: center;}  
+  .box > ul > li:nth-child(3n-1) {background-color:#57a;}
+  .box > ul > li:nth-child(3n-2) {background-color:#a75;}
+/* ---------*/
+/* 위/오른/아래/왼 모두 10px */
+  .margin li:nth-child(1){margin:10px;}
+/* 위/아래 10px 좌/우 50px */
+  .margin li:nth-child(2){margin:10px 50px;}
+/* 위 10px 좌/우 100px 아래 50px */
+  .margin li:nth-child(3){margin:10px 100px 50px;}
+/* 위 10px 오른 100px 아래 50px 왼 30px*/
+  .margin li:nth-child(4){margin:10px 100px 50px 30px;}
+/** margin은 시계방향으로 돈다!!! */
+
+/* ----------- */
+/* 단위(unit): 16px == 12pt == 100% == 1em == 1rem */
+.padding {width: 800px; height: auto; box-sizing:border-box; 
+  padding:1rem; background-color: #fac; margin: auto;}
+
+.padding li:nth-child(1){padding:30px;}
+.padding li:nth-child(2){padding:30px 5px;}
+.padding li:nth-child(3){padding:30px 100px 5px;}
+.padding li:nth-child(4){padding:30px 10px 100px 5px;}
+
+ /*---------- */
+ /** border: 테두리 외곽선 
+   * border-width: 0.3rem;        -선의 두께
+   * border-style: solid(직선) | dotted(점선) | dashed(쇄선) | ridge(액자처럼) | double(이중선)       -선의 모양
+   * border-color: rgba(255,255,100,0.5);       -선의 색상
+*/
+.border {width: 800px; height: auto; box-sizing:border-box;
+  padding:1rem; background-color:#cca; margin: auto;} 
+
+.border li:nth-child(1) {border-width:1rem; border-style:dotted; border-color:#ffa;}  
+.border li:nth-child(2) {border-width:0.5rem; border-style:dashed; border-color:#af0;}
+.border li:nth-child(3) {border:10px ridge #fff;}
+.border li:nth-child(4) {border-left:20px double #faa;
+  border-top:20px solid #aaf;
+  border-bottom-width:30px; 
+  border-bottom-style:double; border-bottom-color:#afa;}
+.border li:nth-child(5) {border:5px solid #fac; box-sizing:border-box;}
+.border li:nth-child(6) {border:10px solid #fa0; 
+                        box-sizing:border-box; padding:20px;}
+.border li:nth-child(7) {color:#555; margin-top:70px; 
+        width: 0; height: 0; border:30px solid #333;
+        background-color:rgba(0,0,0,0) !important;
+        border-top-color:transparent; 
+        border-bottom-color:rgba(0,0,0,0);
+        border-right-color:rgba(0,0,0,0);}
+
+/** 속성값의 말미에 !important 를 사용하면 강제성을 띈다.
+  * 수정처리가 거의 불가능에 가깝다!!! 
+  * 가급적 사용하지 않는 것을 권장
+ */
+
+/* --------------- */
+.outline {width: 800px; height: auto; background-color: #ccc;
+  margin: auto; padding: 1rem; box-sizing:border-box;}
+
+.outline li:nth-child(1) {outline-width:10px; outline-style:dashed; outline-color:#aaf;}
+.outline li:nth-child(2) {outline:20px solid #ff0;}
+.outline li:nth-child(3) {outline:20px solid #af0; 
+                          outline-top-width:none;}
