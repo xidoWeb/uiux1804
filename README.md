@@ -72,5 +72,5 @@
 ---
 
 ## graphic 프로그램
-### illustraot 
+### illustrator
 [익히러가기](https://github.com/xidoWeb/illustartor_basic)
