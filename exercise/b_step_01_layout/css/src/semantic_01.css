@@ -24,18 +24,23 @@
   #contentBox > h2 {width:0; height:0;  position: relative;  z-index: -100; }
 
     .side_view {box-sizing: border-box; padding:0.5rem;
-      float:left; width: 40%; height:580px; height:36.25rem; background-color:#fa0;}
+      float:left; width: 40%; height:auto; background-color:#fa0;}
 
     .side_view > h3{margin-bottom: 1rem;   
       width:100%; height:100px; height:6.25rem; background-color:#9a5;}
 
-    .side_view > ul{width:100%; height:auto; background-color:#ccc;}
-
+    .side_view > ul{width:100%; height:auto;}
     .side_view > ul >li {margin-bottom: 10px; margin-bottom:0.625rem; 
-      width: 100%; height: 70px; height:4.375rem; 
-      background-color: #fff; 
-      border-bottom:10px solid #a60; border-bottom:0.625rem solid #a60;}
+      width: 100%; height:auto;}
     .side_view > ul >li:last-child{margin-bottom:0;}
+
+    /* .side_view dt */
+    .side_view dl{width: 100%; height: auto;}
+    .side_view dl>dt{width: 100%; height: auto; background: #555; color:#fff;
+        font-size:1.1rem; font-weight:bold; text-transform:uppercase;
+        text-align:right;}
+    .side_view dl>dd{width:100%; height: auto; background-color: #0af;
+        font-size:0.9rem; text-align: right; border-bottom:1px solid #fff;}
 
     /* .content_view ----------------- */
     .content_view {float:right; width: 59%; height:auto; height:auto; background-color:#afa;}
@@ -44,9 +49,26 @@
      .content_view > h3 {width:0; height:0; position:relative; z-index:-100;}
     /* .content_view > h3 {width:0; height:0; font-size: 0; }*/
 
-    .content_view > .con{margin-bottom: 6px;
+    .content_view .con{margin-bottom: 6px;
       width: 100%; height: 140px; background-color: #aaf; }
-    .content_view > .con:last-of-type {margin-bottom: 0;}
+    .content_view .con:last-of-type {margin-bottom: 0;}
+    /* .btn */
+    .btn{width: 100%; height: 0;}
+    .btn>button{width:50px; height:140px; border:0;
+      font-size: 2rem; cursor: pointer; }
+    .btn>button:first-of-type{float: left;}
+    .btn>button:last-of-type{float: right;}
+
+    /* .product */
+    .product{width: 100%; height: auto;}
+    .product > h4 {width: 100%; height: 40px; text-align: center; background-color: #a45; color:#fff; margin:1rem auto;}
+    
+    .product ul {box-sizing:border-box; padding: 0.5rem; 
+      width: 100%; height: 100%;}
+    .product ul > li {float:left; margin-right: 1.333%;
+      width: 24%; height: 100%; background-color: #fff;}
+    .product ul > li:last-child{margin-right: 0;}
+
 
     /* #footBox ==================================================== */
   #footBox {box-sizing: border-box; padding: 10px;

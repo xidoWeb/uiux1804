@@ -14,3 +14,4 @@ header, nav, article, section, footer, aside, figure, figcaption {display: block
 /* 공통의 이름을 생성해서 하나의 이름을 부여시 동일하게 동작하도록 처리하는 기법 */
 
 .clearfix::after, .clearfix:after {content:" "; display: block; width: 100%; height: 0; clear: both;}
+.hidden {display:block; width:0; height:0; position: relative; z-index:-100;}
