@@ -1,0 +1,62 @@
+/* position_02.css */
+
+#wrap{margin: auto; 
+  width: 960px; height: auto;}
+
+#headBox {box-sizing:border-box; padding: 0.5rem;
+  width: 100%; height: auto; min-height:100px;
+  background-color: #af1;}
+
+  h1{float: left;
+    width: 150px; height: 150px; background-color: #fff;}
+
+#adBox {
+  position: relative;
+  width: 100%; height:800px;
+  background-color: #b7f;}
+
+.btn>button:focus{background-color: #cca;}
+
+
+.btn {
+  position: absolute; top:50%; left: 0; margin-top: -75px;
+  width: 100%; height:150px; background-color:rgba(255,255,255,0.3);}
+.btn >button{width: 150px; height: 150px; background-color: #0af; border:0;}
+.btn >button:first-of-type{float: left;}
+.btn >button:last-of-type{float: right;}
+
+.banner_wrap{width: 100%; height: 100%; background-color: #faa;}
+/*.banner_wrap>img{margin-top: -300px;}*/
+
+
+
+#lnb {width: 100%; height: auto; min-height:100px;
+  background-color: #c43;}
+
+#contentBox {box-sizing:border-box; padding: 1rem 4rem;
+  width: 100%; height: auto; min-height:100px;
+  background-color: #d7f;}
+#contentBox>ul{width: 100%; height: auto; background-color: #fff;}
+#contentBox>ul>li{margin:0.5rem; float: left;
+  width:150px; height:150px; background-color:#0ca; }
+#contentBox>ul>li>a{display: block; 
+  position: relative;
+  width: 100%; height: 100%;
+  text-align: center; line-height:150px;
+  background-color: #fa7;}
+#contentBox a::before{content:" "; transition:all 300ms;}
+
+#contentBox a:hover::before{content:" "; display: block; 
+  position:absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color:rgba(0,0,0,0.5);}
+
+#contentBox a:hover>span{position: relative; 
+  color:#fff; font-weight: bold;}
+
+#contentBox a:focus {font-size:1.3rem; font-weight: bold;}
+
+
+
+#footBox {width: 100%; height: auto; min-height:100px;
+  background-color: #e05;} 
