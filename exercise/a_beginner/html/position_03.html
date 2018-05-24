@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- position_03.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- import css -->
+  <link rel="stylesheet" href="../CSS/base/reset.css" />
+  <link rel="stylesheet" href="../css/src/position_03.css" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  
+  <title>position_03 fixed</title>
+</head>
+<body>
+  <div id="wrap">
+    <h1> 간단하게 position fixed를 만들보자!</h1>
+
+    <div class="popup_center">
+      <h2>브라우저의 정 가운데 위치한 팝업창</h2>
+    </div>
+    <div class="side_ad">
+      <h2>우측에 존재하는 상자</h2>
+    </div>
+  </div>
+
+  <!-- javascript -->
+  <script src="../js/base/jquery-3.3.1.js"></script>
+  <script>
+    (function($) {
+      var popup = $('.popup_center');
+
+      setTimeout(
+        function(){
+          // popup.fadeOut();
+          popup.addClass('none');
+        },
+        4000
+        );
+
+    })(jQuery);
+  </script>
+</body>
+</html>
