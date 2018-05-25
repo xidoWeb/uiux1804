@@ -18,26 +18,46 @@
 
 /* ------------------------------------------- */
 .indicator{
-  position: absolute; left: 50%; margin-left: -100px;
-  bottom:10px;
+  position: absolute; left: 50%; margin-left: -100px; bottom:10px;
+  box-sizing:border-box; padding:5px;
   width: 200px; height:50px; background-color: #fa0;
   border-radius:1rem;}
 
 .indicator>li{
   margin-right: 10px;
   width: 40px; height: 40px; float: left; 
+  border-radius:100%;
+  overflow: hidden;
   background-color: #fff;}
-.indicator>li>a{}
+.indicator>li:last-child{margin-right: 0;}
+
+.indicator>li>a{
+  display: block; width: 100%; height: 100%; 
+  background-color: #0af;
+}
+.indicator>li>a:focus {background-color: #5c3;}
 
 /* ------------------------------------------ */
-.l_btn {
+div.l_btn {
   position:absolute; top:50%; margin-top: -100px;
   left:10px;
   width:50px; height:200px; background-color:#af7;}
-.r_btn {
+div.r_btn {
   position:absolute; top:50%; margin-top: -100px;
   right:10px;
   width:50px; height:200px; background-color:#7fa;}
 
   /* -----------------------------------------  */
   
+.btn {
+  position: absolute; top: 50%; left: 0; margin-top: -100px;
+  width: 100%; height: 0;}
+  
+.btn > button {
+  width: 50px; height: 200px; background-color: #cca;
+  border:0; cursor:pointer;}
+.btn > button:hover {background-color: #faa;}
+.btn > button:focus {background-color: #777; color:#fff;}
+
+.btn > .l_btn {float:left;}
+.btn > .r_btn {float:right;}
