@@ -8,7 +8,7 @@
   <style>
     html,body{margin: 0;  padding: 0; background-color: #fff;}
     /* position 1 --------------------------------------- */
-    .wrap,.wrap2,.wrap3{
+    .wrap,.wrap2,.wrap3, .wrap4{
       position: relative; margin:auto;  margin-bottom: 50px; 
       width: 800px;  height: 600px;  background-color:#f0a;}
     .wrap:before{content:" "; display: block; position: absolute; top: 0; left: 0; 
@@ -40,7 +40,20 @@
     .indicator:hover span,
     .indicator a:focus span{display: block;}
 
-  
+  /* position 4 --------------------------------------- */
+  .wrap4{position: relative;}
+  .title_box{
+    position: absolute; left: 20px; top: 30%; z-index:200;
+    box-sizing: border-box; padding: 1rem;
+    width: 450px; height: 200px; background-color:rgba(100,0,100,0.6);
+    color:#fff;}
+  .title_box>h1{font-size: 2.5rem; margin: 0; text-transform:capitalize;}
+  .title_box>p{font-size: 1rem;}
+
+  .img1{ position: absolute; bottom: 0; right:220px; z-index:100;
+    width: 250px; height: 400px; background-color: #5bb;}
+  .img2{ position: absolute; bottom: 0; right: 20px;
+    width: 250px; height: 500px; background-color: #798;}
   </style>
 </head>
 <body>
@@ -83,6 +96,15 @@
         </li>
       </ul>
     </div>
+  </div>
+  <!-- 4 -->
+  <div class="wrap4">
+    <div class="title_box">
+      <h1>title</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dolorem nesciunt et, quis eum neque quo impedit rerum dignissimos tempora quaerat deserunt illum eos aspernatur? </p>
+    </div>
+    <div class="img1"></div>
+    <div class="img2"></div>
   </div>
 </body>
 </html>
