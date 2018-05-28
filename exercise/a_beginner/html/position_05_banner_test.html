@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- position_05_banner_test.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- import css -->
+  <link rel="stylesheet" href="../CSS/base/reset.css" />
+  <link rel="stylesheet" href="../css/src/position_05_banner_test.css" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  
+  <title>pageTitle</title>
+</head>
+<body>
+  <div id="bannerWrap">
+    <div class="btn">
+      <button type="button" class="l_btn">이전</button>
+      <button type="button" class="r_btn">이후</button>
+    </div>
+    <div class="banner">
+      <div class="banner_01">slide banner 01</div>
+      <div class="banner_02">slide banner 02</div>
+      <div class="banner_03">slide banner 03</div>
+      <div class="banner_04">slide banner 04</div>
+    </div>
+  </div>
+  <!-- javascript -->
+  <script src="../js/base/jquery-3.3.1.js"></script>
+  <script>
+    (function($) {
+      var rbtn = $('.r_btn');
+      var banner = $('.banner');
+      var result = 0;
+
+      // 오른 버튼 클릭시, 
+      // banner영역이 margin-left값을 100%씩 감소해서 왼쪽으로 이동
+      rbtn.on('click',function() {
+        // result값이 -300보다 작거나 같은지 여부 확인
+        if(result <= -300 ){          
+          result = 0;                       // -400보다 작으면 0으로 변경
+        }else {
+          result = result - 100;           // -400보다 큰 수일 경우 result값을 100씩 빼기
+        }
+        //  -----------------------------
+        // 배너의 margin-left값을  result값으로(%)처리
+        banner.css({marginLeft : result + '%'});
+      });
+
+    })(jQuery);
+  </script>
+</body>
+</html>
