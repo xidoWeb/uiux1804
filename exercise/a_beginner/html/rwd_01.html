@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- rwd_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta:vp -->
+  <meta name="viewport" 
+  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/src/rwd_01.css" />
+  <!-- ie -->
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  <![endif]-->
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <title>responsive web</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <!-- 16px 12pt 100% 1em 1rem -->
+    <!-- vw vh 
+      ** vw: device의 가로값전체를 100%로 설정해서 사용하는 단위
+      * 가로값 전체를 %로 사용하지 않고 vw 사용한다는 규칙
+
+      ** vh: device의 세로값 전체를 100%로 설정해서 사용하는 단위
+      * 세로값 전체를 %가 아닌 vh라는 단위를 사용(safari, IE최신에서도 원할하게 동작하지 않을 수도 있다.)
+
+      *공식: 사용할 크기 / 브라우저기준크기 * 100;
+
+      ** 실제 사용 예: 브라우저크기 600px에서 가로값 300px, 세로값 50px의 상자를 브라우저의 크기가 변할때마다, 일정비율로 변하게 만들기.
+      (브라우저 : 1200px , 가로:600px, 세로:100px)
+      단위 적용시 가로는 300/600*100 = 50vw
+      단위 적용시 세로는 50/600*100 = 8.333333vw
+
+    -->
+  </div>
+
+
+  <!-- javascript -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/rwd_01.js"></script>
+</body>
+</html>
