@@ -1,0 +1,31 @@
+/* rwd_02.css */
+#wrap {width: 100%; min-width: 960px;  height: 1000px; min-height: 1300px;
+  background-color: #0aa;}
+
+/**{transition: all 500ms ease;}*/
+#headBox{width: 100%; height: 300px; background-color:#1af; transition: all 500ms ease;}
+#adBox{width: 100%; height: 300px; background-color:#5ba; transition: all 500ms ease;}
+#lnbBox{width: 100%; height: 300px; background-color:#9c6; transition: all 500ms ease; color:#fff; font-size: 3rem;}
+#contentBox{width: 100%; height: 300px; background-color:#fd3; transition: all 500ms ease;}
+#footBox{width: 100%; height: 300px; background-color:#5e1; transition: all 500ms ease;}
+
+/*mobile ------------------------*/
+@media screen and (max-width:480px) {
+
+  #wrap {min-width:100%; height:auto;}
+  #headBox{height: 100px;}
+  #adBox{height: 500px;}
+  #lnbBox{height: 600px; height:125vw; /* 600/480*100 */}
+  #contentBox{height: 600px;}
+  #footBox{height: 50px;}
+}
+
+/* ============================= */
+@media screen and (min-width:481px) and (max-width:768px) {
+  #wrap {min-width:100%; height:auto;}
+  #headBox{height: 100px; background-color:#333;}
+  #adBox{height: 400px; background-color:#ba7;}
+  #lnbBox{height: 200px; height:26.041666vw; /*200/768*100*/ background-color:#577;}
+  #contentBox{height: 600px; background-color:#979;}
+  #footBox{height: 50px; background-color:#333;}
+}
