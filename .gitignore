@@ -1,0 +1,15 @@
+# gitignore의 한줄 주석
+
+# prepros file
+prepros-6.config
+**/prepros-6.config
+
+# ai, psd
+*.ai
+**/*.ai
+*.psd
+**/*.psd
+
+# notigonre
+notignore
+**/notignore
