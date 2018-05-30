@@ -1,0 +1,58 @@
+/* rwd_01.css */
+/* 반응형웹 제작시: px단위는 거의 X => em, rem 
+                 : 가변형 사이즈를 사용한다면, %, vw/vh
+
+            공식 : 크기 / 기준(브라우저가로값) * 100
+*/
+
+
+/* common area */
+#wrap{width:100%; height:auto; margin: auto;}
+  #headBox {width:100%;  background-color: #afa;}
+  #adBox   {width:100%;  background-color: #aaa;}
+  #conBox  {width:100%;  background-color: #ccc;}
+  #etcBox  {width:100%;  background-color: #aaa;}
+  #footBox {width:100%;  background-color: #ccc;}
+
+/* mobile */
+@media screen and (max-width:480px) {
+  /*#wrap    {}*/
+    #headBox {height:6.25rem;}
+    #adBox   {height:25rem;}
+    #conBox  {height:25rem;}
+    #etcBox  {height:18.75rem;}
+    #footBox {height:4.375rem;}
+}
+
+
+/* table */
+@media screen and (min-width:481px) and (max-width:768px) {
+  #headBox {height:9.375rem;}
+  #adBox   {height:18.75rem; height:39.0625vw;/* 300/768*100 */ 
+            min-height:15.625rem;}
+  #conBox  {height:25rem;}
+  #etcBox  {height:18.75rem; height:39.0625vw;/* 300/768*100 */ }
+  #footBox {height:4.375rem;}
+}
+
+/* pc */
+@media screen and (min-width:769px) and (max-width:1366px) {
+  /* design 기준: 960 */
+  #headBox {height:9.375rem;}
+  #adBox   {height:28.125rem; height:46.875vw; /* 450/960*100 */
+            min-height:28.125rem;}
+  #conBox  {height:37.5rem;}
+  #etcBox  {display:none;}
+  #footBox {height:4.375rem;}
+}
+
+
+/* pc-full */
+@media screen and (min-width:1367px) {
+  #headBox {height:9.375rem;}
+ #adBox   {height:28.125rem; height:46.875vw; /* 450/960*100 */
+           max-height:47.5rem;}
+  #conBox  {height:37.5rem;}
+  #etcBox  {display:none;}
+  #footBox {height:4.375rem;}
+}
