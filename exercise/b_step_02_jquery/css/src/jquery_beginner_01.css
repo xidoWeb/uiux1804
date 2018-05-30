@@ -1,0 +1,4 @@
+/* jquery_beginner_01.css */
+
+.wrap { margin: auto; width: 600px; height: 300px; background-color: #0af; color:#fff;}
+.wrap>p{margin: auto; width: 70%; height:100px; color:#ff0; font-size: 2rem; text-align: center; background-color: #777;}
