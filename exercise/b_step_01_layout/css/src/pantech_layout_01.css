@@ -1,0 +1,21 @@
+/* pantech_layout_01.css */
+
+.wrap{width: 100%; height:100%;}
+  #headBox     {position:fixed; top: 0; left: 0; z-index:100;
+                 width: 100%; height:3.4375rem; background-color:rgba(100,100,100,0.7); }
+  #adBox       { width: 100%; /*height:878px;*/ height: 100%; background-color: #25f; }
+  /** 만약: .wrap영역이 body와 동일하게 처리하지 않을경우,
+    * #adBox 의 높이를 브라우저의 높이와 동일하게 처리해야한다면?
+    * js를 활용: 
+      1. 브라우저의 높이값을 파악(margin,padding값이 존재하는지에 따라 조금 다르다.)
+      2. #adBox에 파악된 높이값을 적용
+  */
+  #infoBox     {position:absolute; left: 0; bottom: 0;
+     width: 100%; height:9.375rem; background-color:rgba(100,100,100,0.7); }
+  #businessBox { width: 100%; height:100%; min-height:55.875rem; background-color: #4f7; }
+  #aboutBox    { width: 100%; height:70%;  /*min-height:50.5rem;*/ background-color: #58f; }
+  #sideBox     { width: 100%; height:30%;  /*min-height:11.125rem;*/ background-color: #6f9; }
+
+
+  #footBox     { box-sizing:border-box; border-top:0.0625rem solid #777; 
+                 width: 100%; height: 6.9375rem; background-color: #710; }
