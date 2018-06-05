@@ -1,7 +1,7 @@
 /* reset.css */
 /* 크로스브라우징을 가능하도록 각 브라우저의 기본형태의 상태를 동일하게 변경 */
 
-html,body{margin: 0; padding: 0; height:100%;}
+html,body{margin: 0; padding: 0; height:100%; background-color:  #fff;}
 h1,h2,h3,h4,h5,h6,
 p,pre,div,ul,ol,li,dl,dt,dd,img {margin: 0; padding: 0; border:0; outline:0;}
 ul,ol,li{list-style:none;}
