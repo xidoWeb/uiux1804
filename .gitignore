@@ -9,6 +9,9 @@ prepros-6.config
 **/*.ai
 *.psd
 **/*.psd
+# up ai,psd
+!**/work/**/*.ai
+!**/work/**/*.psd
 
 # notigonre
 notignore

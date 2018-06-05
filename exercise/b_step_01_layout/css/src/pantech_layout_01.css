@@ -14,20 +14,21 @@
       1. 브라우저의 높이값을 파악(margin,padding값이 존재하는지에 따라 조금 다르다.)
       2. #adBox에 파악된 높이값을 적용
   */
-  .info_wrap {position:absolute; left: 0; bottom: 0;
-              width: 100%; height: auto; background-color:rgba(100,100,100,0.7); }
-  #infoBox     {margin: auto; width:75rem; height:9.375rem; background-color:inherit; }
+  .info_wrap     {position:absolute; left: 0; bottom: 0;
+                  width: 100%; height: auto; background-color:rgba(100,100,100,0.7); }
+  #infoBox       {box-sizing:border-box; padding-top:2.5rem; margin:auto; 
+                  width:75rem; height:9.375rem; background-color:inherit; }
 
   .business_wrap {width: 100%; height: 100%; background-color:#4f7;}
-  #businessBox { margin: auto; width:75rem; height:100%; background-color: #487; }
+  #businessBox   {box-sizing:border-box; padding-top:11.25rem; margin: auto; 
+                  width:75rem; height:100%; background-color: #487; }
 
 
-  .about_wrap {width: 100%; height: 70%;  background-color: #58f;}
-  #aboutBox    {margin: auto;  width:75rem; height:100%;  /*min-height:50.5rem;*/ background-color: #a8f; }
+  .about_side_wrap {width: 100%; height:100%;  background-color: #58f;}
+  #aboutBox      {box-sizing:border-box; padding-top:5.9375rem; margin: auto;  
+                  width:75rem; height:70%; background-color: #a8f; }
+  #sideBox       {margin:auto; width:75rem; height:30%; background-color: #af9; }
 
-  .side_wrap {width: 100%; height: 30%; background-color: #6f9;}
-  #sideBox     {margin:auto; width:75rem; height:100%;  /*min-height:11.125rem;*/ background-color: #af9; }
-
-  .foot_wrap  {width: 100%; height: auto; border-top:0.0625rem solid #777;}
-  #footBox     { margin: auto; box-sizing:border-box;  
-                 width:75rem; height:6.875rem; background-color: #dfddfd; }
+  .foot_wrap     {width: 100%; height: auto; border-top:0.0625rem solid #777;}
+  #footBox       {margin: auto; box-sizing:border-box;  
+                  width:75rem; height:6.875rem; background-color: #dfddfd; }
