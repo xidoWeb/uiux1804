@@ -21,3 +21,30 @@
   font-size: 1.1rem; font-weight: bold; text-transform: uppercase;}
 .layout_01>dl>dd{ padding: 0 0.5rem;
   width: auto; height: auto; color:#171717;}
+
+
+.lnb{ margin-top: 2rem; float: left; width: 100%; height: 200px; background-color: #ffa;}
+.lnb>ul{width: 100%; height: 100%;}
+.lnb>ul>li{width: 20%; height: 100%; float: left;
+  border-right:1px solid #777;
+  box-sizing: border-box; padding: 1rem;}
+.lnb>ul>li:last-child{border-right: 0;
+transition:all 500ms ease;}
+
+.lnb a{display: block; width: 100%; height: 100%;}
+.lnb dl{width: 100%; height: 100%; position: relative;}
+
+.lnb dt{  position: absolute;   bottom:1rem; left:0;
+  width: 100%; height: auto;
+  text-transform:uppercase; 
+  font-size: 1.1em; font-weight: bold; 
+  text-align: center;
+  transition:all 500ms ease;}
+.lnb dd{  position: absolute;  top: 1rem; left: 0;
+  width: 100%; height: auto; text-align: center;
+  color:#fff;  opacity:0;
+  transition:all 500ms ease;}
+
+.lnb li:hover {background-color: #09a;}
+.lnb li:hover dt{color:#fff;}
+.lnb li:hover dd{opacity: 1;}
