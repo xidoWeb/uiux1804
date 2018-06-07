@@ -1,7 +1,7 @@
 /* background_02.css */
 .wrap {margin: auto; width: 60rem; height: auto; background-color: #fafafa;}
 h1{background-color:#04f; color:#fff; text-align:center; font-size:1.7rem;}
-
+ 
 .icons, .icons2 {box-sizing:border-box; padding: 0.5rem; width: 100%; height: auto;}
 .icons::after,.icons:after{content:" "; display: block; clear: both;}
 
@@ -41,3 +41,59 @@ a:focus{outline: 5px solid #f06;}
 .icons2 > li:nth-child(2) > a:hover{background-position:-245px -694px;}
 .icons2 > li:nth-child(3) > a:hover{background-position:-469px -804px;}
 .icons2 > li:nth-child(4) > a:hover{background-position:-799px -916px;}
+
+/*gradient*/
+.linear, 
+.radial{margin-bottom:1rem; 
+  width: 100%; height: auto; 
+  background-color: #ffc;}
+
+.linear>h2,
+.radial>h2{
+  background-color: #f70; text-align: center;
+  padding-bottom: 1rem; color:#fff; 
+  text-transform:uppercase;}
+
+.linear>ul,
+.radial>ul{width: 100%; height: auto;}
+
+.linear li, 
+.radial li{margin-bottom: 1rem;
+  width: 100%; height: 200px; 
+  background-color: #aaa;}
+
+.linear li:first-child{
+  background-color: #f06;
+  background-image:url("../../img/background_test/linear.jpg");
+  background-repeat:repeat-x;
+  background-image:linear-gradient(#ff0, #0ad, #f06);
+}
+.linear li:nth-child(2){
+  background-color: #f06;
+  background-image:linear-gradient(56deg, #ff0, #0ad 20%, #f06 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=56, startColorstr=#1471da, endColorstr=#1C85FB);
+}
+.linear li:nth-child(3){
+  background-color: #f06;
+  background-image:linear-gradient(56deg, rgba(255,255,10,0.5) 20%, #0ad 20%, #f06 50%);
+}
+
+.radial li:first-child{
+  background-image:radial-gradient(ellipse closest-side, #ff5, #0ad, #f06);
+}
+.radial li:nth-child(2){
+  background-image:radial-gradient(circle, #ff5, #0ad, #f06);
+}
+.radial li:nth-child(3){
+  background-image:radial-gradient(circle at 50% 0, #ff5, #0ad, #f06);
+}
+
+
+.gradient_hover{width: 100%; height: 300px; 
+  background-color: #0af;
+  background-image: linear-gradient(65deg, #fa0 10%, rgba(0,0,0,0) 30%);
+  transition:all 600ms ease;}
+
+.gradient_hover:hover{ 
+  background-color: #f0a;
+  background-image: linear-gradient(65deg, #fa0 10%, rgba(0,0,0,0) 30%);}
