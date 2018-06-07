@@ -1,0 +1,43 @@
+/* background_02.css */
+.wrap {margin: auto; width: 60rem; height: auto; background-color: #fafafa;}
+h1{background-color:#04f; color:#fff; text-align:center; font-size:1.7rem;}
+
+.icons, .icons2 {box-sizing:border-box; padding: 0.5rem; width: 100%; height: auto;}
+.icons::after,.icons:after{content:" "; display: block; clear: both;}
+
+.icons>li{margin: 1rem; float: left; width: 3.5rem; height: 3.5rem; border:0.125rem solid #777;}
+/*.icons>li>a{display: block; width: 100%; height: 100%;}
+.icons>li>a>span{display: block; width: 0; height: 0; overflow: hidden;}*/
+
+.icons>li>a{background-image: url("../../img/background_test/icons_01.png");
+            background-repeat: no-repeat;
+            /*background-position:-30px -34px;*/
+            transition:all 800ms ease;}
+/*.icons>li>a:hover{background-position:-146px -158px;}*/
+
+/* .icons의 li의 두번째 안에있는 a */
+
+.icons > li:nth-child(1) > a {background-position:-30px -34px;}
+.icons > li:nth-child(1) > a:hover {background-position:-30px -158px;}
+
+.icons > li:nth-child(2) > a {background-position: -146px -34px;}
+.icons > li:nth-child(2) > a:hover {background-position:-146px -158px;}
+
+
+.icons2 > li {float: left; margin: 0.5em; border:2px solid #0af; width: 65px; height: 65px;}
+.icons2 > li > a {background-repeat:no-repeat; 
+                  background-image: url("../../img/background_test/icons_02.png");
+                  transition:background-position 1000ms ease-in-out;}
+a:focus{outline: 5px solid #f06;}
+
+.icons2 > li:nth-child(1) > a{background-position:-28px -21px;}
+.icons2 > li:nth-child(2) > a{background-position:-245px -130px;}
+.icons2 > li:nth-child(3) > a{background-position:-469px -242px;}
+.icons2 > li:nth-child(4) > a{background-position:-799px -352px;}
+/* .icons2 > li hover */
+
+.icons2 > li:nth-child(1) > a:hover{background-position:-28px -585px;}
+.icons2 > li:nth-child(1) > a:focus{background-position-y:-694px;} /* fire-fox에는 없는 기능 */
+.icons2 > li:nth-child(2) > a:hover{background-position:-245px -694px;}
+.icons2 > li:nth-child(3) > a:hover{background-position:-469px -804px;}
+.icons2 > li:nth-child(4) > a:hover{background-position:-799px -916px;}

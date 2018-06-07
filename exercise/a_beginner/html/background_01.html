@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- background_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta:vp -->
+  <meta name="viewport" 
+  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/src/background_01.css" />
+  <!-- ie -->
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  <![endif]-->
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <title>background web</title>
+</head>
+<body>
+  <div class="wrap">
+    <h1>icon 이미지 배치하기</h1>
+    <p>
+      <strong>backgroud image 왜쓸까?</strong>
+      background-image는 이미지를 배경으로 처리하고, 내부에 글자 또는 다양한 이미지, 버튼, 등의 형태를 취할때 사용하는 방법<br />
+      이미지와, 다른요소가 겹칠때 사용하는 기법 <br />
+      background-image 형태는 해당자료를 컴퓨터에 저장하기 때문에 새로고침을 하거나, 반복적으로 접근할경우에 데이터 사용양이 적다.<br />
+      일반적으로 자주 변경되거나, 임시로 저장하는 경우에는 img를사용, 장기적으로 사용하는 이미지는 background-image를 사용하기도 한다.
+    </p>
+
+    <ul class="icon">
+      <li>home</li>
+      <li>check</li>
+      <li>react</li>
+      <li>
+        <a href="#"><span class="hidden"><strong>image replace기법:</strong>
+        이미지를 글자를 대신하여 존재하게하고, 
+        대신에 내용(글자)은 숨김처리하여, 
+        보이지 않게 처리하는 방법 <br />
+        단, 내용을 숨길때에는 display:none은 사용하는 것이 아니다. 
+        </span></a>
+    </li>
+    </ul>
+    <div class="bgtest">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam nisi asperiores, corrupti suscipit quisquam sed doloremque, a nihil aspernatur numquam harum. Iusto officia fugit voluptatum fugiat vitae quis. Dolor, esse!
+    </div>
+  </div>
+
+
+  <!-- javascript -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/background_01.js"></script>
+</body>
+</html>
