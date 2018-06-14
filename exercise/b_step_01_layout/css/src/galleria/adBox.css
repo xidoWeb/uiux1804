@@ -10,16 +10,33 @@
         auto   - 내용에 따라 스크롤유무를 판단하여 처리
         normal - 아무런 처리하지 않는 기본상태
   */
+
+  /** color:
+      black: #333;
+  */
+
   #adBox{
     overflow-y: hidden;
     position: relative;   
     margin-top: 68px;
     width: 100%; height: 650px; background-color: #ccc;}
 
+/* .indicator ------------------------------- */
   #adBox > .indicator {
     position: absolute; bottom:25px; right:22px; z-index:400;
-    width: 134px; height: 25px; background-color: #adf;}
+    box-sizing:border-box; padding:6px 12px 6px;
+    width: 134px; height: 25px; background-color: #adf;
+    background-color: #333;
+    border-radius:12px;
+  }
 
+.banner_play_btn{width: 12px; height: 12px; float: left; background-color: #fff;}
+.banner_arrow_btn{width: 90px; height: 12px; float: left; margin-left:8px; background-color: #fff;}
+.indicator_selector_btn{
+  position:absolute; top:6px; right:26px;
+  width:64px; height:12px; background-color:#fa0;}
+
+/* .ad_banner ------------------------------- */
   #adBox > .ad_banner {position: relative;
     width: 100%; height: 100%;}
 
