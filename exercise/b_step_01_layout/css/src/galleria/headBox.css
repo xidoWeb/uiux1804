@@ -3,6 +3,8 @@
     line : 1px solid #363636 
 */
 
+
+
   #headBox{
     position: fixed; top: 0; left: 0; z-index:500;
     box-sizing:border-box; padding:0 10px;

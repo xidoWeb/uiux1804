@@ -26,3 +26,5 @@ header, nav, article, section, footer, aside, figure, figcaption {display: block
   background-repeat:no-repeat;
   background-position: center;}
 
+/* 접근성 */
+a:focus, button:focus {outline:2px solid #fa0; position:relative; z-index:1000;}
