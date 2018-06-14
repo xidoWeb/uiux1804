@@ -1,0 +1,39 @@
+/* #headBox =============================================*/
+/* color & guide:
+    line : 1px solid #363636 
+*/
+
+  #headBox{
+    position: fixed; top: 0; left: 0; z-index:500;
+    box-sizing:border-box; padding:0 10px;
+    width: 100%; height: 68px; background-color: #161616;}
+
+    h1{
+      box-sizing:border-box;
+      border-right:1px solid #363636;
+      width: 150px; height:inherit; float: left;
+      background-color: #fff;}
+
+    #gnb{width: 805px; height:inherit; float: left;
+      background-color: #dad;}
+    #gnb > ul{width: 100%; height:inherit;}
+    #gnb > ul > li{
+      border-right:1px solid #363636 ;
+      float:left; width: 160px; height:inherit;}
+
+    #unb{width: 250px; height:inherit; float: right;
+      background: #0af;}
+      #unb > ul{float: left; width:213px; height:inherit;}
+      #unb > ul > li {float:left; height:inherit;
+        background-image: url("../../../img/galleria_img/headBox/unb_vertical.png");
+        background-repeat:no-repeat;
+        background-position:right 29px;}
+        
+      #unb > ul > li:nth-child(1) {width:54px;}
+      #unb > ul > li:nth-child(2) {width:46px;}
+      #unb > ul > li:nth-child(3) {width:59px;}
+      #unb > ul > li:nth-child(4) {width:54px;}
+
+      #unb > button {float: right;
+        width: 30px; height:inherit;
+        cursor:pointer;}
