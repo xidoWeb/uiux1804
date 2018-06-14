@@ -3,8 +3,6 @@
     line : 1px solid #363636 
 */
 
-
-
   #headBox{
     position: fixed; top: 0; left: 0; z-index:500;
     box-sizing:border-box; padding:0 10px;
@@ -15,6 +13,7 @@
       border-right:1px solid #363636;
       width: 150px; height:inherit; float: left;
       background-color: #fff;}
+    h1>a{background-image: url("../../../img/galleria_img/headBox/logo.png");}
 
     #gnb{width: 805px; height:inherit; float: left;
       background-color: #dad;}
@@ -22,6 +21,17 @@
     #gnb > ul > li{
       border-right:1px solid #363636 ;
       float:left; width: 160px; height:inherit;}
+    #gnb li > a{background-image: url("../../../img/galleria_img/headBox/gnb_area.png");
+                background-color: #161616;} 
+    #gnb li> a:hover{background-image: url("../../../img/galleria_img/headBox/gnb_on.png");
+                background-color: #fff;}
+    #gnb li> a:focus{box-sizing:border-box; border-bottom:3px solid #fff;}
+     #gnb li:nth-child(1) > a{background-position: 42px center;}
+     #gnb li:nth-child(2) > a{background-position: -119px center;}
+     #gnb li:nth-child(3) > a{background-position: -280px center;}
+     #gnb li:nth-child(4) > a{background-position: -441px center;}
+     #gnb li:nth-child(5) > a{background-position: -602px center;}
+
 /* inherit 예시 */
 /*   
    #gnb li:nth-child(1){
@@ -39,8 +49,7 @@
       background-color:#707;  }
 */
 
-    #unb{width: 250px; height:inherit; float: right;
-      background: #0af;}
+    #unb{width: 250px; height:inherit; float: right;}
       #unb > ul{float: left; width:213px; height:inherit;}
       #unb > ul > li {
         box-sizing:border-box; padding:0 5px;
@@ -54,6 +63,18 @@
       #unb > ul > li:nth-child(3) {width:59px;}
       #unb > ul > li:nth-child(4) {width:54px;}
 
+      #unb > ul > li:nth-child(1) > a{background-image: url("../../../img/galleria_img/headBox/login.png");}
+      #unb > ul > li:nth-child(2) > a{background-image: url("../../../img/galleria_img/headBox/join.png");}
+      #unb > ul > li:nth-child(3) > a{background-image: url("../../../img/galleria_img/headBox/sitemap.png");}
+      #unb > ul > li:nth-child(4) > a{background-image: url("../../../img/galleria_img/headBox/korean.png");}
+
+      #unb > ul > li:nth-child(1) > a:hover{background-image: url("../../../img/galleria_img/headBox/login_on.png");}
+      #unb > ul > li:nth-child(2) > a:hover{background-image: url("../../../img/galleria_img/headBox/join_on.png");}
+      #unb > ul > li:nth-child(3) > a:hover{background-image: url("../../../img/galleria_img/headBox/sitemap_on.png");}
+
       #unb > button {float: right;
         width: 30px; height:inherit;
-        cursor:pointer;}
+        cursor:pointer;
+        background-image: url("../../../img/galleria_img/headBox/search_btn.png");
+        background-repeat:no-repeat;
+        background-position: center;}
