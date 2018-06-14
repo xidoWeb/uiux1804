@@ -1,4 +1,45 @@
   /* #adBox =============================================*/
+
+  /** overflo: 지정된 영역이 넘쳤을 경우에 사용하는 기능
+        overflow: hidden | scroll | auto | normal;
+        overflow-x: hidden | scroll | auto | normal;
+        overflow-y: hidden | scroll | auto | normal;
+
+        hidden - 지정영역이 넘는 부분은 숨김처리
+        scroll - 넘침여부와 관계없이 스크롤영역만들어주기
+        auto   - 내용에 따라 스크롤유무를 판단하여 처리
+        normal - 아무런 처리하지 않는 기본상태
+  */
   #adBox{
+    overflow-y: hidden;
+    position: relative;   
     margin-top: 68px;
     width: 100%; height: 650px; background-color: #ccc;}
+
+  #adBox > .indicator {
+    position: absolute; bottom:25px; right:22px; z-index:400;
+    width: 134px; height: 25px; background-color: #adf;}
+
+  #adBox > .ad_banner {position: relative;
+    width: 100%; height: 100%;}
+
+  #adBox > .ad_banner > div {
+    position: absolute; top: 0; left: 0; z-index:100;
+    width: 100%; height: 100%;
+    text-align:center; line-height:650px; font-size:4rem; color:#fff;}
+    
+    .banner_01{background-color: #af1;}
+    .banner_02{background-color: #b82;}
+    .banner_03{background-color: #c43;}
+    .banner_04{background-color: #d14;}
+
+  /** 차후 자바스크립트를 통해 '.active'의 
+      이름이 html문서에 삽입되어 기능을 처리하도록 함 */
+  #adBox > .ad_banner > div.active {z-index:110;}
+
+  /**최초의 위치에서 오른쪽에있는 스크롤 바의 위치를 파악하여, 
+    그만큼의 비율을 bottom값에 적용하는것 */
+  #adBox > .scroll_view {
+    position:absolute; bottom:0; left: 50%; z-index:400;
+    margin-left:-31px;
+    width:62px; height: 130px; background-color: #999;}

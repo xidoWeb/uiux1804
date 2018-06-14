@@ -20,15 +20,33 @@
     #gnb > ul > li{
       border-right:1px solid #363636 ;
       float:left; width: 160px; height:inherit;}
+/* inherit 예시 */
+/*   
+   #gnb li:nth-child(1){
+        box-sizing:border-box;
+        padding-top: 50px;
+        background-color:#f76;}
+
+    #gnb li:nth-child(1)>a{
+      height:inherit; margin-top: -50px;
+      background-color:inherit;
+      transition:all 800ms}
+
+    #gnb li:nth-child(1):hover >a {
+      margin-top: 0;
+      background-color:#707;  }
+*/
 
     #unb{width: 250px; height:inherit; float: right;
       background: #0af;}
       #unb > ul{float: left; width:213px; height:inherit;}
-      #unb > ul > li {float:left; height:inherit;
+      #unb > ul > li {
+        box-sizing:border-box; padding:0 5px;
+        float:left; height:inherit;
         background-image: url("../../../img/galleria_img/headBox/unb_vertical.png");
         background-repeat:no-repeat;
         background-position:right 29px;}
-        
+
       #unb > ul > li:nth-child(1) {width:54px;}
       #unb > ul > li:nth-child(2) {width:46px;}
       #unb > ul > li:nth-child(3) {width:59px;}
