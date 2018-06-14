@@ -21,16 +21,44 @@
     #gnb > ul > li{
       border-right:1px solid #363636 ;
       float:left; width: 160px; height:inherit;}
-    #gnb li > a{background-image: url("../../../img/galleria_img/headBox/gnb_area.png");
+    #gnb >ul > li > a{background-image: url("../../../img/galleria_img/headBox/gnb_area.png");
                 background-color: #161616;} 
-    #gnb li> a:hover{background-image: url("../../../img/galleria_img/headBox/gnb_on.png");
+    #gnb >ul > li> a:hover{background-image: url("../../../img/galleria_img/headBox/gnb_on.png");
                 background-color: #fff;}
-    #gnb li> a:focus{box-sizing:border-box; border-bottom:3px solid #fff;}
-     #gnb li:nth-child(1) > a{background-position: 42px center;}
-     #gnb li:nth-child(2) > a{background-position: -119px center;}
-     #gnb li:nth-child(3) > a{background-position: -280px center;}
-     #gnb li:nth-child(4) > a{background-position: -441px center;}
-     #gnb li:nth-child(5) > a{background-position: -602px center;}
+    #gnb > ul > li> a:focus{box-sizing:border-box; border-bottom:3px solid #fff;}
+
+   #gnb > ul > li:hover>a{background-image: url("../../../img/galleria_img/headBox/gnb_on.png");
+                  background-color: #fff;}
+   #gnb > ul > li:hover  .sub_nav{display: block;}
+
+     #gnb > ul > li:nth-child(1) > a{background-position: 42px center;}
+     #gnb > ul > li:nth-child(2) > a{background-position: -119px center;}
+     #gnb > ul > li:nth-child(3) > a{background-position: -280px center;}
+     #gnb > ul > li:nth-child(4) > a{background-position: -441px center;}
+     #gnb > ul > li:nth-child(5) > a{background-position: -602px center;}
+
+/* gnb_하위 내용 */
+    .sub_nav{display: none; box-sizing: border-box; padding:4px;
+      width: 100%; height: auto; background-color: #fff; 
+      border:1px solid #363636; border-top: 0; border-bottom: 0;}
+    .sub_nav>li{width: 100%; height: auto; margin-bottom:6px; font-size:0.85rem; color:#333; text-align: center;}
+
+    .sub_nav > li > a{position: relative;}
+    .sub_nav > li > a:hover {font-weight: bold; font-size: 1rem;
+      border-bottom:1px solid #333;}
+    .sub_nav > li > a:focus {color:#0af; outline: 0;}
+    .sub_nav > li > a:before,
+    .sub_nav > li > a::before{content:" "; display: block; position: absolute;
+        width: 0; height: 0;
+        bottom:-2px; left: 50%; border-bottom:1px solid #333; z-index:100;
+        transition:all 300ms ease;}
+
+    .sub_nav > li > a:focus:before,
+    .sub_nav > li > a:focus::before{width: 100%; left: 0;}
+
+
+
+
 
 /* inherit 예시 */
 /*   
@@ -48,6 +76,9 @@
       margin-top: 0;
       background-color:#707;  }
 */
+
+
+
 
     #unb{width: 250px; height:inherit; float: right;}
       #unb > ul{float: left; width:213px; height:inherit;}
