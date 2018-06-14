@@ -72,5 +72,6 @@
 ---
 
 ## graphic 프로그램
-### illustrator
-[익히러가기](https://github.com/xidoWeb/illustartor_basic)
+- Illustrator-[익히러가기](https://github.com/xidoWeb/illustartor_basic)
+- Photoshop-[익히러가기](https://github.com/xidoWeb/photoshop_basic)
+
