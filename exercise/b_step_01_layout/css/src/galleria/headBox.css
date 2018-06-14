@@ -29,7 +29,7 @@
 
    #gnb > ul > li:hover>a{background-image: url("../../../img/galleria_img/headBox/gnb_on.png");
                   background-color: #fff;}
-   #gnb > ul > li:hover  .sub_nav{display: block;}
+   #gnb > ul > li:hover .sub_nav{display: block;}
 
      #gnb > ul > li:nth-child(1) > a{background-position: 42px center;}
      #gnb > ul > li:nth-child(2) > a{background-position: -119px center;}

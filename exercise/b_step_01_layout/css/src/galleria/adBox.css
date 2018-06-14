@@ -30,11 +30,42 @@
     border-radius:12px;
   }
 
-.banner_play_btn{width: 12px; height: 12px; float: left; background-color: #fff;}
-.banner_arrow_btn{width: 90px; height: 12px; float: left; margin-left:8px; background-color: #fff;}
+.banner_play_btn{
+  position: relative;
+  width: 12px; height: 12px; float: left;}
+.banner_play_btn>button{
+  display: none;
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  cursor: pointer;
+  background-image: url("../../../img/galleria_img/adBox/play_btn.png");
+  background-repeat:no-repeat; }
+
+  .play{background-position:-8px center;}
+  .pause{background-position:3px center;}
+  .banner_play_btn>button.active{display: block;}
+
+
+.banner_arrow_btn{width: 90px; height: 12px; float: left; margin-left:8px;}
+.banner_arrow_btn>button{width: 8px; height: 100%; cursor:pointer;
+  background-image: url("../../../img/galleria_img/adBox/slide_btn.png");
+  background-repeat: no-repeat;}
+.prev_btn{float: left; background-position: 0 center;}  
+.next_btn{float: right; background-position: 100% center;}
+
 .indicator_selector_btn{
   position:absolute; top:6px; right:26px;
-  width:64px; height:12px; background-color:#fa0;}
+  width:64px; height:12px;}
+
+.indicator_selector_btn>li{margin-right: 5px; float: left;
+  width: 12px; height: 100%;}
+
+.indicator_selector_btn>li:last-child{margin-right: 0;}
+
+.indicator_selector_btn>li>a{
+  background-image: url("../../../img/galleria_img/adBox/indicator_sel.png"); 
+  background-position:-15px center;}
+.indicator_selector_btn>li.active>a{background-position: 2px center;}
 
 /* .ad_banner ------------------------------- */
   #adBox > .ad_banner {position: relative;
