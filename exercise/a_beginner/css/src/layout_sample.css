@@ -34,12 +34,27 @@ transition:all 500ms ease;}
 .lnb a{display: block; width: 100%; height: 100%;}
 .lnb dl{width: 100%; height: 100%; position: relative;}
 
+
+
 .lnb dt{  position: absolute;   bottom:1rem; left:0;
   width: 100%; height: auto;
   text-transform:uppercase; 
   font-size: 1.1em; font-weight: bold; 
   text-align: center;
   transition:all 500ms ease;}
+
+.img_sample{display: block; width: 100%; height: 100px; margin-bottom: 1rem; 
+  background-image: url("../../img/background_test/home.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;}
+
+  /*img태그를 사용했을 경우*/
+  /*
+.img_sample{display: block; width: 100%; }
+.img_sample img{width: 70%; }
+*/
+
 .lnb dd{  position: absolute;  top: 1rem; left: 0;
   width: 100%; height: auto; text-align: center;
   color:#fff;  opacity:0;
@@ -47,4 +62,5 @@ transition:all 500ms ease;}
 
 .lnb li:hover {background-color: #09a;}
 .lnb li:hover dt{color:#fff;}
+.lnb li:hover dt .img_sample{display: none;}
 .lnb li:hover dd{opacity: 1;}

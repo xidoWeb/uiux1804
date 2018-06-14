@@ -1,1 +1,38 @@
 /* galleria_01.css */
+/* color: 
+    black1: #161616
+    black2: #292929
+    black3: #0f0f0f
+    white: #ffffff
+    line1: 1px solid #e0e0e0;
+*/
+
+#wrap{width:100%; height:auto; min-height:100px;}
+
+  /* #headBox =============================================*/
+  #headBox{
+    position: fixed; top: 0; left: 0; z-index:500;
+    box-sizing:border-box; padding:0 10px;
+    width: 100%; height: 68px; background-color: #161616;}
+
+  /* #adBox =============================================*/
+  #adBox{
+    margin-top: 68px;
+    width: 100%; height: 650px; background-color: #ccc;}
+
+  /* #noticsBox =============================================*/
+  #noticsBox{
+    box-sizing:border-box; padding-left:10px;
+    width: 100%; height: 56px; background-color: #fff; }
+
+  /* #showBox =============================================*/
+  #showBox{border-top:1px solid #e0e0e0;
+    width: 100%; height: 795px; background-color: #fff;}
+
+  /* #styleBox =============================================*/
+  #styleBox{width: 100%; height:auto; background-color: #292929;}
+  .style_area{margin:auto; width: 1000px; height:2090px;}
+  /* #footBox =============================================*/
+  #footBox{width: 100%; height:auto; background-color: #0f0f0f;}
+  .footer_area{margin:auto; box-sizing:border-box; padding:45px 0; 
+    width:1200px; height:320px; }
