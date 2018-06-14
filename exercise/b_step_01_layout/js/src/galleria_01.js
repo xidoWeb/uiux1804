@@ -28,6 +28,28 @@
     //    동시에 선택한 것에만 ('active')를 적용
     indiLi.removeClass('active');
     $(this).addClass('active');
+
+    // 선택한 순서값 검증
+    // var thisI = $(this).index()
+    // console.log(thisI);
+
+    //1. adDiv의 class를 해제('active')
+    // adDiv.removeClass('active');
+
+    //2. adDiv의 세번째에 class이름('active')를 부여
+    // adDiv.eq(2).addClass('active');
+
+     //2-1. adDiv에 선택한 순서에 맞는 위치에 class이름('active')를 부여
+    // adDiv.eq(thisI).addClass('active');
+
+    // 3. adDiv 중 class이름 'active'는 삭제하고, 
+    //    동시에, 선택한순서( indiLi의 index() )에 
+    //    맞는 adDiv는 class이름 부여
+
+    adDiv.removeClass('active');
+    var i = $(this).index();
+    adDiv.eq(i).addClass('active');
+
   });
 
 })(jQuery);
