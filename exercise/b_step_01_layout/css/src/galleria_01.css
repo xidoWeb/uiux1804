@@ -7,32 +7,17 @@
     line1: 1px solid #e0e0e0;
 */
 
-#wrap{width:100%; height:auto; min-height:100px;}
+@import url("./galleria/wrap.css");
+@import url("./galleria/headBox.css");
+@import url("./galleria/adBox.css");
+@import url("./galleria/noticsBox.css");
+@import url("./galleria/showBox.css");
+@import url("./galleria/styleBox.css");
+@import url("./galleria/footBox.css");
 
-  /* #headBox =============================================*/
-  #headBox{
-    position: fixed; top: 0; left: 0; z-index:500;
-    box-sizing:border-box; padding:0 10px;
-    width: 100%; height: 68px; background-color: #161616;}
-
-  /* #adBox =============================================*/
-  #adBox{
-    margin-top: 68px;
-    width: 100%; height: 650px; background-color: #ccc;}
-
-  /* #noticsBox =============================================*/
-  #noticsBox{
-    box-sizing:border-box; padding-left:10px;
-    width: 100%; height: 56px; background-color: #fff; }
-
-  /* #showBox =============================================*/
-  #showBox{border-top:1px solid #e0e0e0;
-    width: 100%; height: 795px; background-color: #fff;}
-
-  /* #styleBox =============================================*/
-  #styleBox{width: 100%; height:auto; background-color: #292929;}
-  .style_area{margin:auto; width: 1000px; height:2090px;}
-  /* #footBox =============================================*/
-  #footBox{width: 100%; height:auto; background-color: #0f0f0f;}
-  .footer_area{margin:auto; box-sizing:border-box; padding:45px 0; 
-    width:1200px; height:320px; }
+/** css문서내에서 외부파일 불러오는 방법 '@import url()' 
+  * 사실상 '@import url()' 기능은 사용하지 않는다.
+  * 병렬방식이아닌 직렬방식이므로 속도가 사실상 저하되는 방법
+  * html문서상의로 불러왔을경우 가독성이 다소 떨어지기 때문에 쓰기도 한다.
+  * 차후 언젠가 추가될 기능(언어) scss(sass) 의 방식을 이해하기 위해
+*/
