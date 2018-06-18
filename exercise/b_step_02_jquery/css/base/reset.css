@@ -1,11 +1,13 @@
 /* reset.css */
 /* 크로스브라우징을 가능하도록 각 브라우저의 기본형태의 상태를 동일하게 변경 */
 
-html,body{margin: 0; padding: 0; height:100%;}
+html,body{margin: 0; padding: 0; height:100%; background-color:  #fff;}
 h1,h2,h3,h4,h5,h6,
 p,pre,div,ul,ol,li,dl,dt,dd,img {margin: 0; padding: 0; border:0; outline:0;}
 ul,ol,li{list-style:none;}
 a {text-decoration: none; color:#333;}
+
+button{border:0; background:transparent;}
 
 /* html5 --- */
 header, nav, article, section, footer, aside, figure, figcaption {display: block;}
@@ -14,4 +16,15 @@ header, nav, article, section, footer, aside, figure, figcaption {display: block
 /* 공통의 이름을 생성해서 하나의 이름을 부여시 동일하게 동작하도록 처리하는 기법 */
 
 .clearfix::after, .clearfix:after {content:" "; display: block; width: 100%; height: 0; clear: both;}
-.hidden {display:block; width:0; height:0; position: relative; z-index:-100;}
+.hidden,
+.hidden_wrap span{display:block; width:0; height:0; 
+  position: relative; z-index:-100;
+  overflow: hidden;}
+
+.hidden_wrap a{display: block;
+  width: 100%; height: 100%; 
+  background-repeat:no-repeat;
+  background-position: center;}
+
+/* 접근성 */
+a:focus, button:focus {outline:2px solid #fa0; position:relative; z-index:1000;}
