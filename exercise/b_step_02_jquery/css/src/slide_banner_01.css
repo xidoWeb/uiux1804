@@ -23,13 +23,18 @@ h1{padding: 1rem; background-color: #0af; text-align: center;}
   .indicator>li.active{background-color: #fff;}
 
   /* .banner=================================== */
-  .banner_box{width: 100%; height:100%;}
-  /* 1차: 같은자리에 광고배너 겹칠경우 */
-  .banner_wrap{position: relative; width: 100%; height: 100%;}
-  .banner_wrap>div{
-    position: absolute; top: 0; left: 0; z-index:50;
-    width: 100%; height: 100%; }
-  .banner_wrap>div.active{z-index: 100;}
+  .banner_box{width: 100%; height:100%; overflow: hidden; }
   .banner_01{background-color: #f61;}
   .banner_02{background-color: #af1;}
   .banner_03{background-color: #f6f;}
+
+  /* 1차: 같은자리에 광고배너 겹칠경우 */
+  /*.banner_wrap{position: relative; width: 100%; height: 100%;}
+  .banner_wrap>div{
+    position: absolute; top: 0; left: 0; z-index:50;
+    width: 100%; height: 100%; }
+  .banner_wrap>div.active{z-index: 100;}*/
+
+  /* 2차: 슬라이드 배너가 가로로 정렬되어 있는경우.(문제1) */
+  .banner_wrap{width:calc(100% * 3); height: 100%;}
+  .banner_wrap>div{width:calc(100% / 3); height: 100%; float:left;}
