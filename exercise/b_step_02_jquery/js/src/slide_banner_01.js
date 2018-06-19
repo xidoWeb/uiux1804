@@ -1,13 +1,20 @@
 // slide_banner_01.js
 (function($) {
 
+  // slide_btn 내부 버튼요소를 변수
+  var slideBtn = $('.slide_btn');
+  var slideView = slideBtn.children('button');
+  var prevBtn = slideBtn.children('.prev_btn');
+  var nextBtn = slideBtn.children('.next_btn');
+
   // indicator 선택자를 변수로 처리
   var banner     = $('.banner');
-  var bannerUl   = banner.children('ul');
+  var bannerUl   = $('.indicator');
   var banLi      = bannerUl.children('li');
   // banner_wrap 내부 div 선택자를 변수로 처리
   var bannerWrap = $('.banner_wrap');
   var bannerIn   = bannerWrap.children('div');
+  // 
 //  -------------------------------------------------
 
   // banLi 클릭하면,
@@ -46,4 +53,43 @@
     // bannerWrap.css({marginLeft:per});
     bannerWrap.animate({marginLeft:per});
   });
+
+//  -------------------------------------------------
+
+
+  // ==== 3차
+  // .slide_btn의 버튼요소를 선택했을경우,
+  // 광고배너의 이전 이미지와, 다음 이미지의 내용이 보이게 만들기
+  // slideView.on('click', function(e){
+  //   e.preventDefault();
+  //   console.log( $(this) );
+  // });
+
+// nextBtn, prevBtn 클릭시 1씩 수치가 올라가거나 떨어지게 처리
+// 단, 배너의 숫자최대치 이상, 0미만은 생성안되게 처리
+
+  var i = 0; 
+  nextBtn.on('click', function(e){
+    e.preventDefault();
+    // 증감연산자
+    // ++   1씩더해라!
+    // --   1씩 빼라!
+    // ++i  i에 1씩더해라. 
+    
+    if(i < 2){ i += 1; }
+    // console.log( i );
+    var n = i * -100;
+    var per = n + '%';
+    bannerWrap.animate({marginLeft:per});
+  });
+// ----------------------------------------
+  prevBtn.on('click', function(e){
+    e.preventDefault();
+    if(i > 0){ i -= 1; }
+    // console.log( i );
+    var n = i * -100;
+    var per = n + '%';
+    bannerWrap.animate({marginLeft:per});
+  });
+
 })(jQuery);

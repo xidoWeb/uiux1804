@@ -6,11 +6,22 @@ h1{padding: 1rem; background-color: #0af; text-align: center;}
 .banner{position: relative; 
   width: 100%; height: 40vw; background-color: #faa;}
   /* .indicator=================================== */
-  .indicator{
+  .btn{
     position: absolute; bottom:1rem; right:1rem; z-index: 150;
     box-sizing:border-box; padding: 1rem 2rem;
     width: auto; height:auto; background-color: #171717;
     border-radius:3rem;}
+
+  .slide_btn{width: auto; height:auto; float: left;}
+  .slide_btn>button{cursor: pointer;
+     margin-right: 1rem; float: left;
+     width: 1.5rem; height: 1.5em; color:#fff;}
+
+  .slide_btn>.prev_btn:after{content:"<"; color:#fff; font-size: 1.2rem; font-weight: bold;}
+  .slide_btn>.next_btn:after{content:">"; color:#fff; font-size: 1.2rem; font-weight: bold;}
+
+
+  .indicator{width: auto; height: auto; float:left;}
   .indicator>li{
     margin-right: 1rem; float: left;
     box-sizing:border-box;
