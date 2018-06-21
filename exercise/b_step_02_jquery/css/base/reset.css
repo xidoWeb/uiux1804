@@ -7,7 +7,7 @@ p,pre,div,ul,ol,li,dl,dt,dd,img {margin: 0; padding: 0; border:0; outline:0;}
 ul,ol,li{list-style:none;}
 a {text-decoration: none; color:#333;}
 
-button{border:0; background:transparent;}
+button{border:0; background:transparent; cursor:pointer;}
 
 /* html5 --- */
 header, nav, article, section, footer, aside, figure, figcaption {display: block;}
