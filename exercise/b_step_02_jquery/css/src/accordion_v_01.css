@@ -25,4 +25,10 @@ h1{padding: 1rem; color:#fff; background-color: #7a4;
 .accordion > dl > dd{
   box-sizing:border-box; padding: 0.7rem; 
   width: 100%; height: auto; 
+  text-align:justify;
   background-color: #ace;}
+
+.accordion > dl > dd{display: none;}
+/*.accordion > dl > dd.active{display: block;}*/
+
+/*.accordion > dl > dt.active ~ dd{display: block;}*/
