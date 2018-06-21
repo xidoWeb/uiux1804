@@ -5,12 +5,17 @@
   var accordion = $('.accordion');
   var title = accordion.find('dt');
 
+  var timed = 500;
+  var beforeColor ='#067';
+  var afterColor = '#047';
+  
   title.eq(0).nextAll().show();
-  title.eq(0).animate({backgroundColor:'#047'});
+  title.eq(0).animate({backgroundColor:beforeColor});
 
   // dt 클릭시 형제 dd를 보이게 만들기
   title.on('click',function(e) {
     e.preventDefault();
+    var mydt = $(this);
     // step_01
     /*
     $(this).nextAll('dd').addClass('active');
@@ -34,18 +39,18 @@
     */
 
     // step_04 열렸을경우 클릭시 다시 사라지게
-    $(this).parent().siblings('dl').children('dd').slideUp(500);
+    mydt.parent().siblings('dl').children('dd').slideUp(timed);
     // 현재 선택하는 dt의 뒤의 dd가 열렸는가?
-    var thisNext =  $(this).nextAll().css('display');
+    var thisNext =  mydt.nextAll().css('display');
     console.log(thisNext);
 
     if(thisNext === 'block') {
-      $(this).nextAll().slideUp(500);
+      mydt.nextAll().slideUp(timed);
     } else {
-      $(this).nextAll().slideDown(500);
+      mydt.nextAll().slideDown(timed);
     }
 
-    title.animate({backgroundColor:'#067'});
-    $(this).animate({backgroundColor:'#047'});
+    title.animate({backgroundColor:afterColor});
+    mydt.animate({backgroundColor:beforeColor});
   });
 })(jQuery);
