@@ -1,0 +1,28 @@
+/* accordion_v_01.css */
+
+.wrap{width: 100%; height: auto;}
+
+h1{padding: 1rem; color:#fff; background-color: #7a4; 
+  text-align: center; margin-bottom: 2rem;}
+
+.accordion{
+  margin: auto; padding: 0.3rem;
+  width: 600px; height: auto; background-color: #ccc;}
+
+.accordion > dl{
+  width: 100%; height: auto;}
+
+.accordion > dl > dt{
+  border-bottom:1px solid #fff;
+  width: 100%; height: 50px; background-color: #067;}
+
+.accordion > dl > dt > button{
+  width: 100%; height: 100%; text-align: left; cursor:pointer;
+  font-weight: bold; font-family:'myriad pro', '돋움', sans-serif;
+  letter-spacing:0.05rem; word-spacing:0.2rem;
+  color:#fff; font-size: 1.2rem; text-transform:uppercase;}
+
+.accordion > dl > dd{
+  box-sizing:border-box; padding: 0.7rem; 
+  width: 100%; height: auto; 
+  background-color: #ace;}

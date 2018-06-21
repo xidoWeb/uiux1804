@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- slide_banner_02.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/src/slide_banner_02.css" />
+  <!-- ie -->
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  <![endif]-->
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <title>slide banner</title>
+</head>
+<body>
+  <div id="wrap">
+    <h1>slide banner</h1>
+    <section class="banner">
+      <h2 class="hidden">slide banner</h2>
+      <!-- indicator 영역 정리 -->
+
+        <div class="slide_btn">
+          <button type="button" class="prev_btn">
+            <span class="hidden">이전 광고보기</span>
+          </button>
+          <button type="button" class="next_btn">
+            <span class="hidden">다음 광고보기</span>
+          </button>
+        </div>
+
+      <div class="btn">
+        <ul class="hidden_wrap indicator clearfix">
+          <li class="active"><a href="#"><span>배너 1</span></a></li>
+          <li><a href="#"><span>배너 2</span></a></li>
+          <li><a href="#"><span>배너 3</span></a></li>
+        </ul>
+      </div>
+
+
+      <div class="banner_box">
+        <div class="banner_wrap">
+          <div class="banner_01 active">banner_01</div>
+          <div class="banner_02">banner_02</div>
+          <div class="banner_03">banner_03</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- javascript -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/slide_banner_02.js"></script>
+</body>
+</html>
