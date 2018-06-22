@@ -1,0 +1,14 @@
+/* jquery_basic_01 */
+
+.wrap{width: 100%; height: auto;}
+h1{padding:1rem; text-align:center; background-color: #037; color:#fff;}
+
+p{box-sizing: border-box; padding: 1rem;
+  background-color: #cff; width: 800px; height: auto; /*transition:all 800ms ease;*/ }
+
+figcaption{margin: 0; padding: 0; display: block;}
+
+.img_place{
+  margin: auto; overflow: hidden;
+  width: 500px; height: 300px; background-color: #ccc;}
+.img_place>img{width: auto; height: 100%;}
