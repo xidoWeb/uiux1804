@@ -32,4 +32,14 @@
       imgFr.attr({src:'../img/img_03.jpg'});
    });
 
+   $('p').on('click',function() {
+      imgFr.attr({src:imgFrOriginSrc,
+                  alt:imgFrOriginAlt});
+   });
+// -----
+// .make_type 내부에 요소를 삽입
+  $('.make_type').html('<p>내용이 삽입었습니다. <span> 진짜로</span></p> <p>여러 요소를 한번에 삽입이 가능</p>');
+
+
+
 })(jQuery);
