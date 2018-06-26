@@ -3,9 +3,23 @@
 #wrap{width: 100%; height: auto;}
 
 #headBox{width: 100%; height: 100px; background-color: #ccc;}
+h1{float: left; margin: 2rem; background-color: #fff;}
+#headBox>ul{
+  float:right; margin-top: 40px;
+  width: 500px; height: 50px; 
+  background-color: #cff;}
+#headBox>ul>li{
+  float: left; margin-right: 1rem; 
+  background-color: #ff0;}
+#headBox>ul>li:last-child{margin-right: 0;}
+#headBox>ul>li>a{display: block; padding: 0.7rem;}
 
 #contentBox{margin: auto; width: 60rem; height:4000px; 
   background-image:linear-gradient(45deg, #fff, #af0, #fa0);}
+  
+article{margin: auto; border-top: 2px solid  #333;
+  width: 60rem; height: 1000px; 
+  font-size: 2rem; background-image:linear-gradient(15deg, #faa, #f7f);}
 
 .top_btn{position: fixed; bottom: 1rem; left: 50%; margin-left: 30rem; background-color: #acf;
     width: 100px; height: 100px; display: none;}
