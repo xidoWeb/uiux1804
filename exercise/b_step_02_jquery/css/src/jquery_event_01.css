@@ -1,0 +1,48 @@
+/* jquery_event_01.css */
+
+.wrap{width: 100%; height: auto; min-height:100%; 
+  background-color:#dfdfdf;}
+h1{padding:1rem; background-color:#56f; color:#fff;}
+
+.wrap>div{
+  box-sizing:border-box; padding: 1rem;
+  border-top:1px solid #fff;
+  margin: auto;
+  width:600px; height: auto; 
+  min-height: 20rem;}
+
+.mouse{background-color: #acf; position: relative;}
+.mouse>.move{
+  position: absolute; top: 50%; left: 50%; 
+  margin-left: -50px; margin-top: -50px;
+  width: 100px; height: 100px; 
+  background-color: #fff;
+  border-radius:50px 0 0 0;
+  color:#05a; text-align: right;
+  transition:all 300ms ease;}
+
+.mouse:hover>.move{box-shadow:0.2rem 0.2rem 0.2rem rgba(0,0,0,0.5);}
+
+/* ------------------ */
+
+.key{background-color: #aff;}
+.key>input{
+  width: 90%; height: 30px;
+  font-size: 1.4rem; text-indent:0.3rem; }
+.key>p{color:#03a;}
+.key>p>span{font-weight:bold; color:#f05;}
+
+/* ------------------- */
+.wrap>.scroll{
+  height: 50rem; background-color: #faa;
+}
+
+.view{
+  width: 100%; height: 50px;
+  background-color: #af7; color:#171717;
+  text-align: center; line-height: 50px;}
+
+.view.fixed{
+  position: fixed;
+  top: 0;
+}
