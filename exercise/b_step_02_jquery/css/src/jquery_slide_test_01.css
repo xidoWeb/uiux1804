@@ -1,0 +1,40 @@
+/* jquery_slide_test_01.css */
+
+#wrap{padding-bottom: 1rem; width: 100%; height: auto; background-color: #cdcdcd;}
+h1{margin-bottom: 2rem; padding: 1rem; background-color: #afc; 
+  text-align: center; color:#fff; text-shadow:0.1rem 0.1rem 0.1rem rgba(0,0,0,0.5);}
+
+#miniProduct{position: relative; margin: auto; 
+  width: 510px; height: 260px; 
+  background-image: url("../../img/slide_test/wood.jpg");
+  background-repeat:no-repeat; background-size:auto 100%;}
+
+.indicator{position: absolute; bottom: -4rem; left:50%;
+  margin-left: -71px; width: 142px; height: 30px;}
+
+.indicator>li{float: left; margin-right:26px;
+  width: 30px; height: 30px;}
+.indicator>li:last-child{margin-right: 0;}
+
+.indicator>li>a{display: block; width: 100%; height: 100%; background-color: #ccc;
+           border-radius:100%;}
+.indicator>li>a>span{display: block; width: 0; height: 0; overflow: hidden;}
+
+.indicator>li.active>a{background-color: #555;}
+.indicator>li>a:focus{background-color: #fa0;}
+.indicator>li>a:hover{background-color: #aa0;}
+
+/* -------------------------------------------- */
+.product{width: 300%; height: 100%;}
+.product>li{box-sizing:border-box; padding: 30px;
+  float:left; width:33.333333%; height: 100%;}
+.product>li>a{display: block; width: 100%; height: 100%;
+  background-repeat: no-repeat; background-position: center;
+  background-size:contain;}
+.product>li>a>span{display: block; width: 0; height: 0; overflow: hidden;}
+.product>li>a:hover{background-color: #ff03;}
+
+
+.pr_1>a{background-image: url("../../img/slide_test/slide_01.png");}
+.pr_2>a{background-image: url("../../img/slide_test/slide_02.png");}
+.pr_3>a{background-image: url("../../img/slide_test/slide_03.png");}
