@@ -4,7 +4,7 @@
   var indicator = slide.children('.indicator');
   var indiLi    = indicator.children('li');
   var product   = $('.product');
-  var productLi   = product.children('li');
+  var productLi = product.children('li');
   var timed     = 500;
 
   // step1
@@ -106,6 +106,8 @@
     var n = i * -100 + '%' ;
     product.stop().animate({marginLeft:n});
   };
+
+
   Tab(num);
 
   // indicator
@@ -118,8 +120,13 @@
 
   slideBtn.children('button').on('click',function(e) {
     e.preventDefault();
+
+    // console.log( '$(this)는: ', $(this)[0] );
+    // console.log('$(".next_btn")는 :', $('.next_btn')[0] );
+
     var _t = $(this)[0];
-    if(  (_t === nextBtn[0])  &&  (num < productLength-1)  ){ num += 1;
+    if(  (_t === nextBtn[0])  &&  (num < productLength-1)  ){ 
+      num += 1;
     }else if(  (_t === prevBtn[0])  &&  (num > 0)  ){ num -= 1; }
     Tab(num);
   });

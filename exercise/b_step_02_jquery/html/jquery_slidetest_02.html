@@ -21,11 +21,18 @@
   <![endif]-->
     
   <!-- favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
-  <link rel="apple-touch-icon" href="../favicon.png" />
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" /> -->
+  <!-- <link rel="apple-touch-icon" href="../favicon.png" /> -->
   <title>jquery_slidetest_02</title>
 </head>
 <body>
+  <!--
+    <i>i는 단순하게 기울임 글씨를 나타날때, 기본의미 없다.(캐릭터의 표정, 감정)</i><br />
+    <em>em은 강조의 형태</em><br />
+    <span>span자체는 의미가 없다.</span>
+    <address style="width:500px; height:100px; background:#0af">address의 형태 display:block 와 의미 주소, 정보, font-style:italic</address>
+    <p>진우가 말했다. - <i>느끼한 눈빛으로</i> "ㅁㄴㅇㄻㄴㅇㄹ" </p>
+  -->
   <!-- layout -->
   <div class="wrap">
     <h1>jquery_slidetest_02</h1>
@@ -33,15 +40,15 @@
       <div class="slide_btn">
         <button type="button" class="prev_btn"> 
           <i class="glyphicon glyphicon-chevron-left"></i> 
-          <span class="hidden">slide button</span>
+          <span class="hidden">이전 button</span>
         </button>
         <button type="button" class="next_btn">
           <i class="glyphicon glyphicon-chevron-right"></i>
-          <span class="hidden">slide button</span>
+          <span class="hidden">다음 button</span>
         </button>
       </div>
       <ul class="indicator">
-        <li class="active"><a href="#"><span>제품 01 설명</span></a></li>
+        <li><a href="#"><span>제품 01 설명</span></a></li>
         <li><a href="#"><span>제품 02 설명</span></a></li>
         <li><a href="#"><span>제품 03 설명</span></a></li>
         <li><a href="#"><span>제품 04 설명</span></a></li>
