@@ -1,0 +1,34 @@
+/* jquery_slidetest_02 */
+
+.wrap {width: 100%; height: auto;}
+  h1{padding: 1rem; background-color: #357; color:#fff; text-align: center;}
+  #miniProduct{background-color: #8a0; border-color: #8a0;}
+
+  .slide_banner {margin:3rem auto; border:1rem solid; width: 400px; height: 350px; position: relative;}
+  /* .slide_btn */
+  .slide_btn{position: absolute; top: 50%; left: 50%;
+    margin-top:-50px; margin-left:-270px;
+    width: 540px; height: 100px; background-color: #afc;}
+  .slide_btn>button{width: 100px; height: 100px; background-color: #3337; border-radius:100%;}
+  .prev_btn{float: left;}
+  .next_btn{float: right;}
+
+  /* .indicator */
+    .indicator {position:absolute; bottom:0; left:50%; margin-left:-100px;
+      box-sizing:border-box; padding:2px 3px; 
+      width: 200px; height: 30px; background-color: #ccc; border-radius:30px; }
+    .indicator>li{float:left; width:26px; height:26px; margin-right:16px;}
+    .indicator>li:last-child{margin-right: 0;}
+    .indicator>li>a{display: block; width: 100%; height: 100%; border-radius:100%; background-color:#fff;}
+    .indicator>li>a:hover{background-color: #999;}
+    .indicator>li>a:focus{background-color: #fa0;}
+    .indicator>li>a>span{display: block; width: 0; height: 0; overflow: hidden;}
+
+    .product_wrap {width: 100%; height: 300px; background-color: #aff;/*  overflow: hidden; */}
+    .product {width: 500%; height: 100%;}
+    .product>li {float:left; width:calc(100% / 5); height:100%;}
+    .product>li>a {display: block; width: 100%; height: 100%; box-sizing:border-box; border: 1px solid #333}
+    .product>li>a:hover{background-color: #ccc;}
+    .product>li>a:focus{background-color: #fa0;}
+
+    .product>li>a>span {display: block; width: 0; height:0; overflow: hidden;}
