@@ -1,11 +1,13 @@
 /* jquery_slide_test_03.css */
 
-  #wrap{width: 100%; height: 100%; background-color: #aff;}
+  /*html,body{width: 100%; height: 100%;} - reset.css에 세팅되어있음 */
+  #wrap{position: relative; width: 100%;  min-width: 60rem; height: 100%; background-color: #aff;}
+
 
 /* #headBox --------------------------------------------- */
-    #headBox{position: absolute;  top:2rem; left: 50%; margin-left: -30rem;
+    #headBox{display: none; position: absolute;  top:2rem; left: 50%; margin-left: -30rem;
       box-sizing: border-box; padding: 1rem;
-      width: 60rem; height: 100px; background-color: rgba(85,85,85,0.5);}
+      width: 60rem;  height: 100px; background-color: rgba(85,85,85,0.7);}
     h1{float: left; width: 150px; height: 100%;  background-color: #fff;}
     h1>a{display: inline-block; width: 100%; height: 100%; font-size: 1rem; text-align: center; vertical-align:center;}
 
@@ -17,32 +19,50 @@
     #gnb>ul>li>a{color:inherit;}    
 
 /* #adBox --------------------------------------------- */
-    #adBox{width: 100%; height: 100%; background-color: #fa0;}
-     .banner_info{}
-        .indicator{}
-        .indicator>li{}
-        .indicator>li:last-child{}
-        .indicator>li>a{}
+    #adBox{position: relative; width: 100%; height: 100%; background-color: #fa0;}
+     .banner_info{position: absolute; right: 1rem; bottom: 1rem;
+        box-sizing: border-box; padding: 0.2rem;
+        border-radius:1rem;
+        width: auto; min-width:3rem; height: 2rem; background-color:rgba(85,85,85,0.7);}
+        .indicator{float: left; width: auto; height: auto; }
+        .indicator>li{margin-right: 1rem; float:left; 
+          width: 1.6rem; height: 1.6rem; }
+        .indicator>li:last-child{margin-right: 0;}
+        .indicator>li>a{display: block; width: 100%; height: 100%;
+                      border-radius:1.6rem;  background-color: #fff;}
+        .indicator>li.select > a{background-color: #ff0;}
+        .indicator>li > a:focus,
+        .indicator>li > a:hover{background-color: #ddd;}
 
-        .slide_btn{}
-        .slide_btn>button{}
-        .slide_btn>button.prev_btn{}
-        .slide_btn>button.next_btn{}
+        .slide_btn{ float: right; width: auto; height:auto;}
+        .slide_btn>button{margin-left: 1rem; float:left; width: 2.5rem; height: 1.6em; color:#fff;}
+        /*.slide_btn>button.prev_btn{}*/
+        /*.slide_btn>button.next_btn{}*/
+        .slide_btn>button.prev_btn:before{content:"<";display:block; width:100%; height:100%; 
+                                          color:inherit; font-size:1.4rem; font-weight:bold;}
+        .slide_btn>button.next_btn:before{content:">";display:block; width:100%; height:100%; 
+                                          color:inherit; font-size:1.4rem; font-weight:bold;}
 
-   .anner_area{}
-      .banner_wrap{}
-      .banner_wrap>div{}
-        .banner_00{}
-        .banner_01{}
-        .banner_02{}
-        .banner_03{}
-        .banner_04{}
-        .banner_wrap>div>a{}
+   .banner_area{width: 100%; height: 100%;}
+      .banner_wrap{width: 500%; height: 100%;}
+      .banner_wrap>div{position: relative; float:left; width:calc(100% / 5); height: 100%;}
+        .banner_00{background-color:#1af;}
+        .banner_01{background-color:#2ba;}
+        .banner_02{background-color:#3f7;}
+        .banner_03{background-color:#4d4;}
+        .banner_04{background-color:#fa1;}
+        .banner_wrap>div>a{
+          position: absolute; top:70%; left:20%; border:2px solid #fff;
+          width: 15rem; height: 2.5rem; background-color:rgba(85,85,85,0.7);
+          border-radius: 0.5rem;
+          color:#fff; font-size: 1.3rem; text-align: center; transition: all 300ms ease;}
+        .banner_wrap>div>a:focus,
+        .banner_wrap>div>a:hover{background-color: #fff; color:#333; font-weight: bold;}
 
 /* #contentBox --------------------------------------------- */
     #contentBox{margin: auto; width: 60rem; height: auto; min-height: 800px; background-color: #ccc;}
 
-    .top_btn{}
+    .top_btn{display: none;}
     .top_btn>a{}      
 
 /* #footBox --------------------------------------------- */
