@@ -1,1 +1,49 @@
 /* jquery_slide_test_03.css */
+
+  #wrap{width: 100%; height: 100%; background-color: #aff;}
+
+/* #headBox --------------------------------------------- */
+    #headBox{position: absolute;  top:2rem; left: 50%; margin-left: -30rem;
+      box-sizing: border-box; padding: 1rem;
+      width: 60rem; height: 100px; background-color: rgba(85,85,85,0.5);}
+    h1{float: left; width: 150px; height: 100%;  background-color: #fff;}
+    h1>a{display: inline-block; width: 100%; height: 100%; font-size: 1rem; text-align: center; vertical-align:center;}
+
+/* #gnb --------------------------------------------- */
+    #gnb{float: right; width: 700px; height: 100%; }
+    #gnb>ul{box-sizing:border-box; padding-top: 1rem; width: 100%; height: 100%;}
+    #gnb>ul>li{float:left; font-size: 2rem; color:#fff; margin-right: 4rem;}
+    #gnb>ul>li:last-child{margin-right: 0;}
+    #gnb>ul>li>a{color:inherit;}    
+
+/* #adBox --------------------------------------------- */
+    #adBox{width: 100%; height: 100%; background-color: #fa0;}
+     .banner_info{}
+        .indicator{}
+        .indicator>li{}
+        .indicator>li:last-child{}
+        .indicator>li>a{}
+
+        .slide_btn{}
+        .slide_btn>button{}
+        .slide_btn>button.prev_btn{}
+        .slide_btn>button.next_btn{}
+
+   .anner_area{}
+      .banner_wrap{}
+      .banner_wrap>div{}
+        .banner_00{}
+        .banner_01{}
+        .banner_02{}
+        .banner_03{}
+        .banner_04{}
+        .banner_wrap>div>a{}
+
+/* #contentBox --------------------------------------------- */
+    #contentBox{margin: auto; width: 60rem; height: auto; min-height: 800px; background-color: #ccc;}
+
+    .top_btn{}
+    .top_btn>a{}      
+
+/* #footBox --------------------------------------------- */
+    #footBox{margin: auto; width: 60rem; height: 150px; background-color: #777;}
