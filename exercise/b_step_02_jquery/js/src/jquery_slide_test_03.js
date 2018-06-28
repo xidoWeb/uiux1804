@@ -25,7 +25,9 @@
     bannerWrap.animate({marginLeft:move}, timed, easing); 
     indiLi.eq(n).addClass('select');                    
     indiLi.eq(n).siblings('li').removeClass('select');  
-  };
+  }
+
+
 
   // ================================================
   // spep1: indicator클릭시 배너 이동하게
@@ -86,10 +88,6 @@
   // }
   // 단, 함수는 변수로생성(함수표현식)하여 처리할것을 권장
   // var CommonFn = function(){ };  형태로 사용하여 상단으로 옮김..
-
-
-
-
 
 
 })(jQuery);
