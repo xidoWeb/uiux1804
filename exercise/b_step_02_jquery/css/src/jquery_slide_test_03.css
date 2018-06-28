@@ -1,11 +1,13 @@
 /* jquery_slide_test_03.css */
 
+:root{font-size:16px;}
+
   /*html,body{width: 100%; height: 100%;} - reset.css에 세팅되어있음 */
   #wrap{position: relative; width: 100%;  min-width: 60rem; height: 100%; background-color: #aff;}
 
 
 /* #headBox --------------------------------------------- */
-    #headBox{display: none; position: absolute;  top:2rem; left: 50%; margin-left: -30rem;
+    #headBox{position: absolute;  z-index:500; top:2rem; left: 50%; margin-left: -30rem;
       box-sizing: border-box; padding: 1rem;
       width: 60rem;  height: 100px; background-color: rgba(85,85,85,0.7);}
     h1{float: left; width: 150px; height: 100%;  background-color: #fff;}
@@ -16,7 +18,16 @@
     #gnb>ul{box-sizing:border-box; padding-top: 1rem; width: 100%; height: 100%;}
     #gnb>ul>li{float:left; font-size: 2rem; color:#fff; margin-right: 4rem;}
     #gnb>ul>li:last-child{margin-right: 0;}
-    #gnb>ul>li>a{color:inherit;}    
+
+    #gnb>ul>li>a{position: relative; color:inherit;}  
+    #gnb>ul>li>a:focus,
+    #gnb>ul>li>a:hover{text-decoration: none; outline: 0;}  
+
+
+    #gnb>ul>li>a:after{content:" "; display: block; position:absolute; height:0; bottom:0;
+          border-bottom:2px solid #fff; width: 0; left: 50%; transition:all 300ms;}
+    #gnb>ul>li>a:focus:after{width:100%;  left:0; }    
+    #gnb>ul>li>a:hover:after{width:100%;  left:0; border-color: #fa0;}    
 
 /* #adBox --------------------------------------------- */
     #adBox{position: relative; width: 100%; height: 100%; background-color: #fa0;}
@@ -43,14 +54,15 @@
         .slide_btn>button.next_btn:before{content:">";display:block; width:100%; height:100%; 
                                           color:inherit; font-size:1.4rem; font-weight:bold;}
 
-   .banner_area{width: 100%; height: 100%;}
+   .banner_area{width: 100%; height: 100%; overflow: hidden;}
       .banner_wrap{width: 500%; height: 100%;}
-      .banner_wrap>div{position: relative; float:left; width:calc(100% / 5); height: 100%;}
-        .banner_00{background-color:#1af;}
-        .banner_01{background-color:#2ba;}
-        .banner_02{background-color:#3f7;}
-        .banner_03{background-color:#4d4;}
-        .banner_04{background-color:#fa1;}
+      .banner_wrap>div{position: relative; float:left; width:calc(100% / 5); height: 100%;
+        background-repeat: no-repeat; background-position: center; background-size:cover;}
+        .banner_00{background-color:#1af; /*background-image:url("../../img/cake/dish_1.png");*/}
+        .banner_01{background-color:#2ba; /*background-image:url("../../img/cake/dish_2.png");*/}
+        .banner_02{background-color:#3f7; /*background-image:url("../../img/cake/dish_3.png");*/}
+        .banner_03{background-color:#4d4; /*background-image:url("../../img/cake/dish_4.png");*/}
+        .banner_04{background-color:#fa1; /*background-image:url("../../img/cake/dish_5.png");*/}
         .banner_wrap>div>a{
           position: absolute; top:70%; left:20%; border:2px solid #fff;
           width: 15rem; height: 2.5rem; background-color:rgba(85,85,85,0.7);
@@ -62,8 +74,15 @@
 /* #contentBox --------------------------------------------- */
     #contentBox{margin: auto; width: 60rem; height: auto; min-height: 800px; background-color: #ccc;}
 
-    .top_btn{display: none;}
-    .top_btn>a{}      
+/* .top_btn -------------------------------------------------*/
+    .top_btn{/* display: none; */ 
+      position:fixed; left: 50%;  bottom:2rem; margin-left:516px;
+      width: 100px; height: 100px; background-color: #555;}
+    .top_btn>a{display: block; width: 100%; height: 100%; 
+      color:#fff; text-align: center; font-size:4rem; line-height:120px;
+      transition:all 300ms;}      
+    .top_btn>a:focus,
+    .top_btn>a:hover{color:#fa0;}
 
 /* #footBox --------------------------------------------- */
     #footBox{margin: auto; width: 60rem; height: 150px; background-color: #777;}
