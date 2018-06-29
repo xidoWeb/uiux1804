@@ -1,0 +1,14 @@
+/* basic_video_02_fullpage.css */
+
+body{overflow-x: hidden;}
+.wrap{
+  width: 100%; height: 100%; padding-bottom: 100rem; background-color: #dfa;}
+    .title{position: absolute; top: 2rem; left: 2rem; z-index: 100;}
+    .title> h1{font-size: 3rem; border-bottom:1px solid #fa0; color:#fff;}
+    .title> h2{font-size:1.5rem; color:#ff0;}
+      
+    #fullVideo{position: relative; width: 100%; height: 100%; overflow: hidden; background-color: #fa0;}
+    #fullVideo > video{
+      position: absolute; top: 50%; left: 50%; 
+      transform:translate(-50%, -50%);
+      width: auto; height: auto; min-width: 100%; min-height: 100%;}

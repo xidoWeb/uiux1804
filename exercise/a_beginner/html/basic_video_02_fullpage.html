@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- basic_video_02_fullpage.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta:vp -->
+  <meta name="viewport" 
+  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/src/basic_video_02_fullpage.css" />
+  <!-- ie -->
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  <![endif]-->
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <title>basic_video_02_fullpage</title>
+</head>
+<body>
+  <!-- layout -->
+  <div class="wrap">
+    <hgroup class="title">
+      <h1>video를 화면전체에 나타나게 만들기</h1>
+      <h2>video내용이 반응형에서도 돌아가게 만들어보기</h2>
+    </hgroup>
+
+    <div id="fullVideo">
+      <video autoplay="autoplay" muted="muted" loop="loop">
+        <source src="../media/video/PRISTIN-GetIt.mp4" type="video/mp4">
+        <p>사용하고계신 브라우저는 비디오지원불가능이어요 크롬으로써보셔요!<br />
+           <a href="http://google.com/chrome">크롬바로가기</a></p>
+      </video>
+    </div>
+  </div>
+
+  <!-- javascript -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/basic_video_02_fullpage.js"></script>
+</body>
+</html>

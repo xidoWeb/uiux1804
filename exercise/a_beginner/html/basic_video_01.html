@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- basic_video_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta:vp -->
+  <meta name="viewport" 
+  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/src/basic_video_01.css" />
+  <!-- ie -->
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  <![endif]-->
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <title>basic_media_01</title>
+</head>
+<body>
+  <!-- layout -->
+  <div class="wrap">
+    <h1>video and audio</h1>
+    <!-- audio -->
+    <audio controls loop preload="auto">
+      <source src="../media/audio/AKMU_PLAYUGLY.ogg" type="audio/ogg" />
+      <source src="../media/audio/AKMU_PLAYUGLY.mp3" type="audio/mp3" />
+      <p>사용하고계신 브라우저는 음악이 재생되지 않습니다. 지원하는 브라우저를 사용하세요.<br />
+         <a href="http://google.com/chrome">지원브라우저 바로가기</a>
+       </p>
+    </audio>
+
+    <video controls="controls" autoplay="autoplay" muted="muted" 
+           poster="../img/background_test/img_01.jpg">
+      <source src="../media/video/BLACKPINK-DDU-DU.mp4" type="video/mp4" />
+      <p>사용하고 계신 브라우저는 비디오 재생이 되지 않는 브라우저입니다. <br />
+         최신브라우저를 사용하세요. 
+         <a href="http://google.com/chrome">권장브라우저 바로가기</a>
+       </p>
+    </video>
+  </div>
+
+  <!-- javascript -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/basic_video_01.js"></script>
+</body>
+</html>

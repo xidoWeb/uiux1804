@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- basic_table_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta:vp -->
+  <meta name="viewport" 
+  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/src/basic_table_01.css" />
+  <!-- ie -->
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  <![endif]-->
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <title>basic_table_01</title>
+  <style type="text/css">
+    table, th, td{border:1px solid #777; border-spacing:0; border-collapse:collapse;}
+    table{width:800px; height:600px;}
+    thead{background-color:#ac0;}
+    thead>tr{height:100px;}
+    tbody{background-color:#fcc;}
+    tfoot{background-color:#acc;}
+    tfoot>tr{height:100px;}
+
+    .table_one{width:100px;}
+    .table_two{width:200px}
+  </style>
+</head>
+<body>
+  <!-- layout -->
+  <h1>table 01</h1>
+  <table summary="2018년 6월 29일 표에대한 내용을 작성 및 기초 이해하기편" >
+    <caption>테이블의 제목을 작성하는 곳 
+      <span class="hidden">2018년 6월 29일 표에대한 내용을 작성 및 기초 이해하기편</span>
+    </caption>
+    <!--  -->
+    <colgroup>
+      <col class="table_one">
+      <col class="table_two">
+      <col />
+      <col class="table_four">
+    </colgroup>
+    <!--  -->
+    <thead>
+      <tr> <th>셀작성1</th>  <th>셀작성2</th>  <th>셀작성3</th>  <th>셀작성4</th> </tr>
+    </thead>
+
+    <tfoot>
+      <tr> <td>tfoot은 언제나 하단에</td>  <td>tfoot은 언제나 하단에</td>  <td>tfoot은 언제나 하단에</td>  <td>tfoot은 언제나 하단에</td> </tr>
+    </tfoot>
+
+
+    <tbody>
+      <tr> <td colspan="2">셀작성1</td> <td>셀작성3</td>  <td>셀작성4</td> </tr>
+      <tr> <td rowspan="2">셀작성1</td>  <td>셀작성2</td>  <td>셀작성3</td>  <td>셀작성4</td> </tr>
+      <tr>                               <td>셀작성2</td>  <td colspan="2" rowspan="3">셀작성3</td> </tr>
+      <tr> <td>셀작성1</td>  <td>셀작성2</td> </tr>
+      <tr> <td>셀작성1</td>  <td>셀작성2</td> </tr>
+    </tbody> 
+
+  </table>
+
+  <!-- javascript -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <!-- <script src="../js/src/basic_table_01.js"></script> -->
+</body>
+</html>

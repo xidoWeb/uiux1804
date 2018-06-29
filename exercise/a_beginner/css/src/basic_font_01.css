@@ -1,0 +1,72 @@
+/*@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);*/
+/* basic_font_01.css */
+
+
+:root{font-size:16px;}
+
+.font_01{padding: 1rem; background-color: #bdf;
+  font-size:1rem;
+  font-family:"myriad pro", "apple Gothic", arial,nanumGothic, "돋움", dotum, sans-serif;
+  }
+
+
+  /*  font-family: 영문,영문의 대체, 영문의 대체,한글, 한글대체, 전체의 기본서체;*/
+  /* 
+  디자인, 사용서체가, 웹상에서 써야하기때문에, 내컴퓨터를 기준으로 작성하는 것은 아니다.!
+  - 1. 웹폰트를 사용할 것을 권장.(https://fonts.google.com/)
+  - 2. 강제로 웹폰트를 만들자!
+  - 3. 그래픽 프로그램(포토샵/일러스트)을 통한 이미지서체
+  - 4. 포기 ㅜㅜ
+  */
+
+.font_02{padding: 1rem; background-color: #fdb;
+  font-size:1rem;
+  font-family:'Roboto Slab', Shrikhand, serif, cursive;
+  font-weight:100;
+}
+/*
+*  font-weight: regular;(기본굵기-400)
+                thin-100 , right-200
+                bold-600, bolder, extrabold-900
+*/
+
+.font_03{padding: 1rem; background-color: #dfb;
+    font-size: 1.2em;
+    font-family:'Do Hyeon';}
+
+
+.font_04{padding: 1rem; background-color: #f7c; color:#fff;
+  /*letter-spacing:-0.035rem;*/
+  /*word-spacing: 0.3rem;*/
+  /*line-height:1.5;*/
+  font-style:normal;
+  /*text-transform:capitalize;*/
+  /*text-align:justify;*/
+  font-stretch:condensed;
+}
+/*text-transform:uppercase(대문자), 
+                 lowercase(소문자),
+                 capitalize(단어첫글자 대문자)
+
+
+ text-align:center;
+            right;
+            left;
+            justify;
+
+
+ */
+.test{word-spacing:-0.35rem;}
+
+
+.of{background-color: #0af; margin-bottom: 20rem;}
+.of>p{width: 250px; height:30px; background-color: #fa0;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;}
+/* font 설정시 축약방법
+  font:기울임 굵기 서체크기/행간 서체명,서체명,서체명...;
+*/
+.wrap>p{font:italic bold 2rem/200% 'myriad pro',arial,'nanumGothic',sans-serif;}
+.wrap>p::first-line{color:#F06;}
+.wrap>p::first-letter{font-size:5rem;}
