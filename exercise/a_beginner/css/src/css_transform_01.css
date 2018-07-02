@@ -1,0 +1,57 @@
+ /* css_transform_01.css */
+#wrap {height: auto; padding: 5rem;}
+.transform{width: 100%; height: 400px; background-color: #0df; margin-bottom: 4rem;}
+
+.transform>h2{width:100%; border-bottom:1px solid  #333;}
+.transform>ul{width:100%; height:350px; background-color:#ffa;}
+.transform>ul>li{float:left; margin: 1rem; 
+  width: 100px; height: 100px; background-color: #77a;}
+.transform>ul>li>span{display: block; width: 100%; height: 100%;
+    text-align: center; line-height: 100px; font-size: 3rem; color:#fff;}
+
+/* ----------------------------------- */
+/*translate*/
+.transform li{transition:all 1500ms ease;}
+.transform li>span{transition:all 1500ms ease;}
+
+.transform:nth-of-type(1):hover 
+          li:nth-child(1){transform:translate(650px); background-color: #f07;}
+.transform:nth-of-type(1):hover 
+          li:nth-child(2){transform:translate(-100px, -150px); background-color: #0af;}
+.transform:nth-of-type(1):hover 
+          li:nth-child(3){transform:translateX(-30px);}
+.transform:nth-of-type(1):hover 
+          li:nth-child(4){transform:translateX(-130px) translateY(200px);}
+/* scale */
+.transform:nth-of-type(2):hover li:nth-child(1){transform:scale(2);}
+.transform:nth-of-type(2):hover li:nth-child(2){transform:scale(1.2, 1.7); background-color:#Fac;}
+.transform:nth-of-type(2):hover li:nth-child(3){transform:scaleX(1.3);}
+.transform:nth-of-type(2):hover li:nth-child(4){transform:scaleX(0.5) scaleY(3.2); background-color:#Fac;}
+
+/* rotate */
+.transform:nth-of-type(3):hover li:nth-child(1){transform:rotate(360deg); background-color:#Fac;}
+.transform:nth-of-type(3):hover li:nth-child(2){transform:rotateY(180deg); background-color:#Fac;}
+.transform:nth-of-type(3):hover li:nth-child(3){transform:rotateX(360deg); background-color:#Fac;}
+.transform:nth-of-type(3):hover li:nth-child(4){transform:rotateZ(180deg) rotateX(45deg);}
+
+/* skew */
+.transform:nth-of-type(4):hover li:nth-child(1){transform:skew(-45deg);}
+.transform:nth-of-type(4):hover li:nth-child(2){transform:skew(-45deg, 60deg);}
+.transform:nth-of-type(4):hover li:nth-child(3){transform:skewY(60deg); background-color: #af0;}
+.transform:nth-of-type(4):hover li:nth-child(4){transform:skewX(30deg); background-color: #f0a;}
+.transform:nth-of-type(4):hover li:nth-child(4)>span{display: block; transform:skewX(-30deg); background-color:rgba(255,100,0,0.5);}
+
+/* perspective */
+.transform:nth-of-type(5){perspective:50px; position: relative;}
+.transform:nth-of-type(5) li{position: absolute; top: 50%; left: 50%; 
+                            margin-top: -50px; margin-left: -50px;}
+
+.transform:nth-of-type(5) li:nth-child(1){transform:translateX(-500px);}
+.transform:nth-of-type(5) li:nth-child(2){transform:translateX(-150px);}
+.transform:nth-of-type(5) li:nth-child(3){transform:translateX(150px);}
+.transform:nth-of-type(5) li:nth-child(4){transform:translateX(500px);}
+
+.transform:nth-of-type(5):hover li:nth-child(1){transform:translateX(-500px) rotateY(700deg);}
+.transform:nth-of-type(5):hover li:nth-child(2){transform:translateX(-150px) rotateY(700deg);}
+.transform:nth-of-type(5):hover li:nth-child(3){transform:translateX(150px) rotateY(700deg);}
+.transform:nth-of-type(5):hover li:nth-child(4){transform:translateX(500px) rotateY(700deg);}
