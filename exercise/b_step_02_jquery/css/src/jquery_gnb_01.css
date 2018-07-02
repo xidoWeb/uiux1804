@@ -19,10 +19,10 @@ h1{float:left; width: 100px; height:70px; background-color: #fff;}
   font-size: 1.3rem; font-weight: bold; line-height: 50px;}
 
 #gnb ol{display: none;}
-.view #gnb ol{display: block; width: 100%; height: auto;}
-.view #gnb ol>li{margin-top: 0.7rem; width: 100%; height: 30px;/line-height: 30px;}
-.view #gnb li>a{position: relative; }
-.view #gnb li>a:after{content:" "; display: block;
+/*.view*/ #gnb ol{display: block; width: 100%; height: auto;}
+/*.view*/ #gnb ol>li{margin-top: 0.7rem; width: 100%; height: 30px;/line-height: 30px;}
+/*.view*/ #gnb li>a{position: relative; }
+/*.view*/ #gnb li>a:after{content:" "; display: block;
   position: absolute; bottom:-0.3rem; right: 0;
   width:0; height: 0; border-bottom:3px solid #fff; 
   transition:all 300ms ease;}
