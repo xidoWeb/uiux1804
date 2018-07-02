@@ -19,30 +19,25 @@ navBg.css({marginLeft:'-15px', position:'absolute', top:'6.25rem', width: 'inher
 
 // 2. slideUp/slideDown을 이용
 headBox.find('ol').hide();
-headBox.on('mouseenter',function() {
-          $(this).find('ol').stop().slideDown();
-          navBg.stop().slideDown();
-        })
-        .on('mouseleave',function() {
-          $(this).find('ol').stop().slideUp();
-          navBg.stop().slideUp();
-        });
 
-headBox.find('#gnb')
-       .children('ul')
-       .children('li')
-       .children('a').on('focus',function() {
-         headBox.find('ol').stop().slideDown();
-         navBg.stop().slideDown();
-        });
+  var SlideShow = function(){
+     headBox.find('ol').stop().slideDown();
+     navBg.stop().slideDown();
+  };
 
-headBox.find('ol').find('li').eq(-1)
-       .find('a').on('blur',function() {
-         headBox.find('ol').stop().slideUp();
-         navBg.stop().slideUp();
-       });
+  var SlideHide = function(){
+     headBox.find('ol').stop().slideUp();
+     navBg.stop().slideUp();
+  };
 
+  headBox.on('mouseenter',function() { SlideShow(); })
+         .on('mouseleave',function() { slideHide(); });
 
+  var gnb = $('#gnb');
+  var gnbUlA = gnb.children('ul').children('li').children('a');
+  var gnbOlLastA = gnb.find('ol').find('li').eq(-1).find('a');
 
-
+  gnbUl.on('focus',function() { SlideShow(); });
+  gnbOlLastA.on('blur',function() { SlideHide(); });
+  
 })(jQuery);
