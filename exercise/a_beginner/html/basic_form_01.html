@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- basic_form_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta:vp -->
+  <meta name="viewport" 
+  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <!-- ie -->
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  <![endif]-->
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <title>basic_form_01</title>
+</head>
+<body>
+  <div id="wrap">
+    <h1>form</h1>
+    <h2>form이란?</h2>
+    <p>사용자와, 서버간의 상호작용하는 기능(양방향 통신기법)</p>
+
+    <form action="" method="post">
+      <!-- method="get(공개-가볍) | post(보안-무겁다)" -->
+      <fieldset>
+        <!-- form 제작에 필요한 각 파트의 영역 -->
+        <legend>form 영역의 제목</legend>
+        <input type="text" id="idName" name="idName" value="" 
+               placeholder="암거나 입력하세요." required="required" />
+        <label for="idName">당신이 생각하는 그것을 입력하시오!!!</label>
+        <button type="submit">확인 및 전송</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+</body>
+</html>

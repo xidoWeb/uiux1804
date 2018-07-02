@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- jquery_basic_eq.html.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta:vp -->
+  <meta name="viewport" 
+  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <!-- <link rel="stylesheet" href="../css/src/jquery_basic_eq.html.css" /> -->
+  <!-- ie -->
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  <![endif]-->
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <title>jquery_basic_eq web</title>
+  <style>
+    .one li{padding: 1rem; background-color: #fa0; margin: 1rem;
+          color:#fff; font-size: 1.2em;}
+    .one a{color:inherit;}
+    button{padding: 2rem; background-color: #fac;
+      font-size: 2rem;}
+  </style>
+</head>
+<body>
+  <ul class="one hidden_wrap">
+    <li><a href="#">list_01</a></li>
+    <li><a href="#">list_02</a></li>
+    <li><a href="#">list_03</a></li>
+    <li><a href="#">list_04</a></li>
+    <li><a href="#">list_05</a></li>
+    <li><a href="#">list_06</a></li>
+    <li><a href="#">list_07</a></li>
+    <li><a href="#">list_08</a></li>
+    <li><a href="#">list_09</a></li>
+    <li><a href="#">list_10</a></li>
+  </ul>
+
+  <div>
+    <button class="plus">+</button>
+    <button class="minus">-</button>
+  </div> 
+
+     <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script>
+    (function($) {
+
+      var oi = $('.one').find('li');
+      var n = 0;
+      $('.plus').on('click',function(e) {
+        e.preventDefault();
+        n += 1;
+        oi.eq(n).css({backgroundColor:'#0af'});
+        oi.eq(n).siblings('li').css({backgroundColor:'#fa0'});
+      });
+      $('.minus').on('click',function(e) {
+        e.preventDefault();
+        n -= 1;
+        oi.eq(n).css({backgroundColor:'#0af'});
+        oi.eq(n).siblings('li').css({backgroundColor:'#fa0'});
+      });
+
+
+
+    })(jQuery);
+  </script>
+</body>
+</html>
