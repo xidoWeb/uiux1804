@@ -11,7 +11,11 @@ prepros-6.config
 **/*.psd
 # up ai,psd
 !**/work/**/*.ai
-!**/work/**/*.psd
+!**/work/**/*.ps
+
+# multimedia
+**/media
+
 
 # notigonre
 notignore
