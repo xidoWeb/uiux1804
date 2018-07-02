@@ -1,0 +1,34 @@
+/* jquery_gnb_01.css */
+
+#wrap{position: relative; width: 100%; height: auto; min-height: 50rem; background-color: #dfdfdf;}
+#headBox{
+  position: absolute; top: 1rem; left: 50%; margin-left: -30rem;
+  box-sizing:border-box; padding:15px;
+  width: 60rem; height: 6.25rem; background-color: #ccc;}
+#headBox.view:after{content:" "; display: block; margin-left:-15px; margin-top:5.3125rem; width: inherit; height: 15rem; background-color: rgba(0,255,100,0.5)}
+
+h1{float:left; width: 100px; height:70px; background-color: #fff;}
+
+#gnb{float: right; width: 700px; height: 50px; margin-top:20px;}
+#gnb>ul{width:100%; height: 100%;}
+#gnb>ul>li{
+  margin-bottom: 0.5rem;
+  box-sizing:border-box; padding-left: 1rem; padding-top: 1rem;
+  float: left;  width:25%; height: auto; text-align: right;}
+#gnb>ul>li>a{display: block; width: 100%; height: 50px; 
+  font-size: 1.3rem; font-weight: bold; line-height: 50px;}
+
+#gnb ol{display: none;}
+.view #gnb ol{display: block; width: 100%; height: auto;}
+.view #gnb ol>li{margin-top: 0.7rem; width: 100%; height: 30px;/line-height: 30px;}
+.view #gnb li>a{position: relative; }
+.view #gnb li>a:after{content:" "; display: block;
+  position: absolute; bottom:-0.3rem; right: 0;
+  width:0; height: 0; border-bottom:3px solid #fff; 
+  transition:all 300ms ease;}
+
+#gnb li>a:hover:after,
+#gnb li>a:focus:after {content:" "; left: 0; width: 100%;}
+
+#gnb li>a:hover,
+#gnb li>a:focus{outline: 0;}
