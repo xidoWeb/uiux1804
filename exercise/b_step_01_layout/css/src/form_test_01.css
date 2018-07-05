@@ -1,0 +1,25 @@
+/* form_test_01.css */
+.wrap{padding-top:10rem; padding-bottom: 10rem;
+  width: 100%; height: auto; min-height:10rem;
+  background-color: #a0baad;}
+
+h1{padding: 1rem; margin-bottom: 5rem; background-color: #cff; text-align: center; display: none;}
+
+form {margin:auto; width: 800px; height: auto; }
+fieldset{
+  position: relative;
+  margin: 0; padding: 0; border: 0;
+  box-sizing: border-box; padding: 124px 55px 80px;
+  width: 100%; height:550px; background-color: #fff;}
+
+legend{
+  position: absolute; top: -60px; left:50%; margin-left:-322px;
+  margin-bottom: 66px;
+  width: 644px; height: 120px; background-color:rgba(0,100,140,0.8);}
+
+.in_form{margin-bottom: 30px;
+  width:100%; height: 100px; background-color: #ccc; }
+
+#login{border:0; background-color:rgba(0,100,140,1); color:#fff;
+      font-size: 2rem; text-transform:uppercase; cursor: pointer;}
+#login:focus{border-bottom:2px solid #f06; text-decoration: underline;}

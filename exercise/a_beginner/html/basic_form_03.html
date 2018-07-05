@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- basic_form_03.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta:vp -->
+  <meta name="viewport" 
+  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/src/basic_form_03.css" />
+  <!-- ie -->
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  <![endif]-->
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <title>basic_form_03</title>
+</head>
+<body>
+  <div class="wrap">
+    <form action="" method="get">
+      <fieldset>
+        <legend>기타멀티기능의form요소</legend>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+      
+        <label for="sel">전화번호 국번을 선택하세요.</label>
+        <select name="" id="sel">
+          <option>선택하세요.</option>
+          <optgroup label="telecomNum">
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="012">012</option>
+            <option value="013">013</option>
+            <option value="014">014</option>
+            <option value="015">015</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+            <option value="019">019</option>
+            <option value="0505">0505</option>
+          </optgroup>
+        </select>
+
+
+        <button type="submit">확인</button>
+        <button type="reset">취소</button>
+        <button type="button">기능</button>
+      </fieldset>
+    </form>
+
+    <!-- 
+      - 접근성원칙에서 확인/취소 버튼처럼 비교하는 성격일 경우 
+      - 명도/ 정확한 구분할수있도록 처리(크기/명도 텍스트크기 ....)
+     -->
+
+  </div>
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/basic_form_03.js"></script>
+</body>
+</html>
