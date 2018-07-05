@@ -28,26 +28,69 @@
      <h1>form</h1>  
      <h2>form기초 설정</h2>
    </hgroup>
-   
-    <form action="" method="">
+
+    <form action="#" method="">
       <!-- .basic -->
       <fieldset class="basic">
         <legend>기초형태이해하기</legend>
-        
+        <input type="text" id="firstTest" value="" name="firstTest"
+               placeholder="내용을 입력하세요." required="required" />
+        <label for="firstTest">input의 기본형태와 연결</label>
+        <br />
+
+        <label for="requiredInput">
+          암묵적인 방법으로 작성하기: 
+          <input type="text" id="requiredInput" value="" name="firstTest" />
+        </label>
+        <!-- 
+          * form영역 내부의 요소들은 대부분 inline 
+          * 반드시 접근성과의 연관성있게 작성!!
+          * form영역내부에 div,p,span,ul,li, h1~6등의 요소를 함께 사용할 수 있다.
+        -->
       </fieldset>
 
       <!-- .write -->
       <fieldset class="write">
         <legend>입력요소이해하기</legend>
+        <label for="idName">
+         <span class="hidden">당신의</span>
+         이름
+         <span class="hidden">을 입력하세요.</span>
+        </label>
+        <input type="text" id="idName" value="" name="idName" 
+              placeholder="성함을 알려주세요." />  
+        <br />
+
+        <label for="pwName">
+         <span class="hidden">작성하실 </span>
+         비밀번호
+         <span class="hidden">를 13자 이내로 입력하세요.</span>
+        </label>
+        <input type="password" id="pwName" name="pwName" value="" 
+               maxlength="13" 
+               placeholder="비밀번호를 입력하세요." />  
+        <br />
+        <!-- html5 -->
+        <input type="tel" />  <br />
+        <input type="search" />  <br />
+        <input type="month" />  <br />
+        <input type="week" />  <br />
+        <input type="date" />  <br />
       </fieldset>
 
       <!-- .checkbox -->
       <fieldset class="checkbox">
         <legend>선택요소1 이해하기</legend>
+
       </fieldset>
 
       <!-- .radio -->
       <fieldset class="radio">
+        <legend>선택요소2 이해하기</legend>
+      </fieldset>
+
+      <!-- .set -->
+      <fieldset class="set">
         <legend>선택요소2 이해하기</legend>
       </fieldset>
 
