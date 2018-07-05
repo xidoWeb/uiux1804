@@ -67,36 +67,89 @@
          <span class="hidden">를 13자 이내로 입력하세요.</span>
         </label>
         <input type="password" id="pwName" name="pwName" value="" 
-               maxlength="13" 
+               maxlength="13" size="20"
                placeholder="비밀번호를 입력하세요." />  
         <br />
         <!-- html5 -->
-        <input type="tel" />  <br />
-        <input type="search" />  <br />
-        <input type="month" />  <br />
-        <input type="week" />  <br />
-        <input type="date" />  <br />
+        <label class="hidden" for="tel_0">tel설명을 작성</label>
+        <input type="tel" id="tel_0" value="" name="tel_0" />  <br />
+
+        <label class="hidden" for="search_0">search설명을 작성</label>
+        <input type="search" id="search_0" value="" name="search_0" />  <br />
+
+        <label class="hidden" for="month_0">month설명을 작성</label>
+        <input type="month" id="month_0" value="" name="month_0" />  <br />
+
+        <label class="hidden" for="week_0">week설명을 작성</label>
+        <input type="week" id="week_0" value="" name="week_0" />  <br />
+
+        <label class="hidden" for="date_0">date설명을 작성</label>
+        <input type="date" id="date_0" value="" name="date_0" />  <br />
+        <!-- month, week, data는 아직 사용하기에는 시기상조 -->
       </fieldset>
 
       <!-- .checkbox -->
       <fieldset class="checkbox">
         <legend>선택요소1 이해하기</legend>
+        <!--무언가를 선택하고 해제할때 사용하는 기능 -->
+        <p>다음 중 당신이 좋아하는 사람을 선택하세요.</p>
+
+        <input type="checkbox" checked="checked" value="그남자" id="person_1" name="person" >
+        <label for="person_1">그남자</label>    <br />
+
+        <input type="checkbox" value="그남자" id="person_2" name="person" >
+        <label for="person_2">그린컴 웹디자인 남자강사</label>    <br />
+
+        <input type="checkbox" value="그남자" id="person_3" name="person" >
+        <label for="person_3">지금 수업하는 남자</label>    <br />
+
+        <input type="checkbox" value="그남자" id="person_4" name="person" >
+        <label for="person_4">지금 유일한 남자</label>    <br />
 
       </fieldset>
 
       <!-- .radio -->
       <fieldset class="radio">
         <legend>선택요소2 이해하기</legend>
+        <p>당신의 성별을 선택하세요.</p>
+
+        <input type="radio" id="male" value="male" name="gender">
+        <label for="male">남자</label><br />
+
+        <input type="radio" id="female" value="female" name="gender">
+        <label for="female">여자</label><br />
+
+        <input type="radio" id="dual" value="dual" name="gender">
+        <label for="dual">양성</label><br />
       </fieldset>
 
       <!-- .set -->
       <fieldset class="set">
-        <legend>선택요소2 이해하기</legend>
+        <legend>선택요소 more 이해하기(html5)</legend>
+
+        <label for="color">사용하실 색상을 선택하세요.</label> 
+        <input type="color" id="color" name="color" value="" /><br />
+        
+        <label for="range">마음에드는 수치를 설정</label> 
+        <input type="range" min="10" max="20" step="2" id="range" name="range" value="" /><br />
+        
+        <label for="number">사용할 수량을 입력하세요.</label> 
+        <input type="number" min="1" max="100" step="27" id="number" name="number" value="" /><br />
       </fieldset>
 
       <!-- .button -->
       <fieldset class="button">
         <legend>버튼영역 이해하기</legend>
+        <input type="submit" value="확인" /> <br />
+        <input type="reset" value="취소" /> <br />
+        <input type="button" value="중복확인" /> <br />
+        <input type="image" src="../img/background_test/home.png" alt="home버튼" 
+               value="image버튼도 submit버튼의 역할" /> <br />
+        <input type="file" value="" /> <br />
+        <!-- 
+          * input기능중에 버튼의 기능을 하는경우에는 label을 작성하지 않아도 된다! 
+          * 단, 필요한 경우에는 작성하는 것이 좋다!! 
+        -->
       </fieldset>
     </form>
 
