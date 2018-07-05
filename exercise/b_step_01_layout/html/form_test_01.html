@@ -7,7 +7,9 @@
   <!-- meta:vp -->
   <meta name="viewport" 
   content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
-  
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css">
+
   <link rel="stylesheet" href="../css/base/reset.css" />
   <link rel="stylesheet" href="../css/src/form_test_01.css" />
   <!-- ie -->
@@ -19,7 +21,7 @@
   <!-- favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
   <link rel="apple-touch-icon" href="../favicon.png" />
-  <title>form_test_01</title>
+  <title>form test 01</title>
 </head>
 <body>
   <!-- layout -->
@@ -30,10 +32,19 @@
       <fieldset>
         <legend>member login</legend>
         <div class="in_form">
-          
+          <label for="idName">
+            <i class="glyphicon glyphicon-user"></i>
+            <span class="hidden">사용자 아이디를 입력하세요</span>
+          </label>
+          <input type="text" value="" placeholder="Username" name="idName" id="idName" />
         </div>
+
         <div class="in_form">
-          
+          <label for="pwName" class="glyphicon glyphicon-lock">
+            <!-- <i class="glyphicon glyphicon-lock"></i> -->
+            <span class="hidden">사용자의 비밀번호를 입력하세요</span>
+          </label>
+          <input type="password" value="" placeholder="Password" name="pwName" id="pwName" />
         </div>
         <input type="submit" id="login" 
                class="in_form" value="login">          
@@ -45,6 +56,8 @@
   <!-- javascript -->
   <script src="../js/base/jquery-3.3.1.min.js"></script>
   <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+
   <script src="../js/src/form_test_01.js"></script>
 </body>
 </html>
