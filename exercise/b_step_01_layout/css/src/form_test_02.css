@@ -1,4 +1,60 @@
 /* form_test_02.css */
 
-#wrap{width: 100%; height: 100%; background-image: url("../../img/nature.jpg");
+#wrap{
+  padding-top:12rem; box-sizing: border-box;
+  width: 100%; height: 100%; background-image: url("../../img/nature3.jpg");
      background-repeat: no-repeat; background-position:center; background-size:cover;}
+
+form{margin: auto;
+  box-sizing: border-box; padding:30px 35px 0;
+  width: 450px; height: 450px; 
+  background-color: rgba(200,200,200,0.8);
+    border-radius:6px;}
+
+fieldset{width: 100%;}
+.sign_in{position: relative; 
+  box-sizing: border-box; padding-top: 60px;
+  margin-bottom: 40px; height: 320px;}
+.sign_in>legend{
+     position: absolute; top: 0; left: 0;
+     width: 100%; height: 30px; 
+     text-transform:capitalize; text-align: center; color:#fff;
+     font-size: 1.5rem;}
+
+.sign_in>div{width: 100%; margin-bottom: 20px;}
+
+.member{height: 40px;}
+.password{height: 40px;}
+
+.sign_member{ border-bottom:1px solid #fff; }
+.sign_member>input{border: 0;  width:85%; height: 100%; 
+            background-color:transparent; color:#fff;
+            font-size:1.3rem; float: left;}
+.sign_member>label{width: 12%; height: 100%; 
+          float: right;
+          cursor: pointer; color:#fff;
+          text-align: center; font-size: 1.8rem;}
+
+input::placeholder{color:#fff;}
+
+.forgot_pw{height: 20px;}
+.forgot_pw>a{color:#fff; text-decoration:underline;
+      text-transform:capitalize;}
+.forgot_pw>a:hover,
+.forgot_pw>a:focus{
+  -webkit-text-decoration-color:#fa0;
+  -moz-text-decoration-color:#fa0;
+  -ms-text-decoration-color:#fa0;
+  -o-text-decoration-color:#fa0;
+  text-decoration-color:#fa0;}
+
+.sign_in_button{height: 60px;}
+.sign_in > .keep_sign{height: 20px; margin-bottom: 0;}
+
+#ok{width: 100%; height: 100%; 
+  background-color: #1787fb; color:#fff;
+  border-radius:6px;
+  text-transform:capitalize; font-size:1.5rem;}
+#ok:hover{background-color: #05f;}
+
+.sign_up{height: 60px;}

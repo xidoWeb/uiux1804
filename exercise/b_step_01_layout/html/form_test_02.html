@@ -27,7 +27,40 @@
 <body>
   <!-- layout -->
   <div id="wrap">
-    
+    <form action="" method="post">
+      <fieldset class="sign_in">
+        <legend>sign in</legend>
+        <div class="member sign_member">
+          <input type="email" id="memberName" name="memberName" 
+                 value="" placeholder="Email" required="required" />
+          <label for="memberName">
+            <i class="glyphicon glyphicon-envelope"></i>
+            <span class="hidden">사용자 메일주소를 입력하세요.</span>
+          </label>
+        </div>
+
+        <div class="password sign_member">
+          <input type="password" id="pwName" name="pwName" 
+                 value="" placeholder="Password" required="required" />
+          <label for="pwName">
+            <i class="glyphicon glyphicon-lock"></i>
+            <span class="hidden">사용자의 비밀번호를 입력하세요.</span>
+          </label>
+        </div>
+
+        <div class="forgot_pw">
+          <a href="#">forgot password?</a>
+        </div>
+        <div class="sign_in_button">
+          <input type="submit" id="ok" value="sign in" />
+        </div>
+        <div class="keep_sign"></div>
+      </fieldset>
+
+      <fieldset class="sign_up">
+        <legend class="hidden">sign up</legend>
+      </fieldset>
+    </form>
   </div>
   <!-- javascript -->
   <script src="../js/base/jquery-3.3.1.min.js"></script>
