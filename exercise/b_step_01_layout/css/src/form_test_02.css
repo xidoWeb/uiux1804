@@ -2,14 +2,37 @@
 
 #wrap{
   padding-top:12rem; box-sizing: border-box;
-  width: 100%; height: 100%; background-image: url("../../img/nature3.jpg");
-     background-repeat: no-repeat; background-position:center; background-size:cover;}
+  width: 100%; height: 100%; 
+  background-image: url("../../img/nature3.jpg");
+  background-repeat: no-repeat; 
+  background-position:center; 
+  background-size:cover;
+  background-attachment:fixed;}
 
 form{margin: auto;
   box-sizing: border-box; padding:30px 35px 0;
   width: 450px; height: 450px; 
-  background-color: rgba(200,200,200,0.8);
-    border-radius:6px;}
+  background-color: rgba(0,0,0,0.8);
+  /*background-image: url("../../img/nature3_blur.jpg");*/
+/*  background-image: url("../../img/nature3.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment:fixed;*/
+  border-radius:6px; /*overflow: hidden;*/
+
+  position: relative; z-index: 100;}
+
+form:after{content:" "; display: block; 
+  position: absolute;z-index: -100;  top: 0; left: 0;
+  width: 100%; height: 100%;
+  /*background-color:rgba(0,0,0,0.5);*/
+  background: url("../../img/nature3.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment:fixed;
+  filter:blur(5px); opacity:0.3; }
 
 fieldset{width: 100%;}
 .sign_in{position: relative; 
@@ -48,8 +71,19 @@ input::placeholder{color:#fff;}
   -o-text-decoration-color:#fa0;
   text-decoration-color:#fa0;}
 
+
+
 .sign_in_button{height: 60px;}
 .sign_in > .keep_sign{height: 20px; margin-bottom: 0;}
+.keep_sign>label{color:#fff; cursor:pointer;}
+input#keepSign{display: none;}
+input#keepSign:checked + label>i{color:#0af;}
+
+
+
+
+
+
 
 #ok{width: 100%; height: 100%; 
   background-color: #1787fb; color:#fff;
@@ -57,4 +91,21 @@ input::placeholder{color:#fff;}
   text-transform:capitalize; font-size:1.5rem;}
 #ok:hover{background-color: #05f;}
 
-.sign_up{height: 60px;}
+.sign_up{height: 60px; position: relative;}
+.sign_up_link{width: 230px; height: 100%;
+       color:#fff; font-size:1rem; line-height:60px;}
+ a.spel{text-decoration:underline; text-decoration-color:#fff;  color:inherit;} 
+.spel{text-transform:capitalize;}
+
+.more_sign_up{position: absolute; bottom: 0; right:-35px;
+  width: 182px; height: 100%;}
+.more_sign_up>a{float: left;
+     width:60px; height: 100%; margin-right: 1px;
+     background-color:rgba(200,200,200,0.3);
+     text-align: center; color:#fff; font-size: 2.5rem; line-height:60px;}
+.more_sign_up>a:focus,
+.more_sign_up>a:hover{background-color:rgba(255, 0, 100, 0.7);}
+
+
+.more_sign_up>a:last-of-type{margin-right: 0;
+    border-bottom-right-radius:6px;}

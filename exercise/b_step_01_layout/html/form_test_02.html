@@ -7,9 +7,12 @@
   <!-- meta:vp -->
   <meta name="viewport" 
   content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css">
+<!-- bootstrap -->
+ <!-- <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css"> -->
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="../fontawesome5/css/all.css">
   <!-- mycss -->
   <link rel="stylesheet" href="../css/base/reset.css" />
   <link rel="stylesheet" href="../css/src/form_test_02.css" />
@@ -32,18 +35,20 @@
         <legend>sign in</legend>
         <div class="member sign_member">
           <input type="email" id="memberName" name="memberName" 
-                 value="" placeholder="Email" required="required" />
+                 value="" placeholder="Email" required="required"
+                 title="사용자의 이메일 주소를 입력하세요." />
           <label for="memberName">
-            <i class="glyphicon glyphicon-envelope"></i>
+            <i class="far fa-envelope"></i>
             <span class="hidden">사용자 메일주소를 입력하세요.</span>
           </label>
         </div>
 
         <div class="password sign_member">
           <input type="password" id="pwName" name="pwName" 
-                 value="" placeholder="Password" required="required" />
+                 value="" placeholder="Password" required="required"
+                 title="사용자의 비밀번호를 입력하세요." />
           <label for="pwName">
-            <i class="glyphicon glyphicon-lock"></i>
+            <i class="fas fa-unlock-alt"></i>
             <span class="hidden">사용자의 비밀번호를 입력하세요.</span>
           </label>
         </div>
@@ -54,18 +59,44 @@
         <div class="sign_in_button">
           <input type="submit" id="ok" value="sign in" />
         </div>
-        <div class="keep_sign"></div>
+        <div class="keep_sign">
+          <div class="hidden">
+            <input type="checkbox" id="keepSign" value="" name="keepSign" />
+          </div>
+          <label for="keepSign">
+            <i class="fa fa-check-circle"></i>
+            keep sign me ....</label>
+        </div>
       </fieldset>
 
+      <!-- sign up ============================ -->
       <fieldset class="sign_up">
         <legend class="hidden">sign up</legend>
+        <p class="sign_up_link">
+          <a href="#" class="spel">sign up</a>
+          or <span class="spel">sign in with</span>
+        </p>
+        <div class="more_sign_up hidden_wrap">
+          <a href="#">
+            <i class="fab fa-google"></i>
+            <span>구글계정으로 가입하기</span>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+            <span>트위터계정으로 가입하기</span>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook"></i>
+            <span>페이스북계정으로 가입하기</span>
+          </a>
+        </div> 
       </fieldset>
     </form>
   </div>
   <!-- javascript -->
   <script src="../js/base/jquery-3.3.1.min.js"></script>
   <script src="../js/base/jquery-ui.min.js"></script>
-  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <!-- <script src="../bootstrap/js/bootstrap.min.js"></script> -->
   <script src="../js/src/form_test_02.js"></script>
 </body>
 </html>
