@@ -17,7 +17,7 @@
       color:#fff;}
   /* 아이디 기억하기 */
   .remember{float: left; font-size: 0.7rem;}
-  #rememberId{position: absolute; z-index: -100;}
+  #rememberId{position: absolute; z-index: -100; top: -100rem; left: -100rem;}
   label[for="rememberId"]>i{display: none;}
   label[for="rememberId"]>i.fa-square{display: inline;}
 
@@ -44,5 +44,5 @@
     .show_btn{width: 15.625rem; height: 1.25rem; background-color:#ccc}
     .show_btn>button{width: 100%; height: 100%; 
       text-align: right; font-size: 0.875rem; font-weight: bold;}
-    .show_btn>button:before{content:"\f0aa"; font-family: "Font Awesome 5 Free"; 
-                            color:#f06;}
+    .show_btn>button:before{content:"\f0aa"; font-family: "Font Awesome 5 Free"; color:#f06;}
+    .show_btn>button.close:before{content:"\f0ab";}
