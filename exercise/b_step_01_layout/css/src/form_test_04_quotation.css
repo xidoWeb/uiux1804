@@ -1,0 +1,39 @@
+/* form_test_04_quotation.css */
+
+
+#wrap{width: 100%; height: auto; }
+h1{padding: 1rem; margin-bottom: 4rem; background-color: #560; text-align: center; color:#fff;}
+.quotation{margin: auto; box-sizing:border-box; padding:0 38px 20px; 
+      width: 450px; height: auto; background-color: #fff;
+      box-shadow:0 0 0 1px #333;}
+.quotation>h2{
+  margin-left: -38px; box-sizing: border-box; padding-top:1.5rem; padding-left:2.375rem;
+  width:inherit; height: 73px; background-color: #f06;
+  background-image: url("../../img/login_join/quotatioin/bg.png");
+  background-repeat: no-repeat;
+  background-image: linear-gradient(60deg, #f06 75%, #fe7fb2 75%, #ec6da0);
+  color:#fff; font-size:1.625rem; font-weight: bold;}
+.quotation>h3{margin-top: 16px; width: 100%; margin-bottom: 0.5rem;}
+.quotation>p{margin-bottom:12px; line-height:110%;}
+
+form{width: 100%; height: auto;}
+form>fieldset:first-of-type{margin-bottom: 14px; padding-bottom: 10px; border-bottom:1px solid #333;
+   width: 100%; height: auto;}
+.tel{box-sizing:border-box; padding:20px 10px;width: 100%; height: auto; background-color: #f1f1f1;}
+.tel>dl{width: 100%; height: auto;}
+.tel>dl:first-of-type{margin-bottom:18px;}
+.tel>dl>dt,.tel>dl>dd{float: left; height:20px; background-color: #fa0;}
+
+.tel>dl>dt{width: 70px; margin-right: 10px;}
+.tel>dl>dd{width: 75px; margin-right: 22px;}
+.tel>dl>dd:last-of-type{margin-right: 0;}
+
+
+.check{width: 100%; height: auto; text-indent:10px;}
+
+ /* submit/reset button*/
+form>fieldset:last-of-type{box-sizing:border-box; padding:0 90px;
+  width: 100%; background-color: #fff;}
+form>fieldset:last-of-type>input{width: 70px; height: 40px;}
+#ok{float: left; background-color: #f06; color:#fff; font-weight: bold;}
+#reset{float: right; background-color: #ccc; color:#333;}

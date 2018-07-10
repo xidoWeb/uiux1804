@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- form_test_04_quotation.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta:vp -->
+  <meta name="viewport" 
+  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css">
+  <!-- mycss -->
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/src/form_test_04_quotation.css" />
+  <!-- ie -->
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  <![endif]-->
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <title>form_test_04_quotation</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1>quotation</h1>
+    <div class="quotation">
+      <h2>본인인증서비스!!</h2>
+      <h3>휴대폰 인증</h3>
+      <p>입력하시는 정보는 암호화 처리되며, <br /> 어떠한 비용도 발생하지 않습니다. </p>
+       <!-- 인증영역 -->
+       <form action="#.jsp" method="post">
+         <fieldset>
+           <legend class="hidden">번호 확인영역</legend>
+           <div class="tel">
+             <dl class="number clearfix">
+               <dt>휴대폰 번호</dt> 
+               <dd class="first">처음번호</dd> 
+               <dd>중간번호</dd> 
+               <dd>마지막 번호</dd>
+             </dl>
+             <dl class="telecom clearfix">
+               <dt>이동통신사</dt>
+               <dd>skt</dd> 
+               <dd>kt</dd> 
+               <dd>lg u plus</dd>
+             </dl>
+           </div>
+           <p class="check">
+             <input type="checkbox" id="ck" name="ck" value="정보활용 동의" />
+             <label for="ck">개인 정보 제공 및 활용에 동의합니다.</label>
+           </p>
+         </fieldset>
+
+         <fieldset>
+           <legend class="hidden">확인 및 취소</legend>
+           <input type="submit" id="ok" value="확인" />
+           <input type="reset" id="reset" value="취소" />
+         </fieldset>
+       </form>
+    </div>
+  </div>
+
+  <!-- javascript -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <script src="../js/src/form_test_04_quotation.js"></script>
+</body>
+</html>
