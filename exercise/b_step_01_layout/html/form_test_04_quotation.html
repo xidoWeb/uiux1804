@@ -38,16 +38,47 @@
            <legend class="hidden">번호 확인영역</legend>
            <div class="tel">
              <dl class="number clearfix">
-               <dt>휴대폰 번호</dt> 
-               <dd class="first">처음번호</dd> 
-               <dd>중간번호</dd> 
-               <dd>마지막 번호</dd>
+               <dt>
+                <label for="firstNum">휴대폰 번호
+                  <span class="hidden">를 입력하는 곳입니다.</span>
+                </label>
+              </dt> 
+               <dd class="first">
+                 <input type="text" id="firstNum" name="firstNum" value="" 
+                  placeholder="국번" required="required" maxlength="3" />
+                 <label for="firstNum" class="hidden">
+                   사용하고 계신 전화번호 앞자리 세자리를 입력하세요.
+                 </label>
+               </dd> 
+               <dd>
+                 <input type="text" id="middleNum" name="middleNum" value="" 
+                  placeholder="국번" required="required" maxlength="4" />
+                 <label for="middleNum" class="hidden">
+                   사용하고 계신 전화번호 가운데자리 셋 또는 네자리를 입력하세요.
+                 </label>
+               </dd> 
+               <dd>
+                 <input type="text" id="lastNum" name="lastNum" value="" 
+                  placeholder="국번" required="required" maxlength="4" />
+                 <label for="lastNum" class="hidden">
+                   사용하고 계신 전화번호 마지막 네자리를 입력하세요.
+                 </label>
+               </dd>
              </dl>
              <dl class="telecom clearfix">
-               <dt>이동통신사</dt>
-               <dd>skt</dd> 
-               <dd>kt</dd> 
-               <dd>lg u plus</dd>
+               <dt><label for="skt">이동통신사</label></dt>
+               <dd>
+                 <input type="radio" id="skt" name="telecom" value="skt"  required="required" />
+                 <label for="skt">SK t<span class="hidden">elecom</span></label>
+               </dd> 
+               <dd>
+                 <input type="radio" id="kt" name="telecom" value="kt"  required="required" />
+                 <label for="kt">KT<span class="hidden">telecom</span></label>
+               </dd> 
+               <dd>
+                 <input type="radio" id="lg" name="telecom" value="lg"  required="required" />
+                 <label for="lg">LG U+<span class="hidden">telecom</span></label>
+               </dd>
              </dl>
            </div>
            <p class="check">

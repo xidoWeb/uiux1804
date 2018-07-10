@@ -22,11 +22,20 @@ form>fieldset:first-of-type{margin-bottom: 14px; padding-bottom: 10px; border-bo
 .tel{box-sizing:border-box; padding:20px 10px;width: 100%; height: auto; background-color: #f1f1f1;}
 .tel>dl{width: 100%; height: auto;}
 .tel>dl:first-of-type{margin-bottom:18px;}
-.tel>dl>dt,.tel>dl>dd{float: left; height:20px; background-color: #fa0;}
+.tel>dl>dt,.tel>dl>dd{float: left; height:20px;}
 
-.tel>dl>dt{width: 70px; margin-right: 10px;}
-.tel>dl>dd{width: 75px; margin-right: 22px;}
+.tel>dl>dt{width: 70px; margin-right: 10px; word-spacing:-0.25rem; letter-spacing:-0.012rem;}
+.tel>dl>dd{width: 75px; margin-right: 22px; position: relative;}
+
+
+.number>dd>input{box-sizing: border-box; border:1px solid #777; width: 100%; height: 100%;}
+
 .tel>dl>dd:last-of-type{margin-right: 0;}
+
+.number>dd:after{content:" "; display:block; 
+  position: absolute; top: 0; right:-12px;
+  width: 4px; height: 50%; border-bottom:1px solid #111;}
+.number>dd:last-of-type:after{display: none;}
 
 
 .check{width: 100%; height: auto; text-indent:10px;}
