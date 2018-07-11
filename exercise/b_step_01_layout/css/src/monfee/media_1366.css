@@ -1,0 +1,14 @@
+/* media_1366.css */
+@media screen and (min-width:1366px) {
+ .issue_icon{ width: 66.578947vw; /* 1265 / 1900 * 100 */ background-color: #aa0;}
+ .content_text{padding:140px 0 120px;}
+ .foot_box_wrap{padding-top:5.124451vw; /* 70 / 1366 * 100 */}
+ .material_icon{width:75.263158vw;  /*1430/1900*100*/}
+ #location{width:70.278184vw; /* 960 / 1366 * 100 */ }
+} /* @media screen and (min-width:1366px) */
+
+
+
+/*  vw계산법: 사용할크기 / 기준(가로)크기 * 100  
+/*  vh계산법: 사용할크기 / 기준(세로)크기 * 100  */
+  

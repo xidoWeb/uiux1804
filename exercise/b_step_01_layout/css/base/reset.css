@@ -16,21 +16,18 @@ tfoot{background-color: #faa;}
 
 ul,ol,li{list-style:none;}
 a {text-decoration: none; color:#333;}
+a:hover {text-decoration: none; color:#333;}
 
 input, textarea, select{box-sizing:border-box; border:1px solid #777; border-radius:0;}
 input[type="text"],input[type="password"],
 input[type="search"],input[type="email"],input[type="tel"],input[type="url"] {text-indent:0.3rem;}
 
 button, 
-input[type="submit"], input[type="reset"], input[type="button"], input[type="file"]{ border:0; background:transparent; border-radius:0;}
+input[type="submit"], input[type="reset"], input[type="button"], input[type="file"]{ 
+  border:0; background:transparent; border-radius:0;}
 
 select,button{ 
-  -webkit-appearance:none; 
-  -moz-appearance:none; 
-  -ms-appearance:none; 
-  -o-appearance:none; 
-  appearance:none; 
-}
+  -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; appearance:none; }
 
 
 

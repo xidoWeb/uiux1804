@@ -1,0 +1,8 @@
+/* adBox.css */
+
+#adBox{margin-bottom: 120px; width: 100%; height:calc(100% - 120px);  background-color: #aff;}
+/*
+ var docH = $(document).outerheight(true);
+ var headBoxH = $('#headBox').outerHeight();
+
+ $('#adBox').css({height:docH - headBoxH +'px'});*/
