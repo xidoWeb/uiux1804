@@ -1,53 +1,11 @@
- /*monfee_index_test.css */
 
-html,body{height: 100%;}
-#wrap{width: 100%; min-width:960px; height: 100%; background-color: #ccc;}
+@import url("./monfee/wrap.css");
+@import url("./monfee/headBox.css");
+@import url("./monfee/adBox.css");
+@import url("./monfee/bestNews.css");
+@import url("./monfee/issue.css");
+@import url("./monfee/ourMonfee.css");
+@import url("./monfee/footBox.css");
+@import url("./monfee/media_1366.css");
 
-.head_box_wrap{
-  position: absolute; bottom: 0; left: 0;
-  width: 100%; height: 120px; background-color: #fff;
-  box-shadow:0 2px 2px rgba(0,0,0,0.5)}
-/*box-shadow:x y blur offset color;*/
-
-
-#headBox{margin: auto; width:960px; height:100%; background-color: #faa;}
-
-#adBox{margin-bottom: 120px; width: 100%; height:calc(100% - 120px);  background-color: #fa0;}
-/*
- var docH = $(document).outerheight(true);
- var headBoxH = $('#headBox').outerHeight();
-
- $('#adBox').css({height:docH - headBoxH +'px'});*/
-
-#bestNews{margin:auto; box-sizing:border-box; padding-top: 70px; 
-  width: 960px; height: 1080px; background-color: #ffa;}
-
-.issue_text{width: 100%; height: 100%; background-color: #0af;}
-.issue_icon{margin: auto; width: 960px; height: 490px; background-color: #fa0;}
-
-.our_monfee{padding-bottom: 100px; width: 100%; height: auto; min-height:60rem; background-color: #cca;}
-  .content_text{margin: auto; padding:140px 70px 120px;
-        width: 960px; height: auto; background-color: #ccc;}
-
-  .material_wrap{width: 100%; height: auto; background-color: #a30;}      
-  .material_icon{margin: auto; margin-bottom: 140px; width: 960px; height: 196px; background-color: #fa0;}
-  #location{margin: auto; width: 960px; height:30rem; background-color: #fff;}
-
-  .foot_box_wrap{box-sizing:border-box; padding-top: 70px; width: 100%; height: 400px; background-color: #aaa;}
-    #footBox{margin: auto;  width:960px; height:150px; background-color: #777;}
-
-
-@media screen and (min-width:1366px) {
- .issue_icon{ width: 66.578947vw; /* 1265 / 1900 * 100 */ background-color: #aa0;}
- .content_text{padding:140px 0 120px;}
- .foot_box_wrap{padding-top:5.124451vw; /* 70 / 1366 * 100 */}
- .material_icon{width:75.263158vw;  /*1430/1900*100*/}
- #location{width:70.278184vw; /* 960 / 1366 * 100 */ }
-} /* @media screen and (min-width:1366px) */
-
-
-
-
-/*  vw계산법: 사용할크기 / 기준(가로)크기 * 100  
-/*  vh계산법: 사용할크기 / 기준(세로)크기 * 100  */
-  
+/*monfee_index_test.css */
