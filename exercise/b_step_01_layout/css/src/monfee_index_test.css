@@ -1,0 +1,29 @@
+ /*monfee_index_test.css */
+
+html,body{height: 100%;}
+#wrap{width: 100%; min-width:960px; height: 100%; background-color: #ccc;}
+
+.head_box_wrap{
+  position: absolute; bottom: 0; left: 0;
+  width: 100%; height: 120px; background-color: #fff;}
+
+#headBox{margin: auto; width:960px; height:100%; background-color: #faa;}
+
+#adBox{width: 100%; height:calc(100% - 120px); background-color: #fa0;}
+#menu{width: 100%; height: 60rem; background-color: #ffa;}
+
+/*
+ var docH = $(document).outerheight(true);
+ var headBoxH = $('#headBox').outerHeight();
+
+ $('#adBox').css({height:docH - headBoxH +'px'});
+
+*/
+
+@media screen and (min-width:1366px) {
+ #wrap{background-color: #fac;}
+}
+
+/*@media screen and (width:1920px) {
+  
+}
