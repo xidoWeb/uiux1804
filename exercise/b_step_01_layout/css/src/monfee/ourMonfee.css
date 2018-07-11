@@ -2,9 +2,16 @@
 
 .our_monfee{padding-bottom: 100px; width: 100%; height: auto; min-height:60rem; background-color: #cca;}
   .content_text{margin: auto; padding:140px 70px 120px;
-        width: 960px; height: auto; background-color: #ccc;}
+        width: 960px; height: auto; background-color: #777;}
+  .content_text>h2{ margin-bottom:4.0625rem; width: 100%; height: auto; 
+      font-size:4.5rem; color:#fff; text-transform:uppercase; text-align: center;}
+  .content_text>p{font-size:1rem; color:#fff; line-height: 1.2; text-align:center;}
 
   .material_wrap{width: 100%; height: auto; background-color: #a30;}      
   .material_icon{margin: auto; margin-bottom: 140px; width: 960px; height: 196px; background-color: #fa0;}
-  #location{margin: auto; width: 960px; height:30rem; background-color: #fff;}
+
+
+  #location{margin: auto; width: 960px; height:53.125rem;}
+  .map{width:calc(100% - 400px); height: 840px; float: left; background-color: #fff;}
+  .addr{width: 380px; height: 840px; float: right; background-color: #fff;}
 

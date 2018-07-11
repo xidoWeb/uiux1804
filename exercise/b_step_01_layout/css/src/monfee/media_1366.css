@@ -1,10 +1,19 @@
 /* media_1366.css */
 @media screen and (min-width:1366px) {
- .issue_icon{ width: 66.578947vw; /* 1265 / 1900 * 100 */ background-color: #aa0;}
+  /* #adBox */
+
+#adBox > .slide_btn{left:5%; width:90%;}
+#adBox .cover{margin-right: 2rem; width: 470px; height: 520px;}
+
+  /* issue */
+ .issue_icon{ width: 66.578947vw; /* 1265/1900*100 */ }
  .content_text{padding:140px 0 120px;}
- .foot_box_wrap{padding-top:5.124451vw; /* 70 / 1366 * 100 */}
+ .foot_box_wrap{padding-top:5.124451vw; /* 70/1366*100 */}
  .material_icon{width:75.263158vw;  /*1430/1900*100*/}
- #location{width:70.278184vw; /* 960 / 1366 * 100 */ }
+ #location{width:87.368421vw; /* 1660 / 1900 * 100 */ }
+ .map{width:49.473684vw;  /* 940/1900*100 */}
+ .addr{width:36.842105vw; /* 700/1900*100 */ }
+
 } /* @media screen and (min-width:1366px) */
 
 

@@ -1,8 +1,86 @@
 /* adBox.css */
 
-#adBox{margin-bottom: 120px; width: 100%; height:calc(100% - 120px);  background-color: #aff;}
+#adBox{position: relative; margin-bottom: 120px; width: 100%; height:calc(100% - 120px); }
 /*
  var docH = $(document).outerheight(true);
  var headBoxH = $('#headBox').outerHeight();
 
  $('#adBox').css({height:docH - headBoxH +'px'});*/
+/* .indicator */
+ #adBox > .indicator{position: absolute; z-index: 100; left: 50%;  bottom:2rem; margin-left: 80px; 
+        box-sizing: border-box; padding: 1px; width: 275px; height: 34px;}
+
+ #adBox > .indicator>li{margin-right:28px; width: 32px; height: 32px; float: left;}
+ #adBox > .indicator>li:last-child{margin-right: 0;}
+ #adBox > .indicator>li>a{display: block; width: 100%; height: 100%; border-radius: 100%; background-color: #fff;}
+ 
+ #adBox > .indicator>li>a:hover, #adBox > .indicator>li>a:focus{background-color: #cca;}
+ #adBox > .indicator>li.select>a{background-color: #a30;}
+
+
+
+
+ /* .slide_btn */
+#adBox > .slide_btn{position:absolute; z-index: 100; top: 50%; margin-top:-88px; 
+                 left: 0; width: 100%;
+                height:0;}
+#adBox > .slide_btn>button{width: 85px; height: 176px;
+        background-image: url("../../../img/test1/img/adBanner/slide_btn.png"); background-repeat: no-repeat;}
+#adBox   .prev_btn{float: left; background-position: left top;}
+#adBox   .next_btn{float: right; background-position: right top;}
+
+#adBox button:hover, #adBox button:focus {background-position-y:bottom;}
+
+#adBox:before{content:" "; display: block; position: absolute; z-index: 100; left: 50%; margin-left:-23px; bottom: 1rem;
+              width:46px; height:134px; background-image: url("../../../img/test1/img/adBanner/mouse.png");
+              background-repeat:no-repeat; background-position: center;
+              animation:mouse 1000ms infinite ease alternate;}
+
+@keyframes mouse {
+  0% {transform:translateY(0);}
+  100% {transform:translateY(8px); }
+}            
+
+
+
+
+
+/* 
+ * CSS에서 애니메이션 하는 방법:
+   transition: 단방향형의 애니메이션
+   transition: all 500ms 300ms ease;
+   transition: 무엇을(선택) 시간(400ms) 지연시간(400ms) 함수(ease, ease-in, ease-out, ease-in-out, linear);
+
+   animation:지속성을 가질 수 있는 애니메이션, 일정 시간마다 움직일 기능을 만들어 주어야 함
+   @keyframes {}
+
+
+   animateion:이름(마음대로) 시간 방향 반복처리 지연시간 함수; 
+
+   @keyframes 이름 {
+  
+   }
+
+*/
+
+/* .cover */
+#adBox:after{content:" "; display: block; position: absolute; top: 0; left: 0; 
+             width: 50%; height: 100%; background-color:rgba(151,70,0,0.85);}
+#adBox .cover{position: absolute; z-index: 100; top: 50%; right:50%; margin-top:-260px;
+              width:360px; margin-right: 1rem;}
+#adBox .cover>h3{width: 100%; height: 140px; margin-bottom: 1rem;
+              background-image: url("../../../img/test1/img/monfee_big_logo.png");
+              background-repeat:no-repeat; background-position:left center; background-size:90%;}
+#adBox .cover>p{color:#fff; font-size: 1rem; line-height: 1.2;}
+
+/* .slide_banner */
+#adBox > .slide_banner {width:100%; height: 100%; overflow: hidden;}
+#adBox > .slide_banner > ul {width: 500%; height: 100%;}
+#adBox > .slide_banner > ul > li {float:left; width:calc(100% / 5); height: 100%; background-repeat: no-repeat;
+    background-position: center; background-size:cover;}
+
+#adBox > .slide_banner > ul > li:nth-child(1){background-image: url("../../../img/test1/img/adBanner/slide_01.png");}
+#adBox > .slide_banner > ul > li:nth-child(2){background-image: url("../../../img/test1/img/adBanner/slide_02.png");}
+#adBox > .slide_banner > ul > li:nth-child(3){background-image: url("../../../img/test1/img/adBanner/slide_03.png");}
+#adBox > .slide_banner > ul > li:nth-child(4){background-image: url("../../../img/test1/img/adBanner/slide_04.png");}
+#adBox > .slide_banner > ul > li:nth-child(5){background-image: url("../../../img/test1/img/adBanner/slide_05.png");}
