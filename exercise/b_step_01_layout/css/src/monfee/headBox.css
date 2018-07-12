@@ -6,8 +6,19 @@
 /*box-shadow:x y blur offset color;*/
 .head_box_wrap.fixed{position: fixed; top: 0; bottom:auto;}
 
-#headBox{margin: auto; box-sizing: border-box; padding: 0 10px;
+#headBox{position: relative; z-index: 50; margin: auto; box-sizing: border-box; padding: 0 10px;
   width:960px; height:100%;}
+
+#headBox:after{content:" "; display: block; 
+    position: absolute; z-index: -50; top:7.5rem; left: 0;
+    width: 100%; height: 0; background-color:rgba(151,70,0,0.8);
+    background-image: url("../../../img/test1/img/character.svg");
+    background-repeat: no-repeat; background-position:7% 50%;
+    background-size:auto 50%; transition:height 500ms linear;}
+
+#headBox.top:after{top:auto; bottom:7.5rem;}
+#headBox.show:after{ height: 15rem;}
+
 
 h1{width: 220px; height: 100%; float: left; background-color: #a30;}
 h1>a{background-image: url("../../../img/test1/img/h1_logo.png");}
@@ -17,7 +28,8 @@ h1>a{background-image: url("../../../img/test1/img/h1_logo.png");}
 #gnb>ul>li{float:left; margin-right: 20px; width:140px; height: 100%;}
 #gnb>ul>li:last-child{margin-right: 0;}
 #gnb>ul>li>a{display: block; width: 100%; height: 100%; 
-    line-height:120px; text-align: center; text-transform:capitalize;
+    text-indent:1rem;
+    line-height:120px; text-align: left; text-transform:capitalize;
     font-size:2rem; position: relative; text-decoration: none;}
   /*#gnb>ul>li>a:hover, #gnb>ul>li>a:focus{ 
     text-decoration:underline; 
@@ -33,7 +45,7 @@ h1>a{background-image: url("../../../img/test1/img/h1_logo.png");}
 
 #gnb>ul>li>a:after,
 #gnb>ul>li>a::after{content:" "; display: block; position: absolute;
-        width:80%; height:0; left: 10%; bottom: 1.5rem; background-color: #a30;
+        width:80%; height:0; left:0; bottom: 1.5rem; background-color: #a30;
         transition:all 500ms ease;}
 
 #gnb>ul>li>a:hover:after,
@@ -41,3 +53,11 @@ h1>a{background-image: url("../../../img/test1/img/h1_logo.png");}
 #gnb>ul>li>a:focus:after,
 #gnb>ul>li>a:focus::after{
         width:80%; height:3px; transform:translateY(-3px);}
+
+
+/* level 2 */
+  #gnb ul ol{padding-top: 1rem; width: 100%; height: auto;}
+  #gnb ul >li{position: relative;}
+  #gnb ul ol.top{position: absolute; bottom:7.5rem; left: 0;}
+  #gnb ul ol>li{margin-bottom: 0.5em; width: 100%; height: auto; }
+  #gnb ul ol>li>a{font-size: 1.1rem; color:#fff;}
