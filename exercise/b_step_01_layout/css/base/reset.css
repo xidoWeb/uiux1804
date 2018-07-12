@@ -26,8 +26,8 @@ button,
 input[type="submit"], input[type="reset"], input[type="button"], input[type="file"]{ 
   border:0; background:transparent; border-radius:0;}
 
-select,button{ 
-  -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; appearance:none; }
+/*select,button{ 
+  -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; appearance:none; }*/
 
 
 
