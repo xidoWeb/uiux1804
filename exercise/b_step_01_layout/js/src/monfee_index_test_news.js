@@ -10,22 +10,23 @@
 */
   
 var addr = "../img/test1/img/new_menu/";
-var img  = ['menu_01.png','menu_02.png','menu_03.png','menu_04.png','menu_05.png','menu_06.png'];
+var img  = ['menu_01.png','menu_02.png','menu_03.png','menu_04.png','menu_05.png','menu_06.png','menu_07.png'];
 
 
-$('.new_01').find('.news_img').css({backgroundImage:'url('+ addr + img[0] +')'});
-$('.new_02').find('.news_img').css({backgroundImage:'url('+ addr + img[1] +')'});
-$('.new_03').find('.news_img').css({backgroundImage:'url('+ addr + img[2] +')'});
-$('.new_04').find('.news_img').css({backgroundImage:'url('+ addr + img[3] +')'});
+// $('.new_01').find('.news_img').css({backgroundImage:'url('+ addr + img[0] +')'});
+// $('.new_02').find('.news_img').css({backgroundImage:'url('+ addr + img[1] +')'});
+// $('.new_03').find('.news_img').css({backgroundImage:'url('+ addr + img[2] +')'});
+// $('.new_04').find('.news_img').css({backgroundImage:'url('+ addr + img[3] +')'});
 
 
 var best = $('#bestNews');
 var bestUl = best.find('ul');
-var bestLi = bestUl.find('li').eq(0)[0];
-// console.log(bestLi[0]);
-// for(var i = 0; i<20; i++){
-//   bestUl.append(bestLi);
-// }
 
+var i=0; 
+for(; i < img.length-1; i+=1){
+  var bestLi = bestUl.find('li').eq(0).clone();
+  bestUl.append(bestLi);
+  bestUl.children('li').eq(i).find('.news_img').css({backgroundImage:'url('+ addr + img[i] +')'});
+}
 
 })(jQuery);
