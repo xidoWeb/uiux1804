@@ -6,7 +6,7 @@
   var isLiClone = isBan.find('li').eq(0).clone();
   isBan.children('ul').append(isLiClone);
   var isBanLen = isBan.find('li').length;
-  console.log(isBanLen);
+  // console.log(isBanLen);
   isBan.children('ul').css({width:isBanLen * 100 +'%'});
 
 
@@ -21,10 +21,10 @@
     // 배너의 갯수를 파악해서 최대갯수위치에 오면 처음으로 이동
     var  num = i * -100 + '%';    
     if(i < isBanLen-1){      
-      isBan.children('ul').animate({marginLeft:num});
+      isBan.children('ul').stop().animate({marginLeft:num});
     }else{
       i=0;
-      isBan.children('ul').animate({marginLeft:num},function(){
+      isBan.children('ul').stop().animate({marginLeft:num},function(){
         $(this).css({marginLeft:0});
       });
     }
@@ -40,48 +40,75 @@
   });
 // ---------------------------
   // 일정시간마다 움직이는 자동 슬라이드 기능 (setInterval, clearInterval)
-  var timed = 1000;
+  var timed = 2000;
   var autoStart;
-
-  var StartSlide = function(){
-       autoStart = setInterval(function(){
-                  (i<isBanLen-1) ? i+=1 : i=1;
-                  issueBanner(i);   }, timed*2);  };
-  var StopSlide = function() {clearInterval( autoStart ); };
-  StartSlide();
-//----------------------------
-  issue.off('mouseleave');
-  issue.on('mouseleave',function(){
-    StartSlide(); 
-    play.addClass('active'); 
-    pause.removeClass('active');   
-  });
-
-  issue.on('mouseenter',function(){
-    StopSlide();
-    pause.addClass('active'); 
-    play.removeClass('active'); 
-  });
-// ------------
   var play  = issue.find('.play');
   var pause = issue.find('.pause');
   play.addClass('active');
 
-  play.off('click');
-  play.on('click',function(e){
-    e.preventDefault();
-    issue.trigger('mouseleave');
+
+  var StartSlide = function(){
+       autoStart = setInterval(function(){
+                  (i<isBanLen-1) ? i+=1 : i=1;
+                  issueBanner(i);
+                }, timed);  
+     };
+  var StopSlide = function() {clearInterval( autoStart ); };
+
+  StartSlide();
+//----------------------------
+  // issue.off('mouseleave');
+  var Go = function(e) {
+      e.preventDefault(); 
+      StopSlide();  
+      StartSlide(); 
+      play.addClass('active');  
+      pause.removeClass('active'); 
+    };
+
+  var Stop = function(e) {
+      e.preventDefault();  
+      StopSlide(); 
+      pause.addClass('active');  
+      play.removeClass('active');
+    };
+  /*
+  var status = false;
+
+  issue.find('dl').on('mouseleave',function(e){
+    var btnStatus = pause.hasClass('active');
+    status = false;
+    console.log(btnStatus);
+    if(btnStatus){  Go(e)  }
+  });
+  issue.find('dl').off('.slide1').on('mouseenter.slide',function(e) {
+    Stop(e);
+    status = true;
   });
 
-  pause.on('click',function(e){
-    StopSlide();
-    e.preventDefault();
-    issue.trigger('mouseenter');   
+  play.off('.slide').on('click.slide1',function(e) {
+    (status) ? Stop(e) : Go(e);
+    // issue.on('mouseleave',function(){ Go(e) });
   });
-  // play.unbind('click');
 
+  pause.on({'click': Stop});
+  */
 
-  // setInterval( function(){} , 시간);
-  // clearInterval( setInterval이름 );
+   issue.on({'mouseleave':Go, 'mouseenter':Stop});
+   pause.on({'click': Stop});
+   play.on({'click': Go});
 // -------------------------
 })(jQuery);
+
+
+// var a;
+
+
+// function Start(){
+//   a = setInterval(function(){},2000);
+// }
+// Start();
+
+// (click) => clearInterval( a );
+
+// Start();
