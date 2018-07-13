@@ -11,7 +11,8 @@
 
 
   // indicator 클릭시 배너 이동
-  var issue_btn = $('.issue_text').children('.btn');
+  var issue = $('.issue_text');
+  var issue_btn = issue.children('.btn');
   var indi = issue_btn.find('.indicator');
   var indiLi = indi.children('li');
   var i = 0;
@@ -40,9 +41,47 @@
 // ---------------------------
   // 일정시간마다 움직이는 자동 슬라이드 기능 (setInterval, clearInterval)
   var timed = 1000;
-  setInterval(function(){
-    (i<isBanLen-1) ? i+=1 : i=1;
-    issueBanner(i); 
-  }, timed*2);
+  var autoStart;
+
+  var StartSlide = function(){
+       autoStart = setInterval(function(){
+                  (i<isBanLen-1) ? i+=1 : i=1;
+                  issueBanner(i);   }, timed*2);  };
+  var StopSlide = function() {clearInterval( autoStart ); };
+  StartSlide();
+//----------------------------
+  issue.off('mouseleave');
+  issue.on('mouseleave',function(){
+    StartSlide(); 
+    play.addClass('active'); 
+    pause.removeClass('active');   
+  });
+
+  issue.on('mouseenter',function(){
+    StopSlide();
+    pause.addClass('active'); 
+    play.removeClass('active'); 
+  });
+// ------------
+  var play  = issue.find('.play');
+  var pause = issue.find('.pause');
+  play.addClass('active');
+
+  play.off('click');
+  play.on('click',function(e){
+    e.preventDefault();
+    issue.trigger('mouseleave');
+  });
+
+  pause.on('click',function(e){
+    StopSlide();
+    e.preventDefault();
+    issue.trigger('mouseenter');   
+  });
+  // play.unbind('click');
+
+
+  // setInterval( function(){} , 시간);
+  // clearInterval( setInterval이름 );
 // -------------------------
 })(jQuery);
