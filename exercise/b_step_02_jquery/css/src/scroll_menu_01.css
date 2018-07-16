@@ -1,0 +1,28 @@
+/* scroll_menu_01.css */
+#wrap{width: 100%; height: 100%;}
+#headBox{
+  position:fixed; top: 0; left: 0; z-index: 1500;
+  box-sizing:border-box; padding:1rem;
+  width: 100%; height: 70px; background-color: rgba(100,100,100,0.5);}
+#headBox>h1{float: left; width: 150px; height: 100%;
+  background-color: #fff; overflow: hidden;
+  text-overflow:ellipsis; white-space:nowrap;}
+#headBox>nav{float: right; width: 900px; height: 100%; background-color: #acc;}
+
+/* ------------------------------ */
+#sideMenu{position: fixed; top: 50%; margin-top: -75px; left: 2rem; width: 30px; height: 150px; z-index: 1000;}
+#sideMenu>ul{width: 100%; height: 100%;}
+#sideMenu>ul>li{ margin-bottom: 2rem; box-sizing:border-box; 
+    border:2px solid #778; overflow: hidden;
+    width: 30px; height: 30px; border-radius:100%; 
+    background-color: #fff;}
+
+#sideMenu>ul>li.select>a{background-color: #f06;}
+/* ------------------------------ */
+.scroll_menu{box-sizing:border-box; padding: 2rem;
+  width: 100%; height: 100%;}
+
+#adBox{background-color: #af1;}
+#bestBox{background-color: #b82;}
+#contentBox{background-color: #c43;}
+#moreBox{background-color: #df4;}

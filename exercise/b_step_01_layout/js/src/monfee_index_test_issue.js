@@ -100,15 +100,12 @@
 // -------------------------
 })(jQuery);
 
-
-// var a;
-
-
-// function Start(){
-//   a = setInterval(function(){},2000);
-// }
-// Start();
-
-// (click) => clearInterval( a );
-
-// Start();
+/*
+  // var a;
+  // function Start(){
+  //   a = setInterval(function(){},2000);
+  // }
+  // Start();
+  // (click) => clearInterval( a );
+  // Start();
+  */
