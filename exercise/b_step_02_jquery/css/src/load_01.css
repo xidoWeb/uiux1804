@@ -1,0 +1,6 @@
+/* load_01.css */
+#headBox{box-sizing:border-box; 
+         padding-top: 1rem; 
+         background-color: #f06;}
+h1{text-align: center; color:#fff;}
+p{text-align: center; color:#fa0;}

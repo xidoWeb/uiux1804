@@ -1,0 +1,11 @@
+/* before_file_01.css */
+ .wrap{width: 100%; height: auto;}
+    #headBox{width: 100%; height: 100px;
+      background-color: #0fc;}
+    #adBox{width: 100%; height: 200px;
+      background-color: #a33;}
+    #contentBox{width: 100%;height: 300px;
+      background-color: #a4a;}
+    #footBox{width: 100%; height: 50px;
+      background-color: #555;}
+      h2{color:#fff;}
