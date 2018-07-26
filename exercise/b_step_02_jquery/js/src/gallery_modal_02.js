@@ -44,9 +44,11 @@ list.on('click', ['a'], function(e) {
   mdBox.prepend('<div class="close"><button type="button">닫기</button></div>');
 
   $('.close').css({position:'absolute', top:0, right:0,padding:'1rem', 
-                   backgroundColor:'#fff'});
+                   backgroundColor:'#fff'});  
 
-  mdBox.fadeIn();
+  mdBox.fadeIn(function(){
+     $('.close').find('button').focus();
+  });
   mdBg.fadeIn();
 
   close = $('.close'); 
