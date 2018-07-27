@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- mediaTest.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta:vp -->
+  <meta name="viewport" 
+  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/src/mediaTest.css" />
+  <!-- ie -->
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  <![endif]-->
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <title>responsive web</title>
+  <style>
+    .wrap{margin: auto; width: 500px; height: auto; background-color: #fff;}
+    ul>li{border-bottom:1px solid #aaa; padding: 2rem;}
+    .active{background-color: #07a; color:#fff; font-weight: bold;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <ul>
+      <li>mob color</li>
+      <li>tab color</li>
+      <li>pc color</li>
+      <li>pc full color</li>
+    </ul>
+
+  </div>
+
+
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script>
+    (function($) {
+      // var wid = $(window).outerWidth();
+      var li = $('li');
+      var n; 
+      
+
+      var Test = function(color,n) {
+        $('body').css({backgroundColor:color});
+        li.removeClass('active');
+        li.eq(n).addClass('active');
+        // li.eq(n).siblings('li').removeClass('active');
+      }
+      var mob = function(){ Test('#ccc', 0); };
+      var tab = function(){ Test('#fa0', 1); };
+      var pc = function(){ Test('#aaf', 2); };
+      var pcfull = function(){ Test('#ffa', 3); };
+      
+      
+      var Media = function () {
+        var mqm = window.matchMedia("screen and (max-width:480px)");
+        var mqt = window.matchMedia("screen and (min-width:481px) and (max-width:767px)");
+        var mqp = window.matchMedia("screen and (min-width:768px) and (max-width:1365px)");
+        var mqf = window.matchMedia("screen and (min-width:1366px)");
+         
+        if(mqm.matches){ n = 'mob', mob(); }
+        else if(mqt.matches){ n = 'tab', tab(); }
+        else if(mqp.matches){ n = 'pc', pc(); }
+        else if(mqf.matches){ n = 'pcfull', pcfull(); }
+        else{ n = 'not screen'}
+        console.log(n);
+        return n;
+      }
+      Media();
+      
+    $(window).on('resize', function(e){
+      Media();
+    });
+      
+    })(jQuery);
+  </script>
+</body>
+</html>
