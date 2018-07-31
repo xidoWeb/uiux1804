@@ -31,11 +31,35 @@
   //터치마우스,트랙패드,휠의빠른속더구현으로인해 동작하는 기능을 막기위한 기능 부여
   var go = true; 
   $('html').on('mousewheel DOMMouseScroll', function(e) {
-    // {originalEvent:{  wheelDelta:-120   }   }
+    // e = {originalEvent:{  wheelDelta:-120   }   }
     //크롬, 사파리, IE등의 휠이벤트 처리값 파악하기
-    var evt = e.originalEvent.wheelDelta;
-    var delta = evt;
+    var originE = e.originalEvent;
+
+    var foxevt = originE.detail; // firefox에 존재
+    var evt = originE.wheelDelta;  // firefox이외의 브라우저 존재
+    var delta;
+    // -----------------------------------------------------
+    // firefox에서는 어떠한 이벤트를 받아들이는가?
+    if(foxevt){
+      //console.log('detail속성이 존재한다!!!', foxevt);
+      foxevt *= -40;
+      delta = foxevt;
+    }else if(evt){
+      //console.log('wheelDelta 속성이 존재한다!!!', evt);
+      delta = evt;
+    }
+    console.log(delta);
+    // -----------------------------------------------------
+
+
+
+
+
+    
     // console.log(evt);
+
+
+
 
     // 이벤트처리값의 양수/음수의 판단여부로 동작
     // 단, 반복수행되는 터치마우스의 기능을 한번의 동작으로 처리하기위해 강제로 조건문을 막도록 처리(변수 go기능)
@@ -48,7 +72,7 @@
       (j <= 0) ? j = 0 : j-=1;
       console.log('마우스를 올렸습니다.', j);
     }
-    $('html').animate({ scrollTop:boxList[j] },function() {
+    $('html').stop().animate({ scrollTop:boxList[j] },function() {
       go = true;
     });
   });
