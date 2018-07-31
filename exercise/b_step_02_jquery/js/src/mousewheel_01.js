@@ -26,8 +26,9 @@
    });
    // console.log(boxList); 
 
- // 마우스 휠기능 처리시 동작(firefox에서는 DOMMouseScroll이벤트로 수행해야함)
-
+ /**
+ *01 마우스 휠기능 처리시 동작(firefox에서는 DOMMouseScroll이벤트로 수행해야함)
+ */
   //터치마우스,트랙패드,휠의빠른속더구현으로인해 동작하는 기능을 막기위한 기능 부여
   var go = true; 
   $('html').on('mousewheel DOMMouseScroll', function(e) {
@@ -50,17 +51,8 @@
     }
     console.log(delta);
     // -----------------------------------------------------
-
-
-
-
-
     
     // console.log(evt);
-
-
-
-
     // 이벤트처리값의 양수/음수의 판단여부로 동작
     // 단, 반복수행되는 터치마우스의 기능을 한번의 동작으로 처리하기위해 강제로 조건문을 막도록 처리(변수 go기능)
     if(delta < 0 && go){
@@ -76,4 +68,39 @@
       go = true;
     });
   });
+
+  /**
+  *02 마우스 휠 기능뿐아니라, 스크롤처리시에 동작하는 기능까지 결합해 보자~~!!
+  */
+
+/*
+  $(window).on('scroll',function() {
+    var myTop = $(this).scrollTop();
+    console.log(myTop);
+
+    for(var k=0; k<boxList.length; k+=1){
+      if(myTop >= boxList[k] && myTop < boxList[k+1]){
+        $('html,body').stop().animate({scrollTop:boxList[k]});    
+      }
+    }
+  });
+*/
+
+$('body').css({overflow:'hidden'});
+$(window).on('keyup',function(e) {
+  e.preventDefault()
+  var myKey = e.key.toLowerCase();
+  // console.log(myKey);
+  if(myKey == 'home'){
+    j=0;
+  }else if(myKey == 'end'){
+    j=boxList.length-1;
+  }else if(myKey == 'pageup'){
+    j -= 1;
+  }else if(myKey == 'pagedown'){
+    j += 1;
+  }
+  $('html,body').stop().animate({scrollTop:boxList[j]});
+});
+
 })(jQuery);
