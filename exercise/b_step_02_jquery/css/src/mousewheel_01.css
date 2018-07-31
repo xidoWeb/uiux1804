@@ -1,0 +1,17 @@
+/* mousewheel_01.css */
+#wrap{width: 100%; height: 100%; background-color: #ccc;}
+.box{box-sizing:border-box; padding: 1rem; border-bottom:10px solid #0af; 
+    width: 100%; height: 100%; }
+
+.box_color_01{background-color:#fa0;}
+.box_color_02{background-color:#cf9;}
+.box_color_03{background-color:#f52;}
+.box_color_04{background-color:#ac5;}
+.box_color_05{background-color:#f3c;}
+.box_color_06{background-color:#ac2;}
+.box_color_07{background-color:#f56;}
+.box_color_08{background-color:#f9f;}
+.box_color_09{background-color:#fca;}
+.box_color_10{background-color:#fa9;}
+
+h2{font-size: 3rem;}
