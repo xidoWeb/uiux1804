@@ -33,6 +33,7 @@
             border-radius:100%; background-color: #0ac; 
             color:#fff;}
             
+.indicator>ul>li.active>a,            
 .indicator>ul>li>a:hover,
 .indicator>ul>li>a:focus{background-color: #f06;}
 
