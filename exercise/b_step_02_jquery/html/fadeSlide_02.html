@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- fadeSlide_02.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta:vp -->
+  <meta name="viewport" 
+  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/src/fadeSlide_02.css" />
+  <!-- ie -->
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  <![endif]-->
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <title>fadeSlide_02 web</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1>fade 처리되는 slide기능</h1>
+    <article id="adBanner">
+      <h2 class="hidden">fade처리되는 광고배너 + indicator</h2>
+
+      <div class="btn">
+        <button type="button" class="prev_btn">이전내용보기</button>
+        <button type="button" class="next_btn">다음내용보기</button>
+      </div>
+  
+      <div class="indicator">
+        <ul>
+          <li><a href="#">01</a></li>
+          <li><a href="#">02</a></li>
+          <li><a href="#">03</a></li>
+          <li><a href="#">04</a></li>
+          <li><a href="#">05</a></li>
+        </ul>
+      </div>
+
+        <div class="banner_wrap">
+          <div class="banner_01">banner_01</div>
+          <div class="banner_02">banner_02</div>
+          <div class="banner_03">banner_03</div>
+          <div class="banner_04">banner_04</div>
+          <div class="banner_05">banner_05</div>
+        </div>
+    </article>
+  </div>
+
+  <!-- javascript -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/fadeSlide_02.js"></script>
+</body>
+</html>

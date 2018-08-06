@@ -1,0 +1,31 @@
+/* fadeSlide_01.css */
+#wrap{
+  width: 100%; height: auto;}
+ h1{padding: 1rem; background-color: #76a; color:#fff;} 
+
+#adBanner{position: relative; 
+        width: 100%; height: 45vw; 
+        background-color: #ccc;}
+
+.btn{position: absolute; top: 50%; left: 5%;
+    margin-top: -1.5625rem;
+    width: 90%; height: 0; 
+    z-index: 500;}
+.btn>button{width: 12.5rem; height: 3.125rem; 
+      background-color: #0af;}
+
+.prev_btn{float: left;}
+.next_btn{float: right;}
+
+.banner_wrap{width: 100%; height: 100%;
+            background-color: #ccf;}
+
+.banner_wrap>div{width: 100%; height: 100%;
+              position: absolute; top: 0; left: 0;
+              text-align: center;
+              line-height:45vw; font-size: 5rem;}
+.banner_01{background-color: #6aa;}
+.banner_02{background-color: #6af;}
+.banner_03{background-color: #af6;}
+.banner_04{background-color: #f6a;}
+.banner_05{background-color: #c7a;}
