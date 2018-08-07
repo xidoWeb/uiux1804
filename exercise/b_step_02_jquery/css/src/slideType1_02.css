@@ -1,0 +1,34 @@
+/* slideType1_01.css */
+#wrap{margin: auto; width: 90%; min-width:1600px; height: 32rem;}
+h1{width: 0; height: 0; overflow: hidden;}
+#adBanner{position: relative; width: 100%; height: 100%; background-color: #ccc;}
+.btn{position: absolute; width: 12.5rem; height: 2.5rem; 
+     bottom: 1rem; right: 1rem;}
+.btn>button{width: 40%; height: 100%; background-color: #0af;
+          border-radius:0.3rem;}     
+.btn>button:nth-of-type(1){float: left;}     
+.btn>button:nth-of-type(2){float: right;}
+
+.banner_box{width: 100%;  height: 100%; overflow: hidden;}
+.banner_wrap{width: 200%; height: 100%;
+            box-sizing: border-box; padding:2rem; padding-top: 5rem;}
+.banner_wrap>div{width:15rem; height:15rem; float: left;
+          border-radius: 100%; margin-right:5rem;
+          text-align: center; line-height: 15rem; font-size: 5rem; color:#fff; font-weight: bold;
+          text-shadow:0.2rem 0.2rem 0.2rem rgba(0,100,255,0.5);
+          background-repeat: no-repeat; background-position: center; background-size:cover; background-color: #fff;
+          transform: scale(0.5) rotate(0); 
+          transition:all 500ms ease;}
+
+.banner_wrap>div.active{transform:scale(1.5) rotate(720deg);}
+.banner_wrap>div:nth-of-type(3),
+.banner_wrap>div:nth-of-type(4),
+.banner_wrap>div:nth-of-type(5){transform:scale(1) rotate(0);}
+
+.banner_01{background-image: url("../../img/gallery/j03_big.jpg");}
+.banner_02{background-image: url("../../img/gallery/j04_big.jpg");}
+.banner_03{background-image: url("../../img/gallery/j05_big.jpg");}
+.banner_04{background-image: url("../../img/gallery/j06_big.jpg");}
+.banner_05{background-image: url("../../img/gallery/j07_big.jpg");}
+.banner_06{background-image: url("../../img/gallery/j08_big.jpg");}
+.banner_07{background-image: url("../../img/gallery/j09_big.jpg");}

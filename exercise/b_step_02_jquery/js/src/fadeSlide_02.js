@@ -26,6 +26,15 @@
   };
   IndiActive(j);
  
+// indiLi클릭시 fade배너 위치가 나타나거나 사라지게
+indiLi.on('click',function(e) {
+  e.preventDefault();
+  j = $(this).index();
+  IndiActive(j);
+});
+
+
+ 
 // 이전/다음 버튼 클릭시 내용보이기처리
   btn.on('click',function(e) {
     e.preventDefault();
@@ -38,11 +47,5 @@
     IndiActive(j);
   });
 
-// indiLi클릭시 fade배너 위치가 나타나거나 사라지게
-indiLi.on('click',function(e) {
-  e.preventDefault();
-  j = $(this).index();
-  IndiActive(j);
-});
 
 })(jQuery);
