@@ -1,0 +1,18 @@
+/* d-day.css */
+
+div{margin: auto;
+    box-sizing: border-box; padding: 1rem;
+    width: 80%; min-width:600px;
+    height: auto;
+    box-shadow:0.3rem 0.3rem 0.3rem rgba(0,0,0,0.3);}
+
+p{width: 100%; height: auto; margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;}
+
+.today{font-size:2rem;}
+.want_day{font-size:1.5rem;}
+.d_day{font-size:3rem;}
+
+p>strong{display:inline-block; 
+         width:130px; 
+         font-size: 1.2rem;}

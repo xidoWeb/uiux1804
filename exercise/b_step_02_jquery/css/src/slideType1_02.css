@@ -17,13 +17,13 @@ h1{width: 0; height: 0; overflow: hidden;}
           text-align: center; line-height: 15rem; font-size: 5rem; color:#fff; font-weight: bold;
           text-shadow:0.2rem 0.2rem 0.2rem rgba(0,100,255,0.5);
           background-repeat: no-repeat; background-position: center; background-size:cover; background-color: #fff;
-          transform: scale(0.5) rotate(0); 
+          transform: scale(1) rotate(0); 
           transition:all 500ms ease;}
 
 .banner_wrap>div.active{transform:scale(1.5) rotate(720deg);}
-.banner_wrap>div:nth-of-type(3),
+/*.banner_wrap>div:nth-of-type(3),
 .banner_wrap>div:nth-of-type(4),
-.banner_wrap>div:nth-of-type(5){transform:scale(1) rotate(0);}
+.banner_wrap>div:nth-of-type(5){transform:scale(1) rotate(0);}*/
 
 .banner_01{background-image: url("../../img/gallery/j03_big.jpg");}
 .banner_02{background-image: url("../../img/gallery/j04_big.jpg");}
