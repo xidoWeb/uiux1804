@@ -1,16 +1,17 @@
 # 요청 자료 및 할일!
 
 ## jQuery
-1. slidebanner: position 기능으로 fade처리되는 slide
-2. slideBanner: 위치에따른 크기변형으로 처리(append,prepend)
-3. scroll위치하면 countUp
-4. date 날짜 표시
+1. `v` slidebanner: position 기능으로 fade처리되는 slide
+2. `v` slideBanner: 위치에따른 크기변형으로 처리(append,prepend)
+3. `v` date 날짜 표시 : D-day
+4. scroll위치하면 countUp
 5. 구글맵(다음, 네이버)
-6. 로딩페이지 구현하기
-7. 스크롤 더보기(전체갯수, 나와있는 갯수표기)
-8. 플러그인 만들기
-9. 다른 플러그인 사용하기
-10. 배경이미지 움직이기 (parallax web)
+6. `v` 로딩페이지 구현하기
+7. `v` video 재생 및 정지버튼만들기(스크롤이동시 정지처리포함)
+8. 스크롤 더보기(전체갯수, 나와있는 갯수표기)
+9. 플러그인 만들기
+10. 다른 플러그인 사용하기
+11. 배경이미지 움직이기 (parallax web)
 ---
 
 ## 추가로 배울것

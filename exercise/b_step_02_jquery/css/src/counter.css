@@ -1,0 +1,37 @@
+/* counter.css */
+
+#wrap{width: 100%; height: auto;
+    box-sizing: border-box;
+     padding: 10rem 2rem; background-color: #fca;}
+ h1{width: 100%; text-align: center; 
+    box-sizing: border-box;
+    padding: 2rem; margin-bottom: 2rem; color:#fff;
+    background-color: #a0f;
+    background-image:linear-gradient(#a0f, #a4a);
+  }
+#wrap>div{margin: auto; margin-bottom: 10rem;
+    border:2px solid #777; 
+    border-left:0; border-right:0;
+    box-sizing:border-box; padding: 2rem;
+    width: 600px; height: 300px;
+    }
+#wrap>div>p{width: 100%; height: auto; 
+  margin-bottom: 1rem;
+  font-size: 5rem; font-weight:bold;
+  text-align: center;}
+#wrap>div>button{display: block; margin: auto;
+    width: 15rem; height: 3rem; 
+    background-color: #05a;
+    font-size: 1.5em; font-weight: bold; 
+    color:#fff;}
+
+#wrap>.count_03{
+        background-color: #fff; 
+        margin-top: 50rem;}
+
+#wrap>.count_04{
+      background-color: #0cf;
+      margin-top: 50rem;
+      line-height: 250px;
+    }
+#wrap>.count_04>p{font-size: 10rem;}

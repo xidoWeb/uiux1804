@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- d-day.html -->
+<!-- counter.html -->
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
@@ -9,7 +9,7 @@
   content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
   
   <link rel="stylesheet" href="../css/base/reset.css" />
-  <link rel="stylesheet" href="../css/src/d-day.css" />
+  <link rel="stylesheet" href="../css/src/counter.css" />
   <!-- ie -->
   <!--[if lte IE 9]>
     <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
@@ -19,42 +19,31 @@
   <!-- favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
   <link rel="apple-touch-icon" href="../favicon.png" />
-  <title>d-day web</title>
+  <title>counter</title>
 </head>
 <body>
   <!-- layout -->
-  <p>
-    <a href="http://naver.com" target="_top">네이버로이동</a>
-  </p>
-  <div>
-    <p class="today">
-      <strong>오늘날짜:</strong>
-      <span class="y"></span> 
-      <span class="m"></span> 
-      <span class="d"></span> 
-      <span class="t"></span> 
-    </p>
-    <p class="want_day">
-      <strong>목표날짜:</strong>
-      <span class="y"></span> 
-      <span class="m"></span> 
-      <span class="d"></span> 
-      <span class="t"></span> 
-    </p>
-    <p class="d_day">
-      <strong>남은기간:</strong>
-      <span class="y"></span> 
-      <span class="m"></span> 
-      <span class="d"></span> 
-      <span class="t"></span> 
-    </p>    
+  <div id="wrap">
+    <h1>counter 기능 만들기</h1>
+    <div class="count_01">
+      <p></p>
+      <button type="button">숫자 더하기</button>
+    </div>
+     <div class="count_02">
+      <p>500</p>
+      <button type="button">자동 카운터</button>
+    </div>
+    <div class="count_03">
+      <p>500</p>
+    </div>
+    <div class="count_04">
+      <p>500</p>
+    </div>
   </div>
-    
-  </div>
+
   <!-- javascript -->
   <script src="../js/base/jquery-3.3.1.min.js"></script>
   <script src="../js/base/jquery-ui.min.js"></script>
-  <!-- <script src="../js/src/d-day.js"></script> -->
-
+  <script src="../js/src/counter.js"></script>
 </body>
 </html>
