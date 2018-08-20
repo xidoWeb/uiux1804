@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- google_map_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta:vp -->
+  <meta name="viewport" 
+  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  
+  <link rel="stylesheet" href="../css/base/reset.css" />
+  <link rel="stylesheet" href="../css/src/google_map_01.css" />
+  <!-- ie -->
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  <![endif]-->
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <title>google_map_01</title>
+  <style>
+    #map1{margin: auto; width: 700px; height: 400px;
+      background-image: url("../img/map.png"); background-repeat:no-repeat; background-position: center;}
+  </style>
+</head>
+<body>
+  <h1>google map</h1>
+  <!-- *google map 사용법
+    1. google api key 를 받아서 등록
+    2. 서버가 구동
+    3. google 맵 코드를 가져와야하며, 키를 입력
+    4. google map은 굳이 jQuery를 사용하지 않아도 됨!(순수 자바스크립트)
+    5. 디테일한 사용법은 google 개발자모드/ w3schools.com에서 참조
+   -->
+
+  <div id="map1"></div>
+
+
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <!-- 실제로는 이렇게 써야합니다. -->
+
+
+  <script>
+     function initMap() {
+        var myLatLng = {lat: 37.267133, lng: 127.002948}; //위도, 경도
+        var select   = document.getElementById('map1');
+
+        var map      = new google.maps.Map(select, {
+          center: myLatLng,
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.SATELLITE
+        });
+
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          title: '수원 그린컴퓨터 아카데미',
+          animation:google.maps.Animation.BOUNCE
+        });
+      }
+      initMap();
+
+  </script>
+
+  <!--   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+          async defer></script> -->
+</body>
+</html>
